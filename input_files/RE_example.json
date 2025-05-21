@@ -1,0 +1,70 @@
+{
+    "Schema": [
+        {
+            "designed": {
+                "domain": "Person",
+                "range": "Structure"
+            }
+        },
+        {
+            "located_in": {
+                "domain": "Structure",
+                "range": "Location"
+            }
+        },
+        {
+            "part_of": {
+                "domain": "City",
+                "range": "Country"
+            }
+        },
+        {
+            "friends_with": {
+                "domain": "Person",
+                "range": "Person"
+            }
+        },
+        {
+            "lives_at": {
+                "domain": "Person",
+                "range": "Location"
+            }
+        },
+        {
+            "visits": {
+                "domain": "Person",
+                "range": "Location"
+            }
+        },
+        {
+            "accompanied_by": {
+                "domain": "Person",
+                "range": "Person"
+            }
+        },
+        {
+            "shares": {
+                "domain": "Person",
+                "range": "Product"
+            }
+        }
+    ],
+    "Text": "Gustave Eiffel designed the Eiffel Tower, which is located in Paris, France.",
+    "Relations": [
+        [
+            "Gustave Eiffel",
+            "designed",
+            "Eiffel Tower"
+        ],
+        [
+            "Eiffel Tower",
+            "located_in",
+            "Paris"
+        ],
+        [
+            "Paris",
+            "part_of",
+            "France"
+        ]
+    ]
+}

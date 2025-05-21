@@ -1,0 +1,249 @@
+[
+    {
+      "category": "Taxonomy / Ontology / Classification",
+      "relations": [
+        "subclass of",
+        "instance of",
+        "facet of",
+        "has parts of the class",
+        "parent taxon",
+        "different from",
+        "opposite of",
+        "said to be the same as"
+      ]
+    },
+    {
+      "category": "Spatial / Geographical Relations",
+      "relations": [
+        "part of",
+        "location",
+        "headquarters location",
+        "capital",
+        "continent",
+        "applies to jurisdiction",
+        "located in or next to body of water",
+        "basin country",
+        "country of origin",
+        "historical region",
+        "mouth of the watercourse",
+        "contains",
+        "contains administrative territorial entity",
+        "contains settlement",
+        "enclave within",
+        "has boundary",
+        "territory claimed by",
+        "site of astronomical discovery",
+        "anatomical location"
+      ]
+    },
+    {
+      "category": "Organizational / Group Membership",
+      "relations": [
+        "member of",
+        "parent organization",
+        "affiliation",
+        "business division",
+        "league",
+        "twinned administrative body",
+        "executive body",
+        "legislative body",
+        "authority",
+        "member of political party",
+        "office held by head of government",
+        "office held by head of state"
+      ]
+    },
+    {
+      "category": "Ownership / Control / Corporate",
+      "relations": [
+        "owned by",
+        "owner of",
+        "operator",
+        "operating area",
+        "manufacturer",
+        "stock exchange",
+        "stock market index",
+        "investor",
+        "revenue",
+        "revenue per share",
+        "profit margin",
+        "central bank",
+        "central bank/issuer",
+        "sponsor",
+        "legal form",
+        "industry",
+        "credit rating",
+        "Credit rating agency",
+        "credit rating agency",
+        "stock market capitalization",
+        "highest debt",
+        "highest debt ratio"
+      ]
+    },
+    {
+      "category": "Person & Role Relations",
+      "relations": [
+        "position held",
+        "officeholder",
+        "chairperson",
+        "chief executive officer",
+        "Chief Executive Officer",
+        "Chief executive officer",
+        "director / manager",
+        "director",
+        "coach of sports team",
+        "head coach",
+        "occupant",
+        "appointed by",
+        "substitute/deputy/replacement of office/officeholder",
+        "commemorates"
+      ]
+    },
+    {
+      "category": "Biographical / Personal Attributes",
+      "relations": [
+        "spouse",
+        "child",
+        "sibling",
+        "father",
+        "place of birth",
+        "residence",
+        "occupation",
+        "educated at",
+        "work location",
+        "language used",
+        "language of work or name",
+        "patronym or matronym for this person",
+        "military rank",
+        "allegiance",
+        "title of honor",
+        "award received",
+        "notable work"
+      ]
+    },
+    {
+      "category": "Events / Temporal Relations",
+      "relations": [
+        "significant event",
+        "conflict",
+        "participant",
+        "participant in",
+        "followed by",
+        "follows",
+        "replaces",
+        "separated from",
+        "sports season of league or competition",
+        "public holiday",
+        "day in year for periodic occurrence"
+      ]
+    },
+    {
+      "category": "Relationships in Knowledge / Influence / Logic",
+      "relations": [
+        "has cause",
+        "has effect",
+        "subject has role",
+        "studied by",
+        "studies",
+        "interested in",
+        "influenced by",
+        "contributing factor of",
+        "has contributing factor",
+        "manifestation of"
+      ]
+    },
+    {
+      "category": "Creative / Intellectual Work",
+      "relations": [
+        "author",
+        "creator",
+        "director",
+        "editor",
+        "publisher",
+        "composer",
+        "notable work",
+        "has edition or translation",
+        "contributor to the creative work or subject",
+        "based on",
+        "main subject",
+        "has written for"
+      ]
+    },
+    {
+      "category": "Legal / Political",
+      "relations": [
+        "legislated by",
+        "main regulatory text",
+        "designated as terrorist by",
+        "political ideology",
+        "jurisdiction",
+        "highest judicial authority"
+      ]
+    },
+    {
+      "category": "Science / Nature / Technology",
+      "relations": [
+        "discoverer or inventor",
+        "field of this occupation",
+        "molecular function",
+        "monomer of",
+        "polymer of",
+        "natural product of taxon",
+        "found in taxon",
+        "this taxon is source of",
+        "medical examinations",
+        "measured physical quantity",
+        "measurement scale",
+        "fabrication method"
+      ]
+    },
+    {
+      "category": "Sports",
+      "relations": [
+        "sport",
+        "sports discipline competed in",
+        "country for sport",
+        "goalkeepers",
+        "coach of sports team",
+        "head coach",
+        "position played on team / speciality",
+        "team",
+        "league",
+        "participating team",
+        "winner",
+        "official sports equipment",
+        "home venue",
+        "captain",
+        "partner in business or sport"
+      ]
+    },
+    {
+      "category": "Economic / Financial",
+      "relations": [
+        "economy of topic",
+        "uses",
+        "use",
+        "produced by",
+        "made from material",
+        "manufacturer",
+        "currency",
+        "currency symbol description",
+        "profit margin"
+      ]
+    },
+    {
+      "category": "Symbolic / Cultural / Miscellaneous",
+      "relations": [
+        "color",
+        "named after",
+        "commemorates",
+        "diaspora",
+        "represents",
+        "part of the series",
+        "historical region",
+        "public holiday",
+        "foundational text"
+      ]
+    }
+  ]
+  

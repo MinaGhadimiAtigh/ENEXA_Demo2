@@ -1,0 +1,10 @@
+{
+    "input_folder": "/scratch-local/femilovayil.11804329/ENEXA_Demo2/wiki_downloads",
+    "prompt_template": "/scratch-local/femilovayil.11804329/ENEXA_Demo2/input_files/prompt_template_with_example.json",
+    "target_relations": "/scratch-local/femilovayil.11804329/ENEXA_Demo2/input_files/target_relations_shorter.json",
+    "example": "/scratch-local/femilovayil.11804329/ENEXA_Demo2/input_files/RE_example.json",
+    "LLM": "FinaPolat/phi4_adaptable_IE",
+    "temperature": 0.001,
+    "max_tokens": 3072,
+    "output_folder": "/scratch-local/femilovayil.11804329/ft_phi4_semiclosed_with_example"
+}

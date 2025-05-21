@@ -1,0 +1,28 @@
+{
+    "Schema": [
+        "Person",
+        "Organization",
+        "Location",
+        "Date",
+        "Product"
+    ],
+    "Text": "The Eiffel Tower in Paris, designed by Gustave Eiffel, is one of the most famous landmarks in France.",
+    "Entities": [
+        [
+            "Eiffel Tower",
+            "Location"
+        ],
+        [
+            "Paris",
+            "Location"
+        ],
+        [
+            "Gustave Eiffel",
+            "Person"
+        ],
+        [
+            "France",
+            "Location"
+        ]
+    ]
+}

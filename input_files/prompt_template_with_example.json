@@ -1,0 +1,10 @@
+{
+    "formatter": "Information Extraction is the process of automatically identifying and extracting structured information from unstructured text data. The goal is to transform raw text into meaningful data that can be easily analyzed and used in various applications. Named Entity Recognition (NER) and Relation Extraction are two common tasks in Information Extraction.\n\nNamed Entity Recognition involves identifying and classifying named entities such as people, organizations, locations, and other domain-specific concepts. Relation Extraction involves identifying and extracting relationships between entities.\n\nThe task at hand is {task}.\n\nHere is an example of task execution:\n\n{example}\n\nAnalyze the text and targets carefully, identify relevant information.\n\nExtract the information in the following format: `{output_format}`. If no matching entities are found, return an **empty list**. Please provide only the extracted information without any explanations.\n\nSchema: {schema}\nText: {inputs}\n",
+    "input variables": [
+        "task",
+        "example",
+        "schema",
+        "inputs",
+        "output_format"
+    ]
+}
