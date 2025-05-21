@@ -1,5 +1,5 @@
 
-# ENEXA Pipeline
+# ENEXA Extractions Pipeline
 
 ## Step 1: Download Wikipedia articles
 
