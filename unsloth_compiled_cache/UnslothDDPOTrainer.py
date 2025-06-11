@@ -145,7 +145,7 @@ class UnslothDDPOConfig(DDPOConfig):
     )
     def __init__(
         self,
-        exp_name = 'link_items',
+        exp_name = 'semiclosedIE_with_example',
         run_name = '',
         seed = 3407,
         log_with = None,
