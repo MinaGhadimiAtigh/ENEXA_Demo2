@@ -80,7 +80,7 @@ def main():
     parser.add_argument('--NER_example', type=str, default="ENEXA_Demo2/input_files/NER_example.json", help='NER example to use in the prompt template.')
     parser.add_argument('--RE_example', type=str, default="ENEXA_Demo2/input_files/RE_example.json", help='RE example to use in the prompt template.')
     parser.add_argument('--LLM', type=str, default="FinaPolat/phi4_adaptable_IE", help='The model to use for the test')
-    parser.add_argument('--batch_size', type=int, default=1, help='The batch size to use for the test')
+    #parser.add_argument('--batch_size', type=int, default=1, help='The batch size to use for the test')
     parser.add_argument('--temperature', type=int, default=0.001, help='The temperature to use for the test')
     parser.add_argument('--max_tokens', type=int, default=3072, help='The maximum number of tokens to use for the test')
     parser.add_argument('--output_folder', type=str, default="ENEXA_Demo2/IE_extraction_output", help='The output folder where the resulting triples will be stored')
@@ -212,61 +212,76 @@ def main():
     FastLanguageModel.for_inference(model) # Enable native 2x faster inference
     #text_streamer = TextStreamer(tokenizer)
 
-    batch_size = args.batch_size if hasattr(args, 'batch_size') else 1
-    data_list = data.to_list()
-    num_batches = math.ceil(len(data_list) / batch_size)  # Limit to first 3 batches for testing
-    print(f"Number of batches: {num_batches}", flush=True)
-    print(f"Batch size: {batch_size}", flush=True)
-    start_time = time.time()  # Start timing
+    # batch_size = args.batch_size if hasattr(args, 'batch_size') else 1
+    # data_list = data.to_list()
+    # num_batches = math.ceil(len(data_list) / batch_size)  # Limit to first 3 batches for testing
+    # print(f"Number of batches: {num_batches}", flush=True)
+    # print(f"Batch size: {batch_size}", flush=True)
+    # start_time = time.time()  # Start timing
 
     LLM_answers = []
-    with tqdm(total=num_batches, desc="Generating", unit="batch") as pbar:
-        for batch_idx in range(num_batches): #range(2):
-            start = batch_idx * batch_size
-            end = min(start + batch_size, len(data_list))
-            batch = data_list[start:end]
-
-            prompts = [item["text"] for item in batch]
-            encoded = tokenizer(
-                            prompts,
-                            return_tensors="pt",
-                            padding=True,
-                            truncation=True,
-                        ).to("cuda")
-            
-            with torch.no_grad():
-                outputs = model.generate(
-                input_ids=encoded["input_ids"],
-                attention_mask=encoded["attention_mask"],
-                max_new_tokens=2048,
-                temperature=args.temperature,
-                do_sample=True,
-                pad_token_id=tokenizer.pad_token_id,
-                eos_token_id=tokenizer.eos_token_id,
-                )
-
-            for i, output in enumerate(outputs):
-                input_len = (encoded["attention_mask"][i] == 1).sum().item()
-                generated_text = tokenizer.decode(output[input_len:], skip_special_tokens=True)
-                item = batch[i]
-
-                LLM_answers.append({
-                    "article": item["article"],
-                    "heading": item["heading"],
-                    "url": item["url"],
-                    "input type": item["input type"],
-                    "task": item["task"],
-                    "schema": item["schema"],
-                    "input text": item["input text"],
+    #for i in range(len(data)):
+    for i in range(10):
+        print(f"Generating answer for row {i}...", flush=True)
+        row = data[i]   
+        inputs = tokenizer(row["text"], return_tensors="pt").to("cuda")
+        outputs = model.generate(input_ids=inputs['input_ids'], 
+                                  attention_mask=inputs["attention_mask"], 
+                                  max_new_tokens = args.max_tokens,
+                                  temperature=args.temperature,
+                                  do_sample=True,
+                                  ) 
+        prompt_length = inputs['input_ids'].shape[1]
+        generated_text = tokenizer.decode(outputs[0][prompt_length:], skip_special_tokens=True)
+        #print("LLM answer", generated_text, flush=True)
+        LLM_answers.append({
+                    "article": row["article"],
+                    "heading": row["heading"],
+                    "url": row["url"],
+                    "input type": row["input type"],
+                    "task": row["task"],
+                    "schema": row["schema"],
+                    "input text": row["input text"],
                     "LLM answer": generated_text,
                 })
 
-        pbar.update(1)
+    # with tqdm(total=num_batches, desc="Generating", unit="batch") as pbar:
+    #     for batch_idx in range(num_batches): #range(2):
+    #         start = batch_idx * batch_size
+    #         end = min(start + batch_size, len(data_list))
+    #         batch = data_list[start:end]
 
-    end_time = time.time()  # End timing
-    elapsed_time = end_time - start_time
-    print(f"Total time taken: {elapsed_time:.2f} seconds")
-    print("LLM answers are generated", flush=True)
+    #         prompts = [item["text"] for item in batch]
+    #         encoded = tokenizer(
+    #                         prompts,
+    #                         return_tensors="pt",
+    #                         padding=True,
+    #                         truncation=True,
+    #                     ).to("cuda")
+            
+    #         with torch.no_grad():
+    #             outputs = model.generate(
+    #             input_ids=encoded["input_ids"],
+    #             attention_mask=encoded["attention_mask"],
+    #             max_new_tokens=2048,
+    #             temperature=args.temperature,
+    #             do_sample=True,
+    #             pad_token_id=tokenizer.pad_token_id,
+    #             eos_token_id=tokenizer.eos_token_id,
+    #             )
+
+    #         for i, output in enumerate(outputs):
+    #             input_len = (encoded["attention_mask"][i] == 1).sum().item()
+    #             generated_text = tokenizer.decode(output[input_len:], skip_special_tokens=True)
+    #             item = batch[i]
+
+
+    #        pbar.update(1)
+
+    # end_time = time.time()  # End timing
+    # elapsed_time = end_time - start_time
+    # print(f"Total time taken: {elapsed_time:.2f} seconds")
+    # print("LLM answers are generated", flush=True)
       
     write_jsonL(LLM_answers, f"{args.output_folder}/LLM_answers.jsonl")
     write_json(args_dict, f"{args.output_folder}/args.json")

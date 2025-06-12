@@ -20,7 +20,7 @@ cp -r $HOME/ENEXA_Demo2 "$TMPDIR"
 pwd
 
 #Create output directory on scratch
-mkdir "$TMPDIR"/extraction_batched
+mkdir "$TMPDIR"/extraction_not_batched
 
 #Execute the Python program.
 accelerate launch --num_processes=1 --num_machines=1 $TMPDIR/ENEXA_Demo2/semiclosedIE_with_example.py \
@@ -31,8 +31,7 @@ accelerate launch --num_processes=1 --num_machines=1 $TMPDIR/ENEXA_Demo2/semiclo
                             --NER_example $TMPDIR/ENEXA_Demo2/input_files/NER_example.json \
                             --RE_example $TMPDIR/ENEXA_Demo2/input_files/RE_example.json \
                             --LLM FinaPolat/phi4_adaptable_IE \
-                            --batch_size 6 \
-                            --output_folder $TMPDIR/extraction_batched
+                            --output_folder $TMPDIR/extraction_not_batched
  
 #Copy output directory from scratch to home
-cp -r "$TMPDIR"/extraction_batched $HOME/ENEXA_Demo2/IE_extraction_output
+cp -r "$TMPDIR"/extraction_not_batched $HOME/ENEXA_Demo2/IE_extraction_output

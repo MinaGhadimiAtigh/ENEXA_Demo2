@@ -126,7 +126,7 @@ def main():
     columns_to_remove = ["messages", "prompt"]
     data = data.map(lambda x: x, remove_columns=columns_to_remove)
 
-    max_seq_length = 2048
+    max_seq_length = 3072
     model, tokenizer = FastLanguageModel.from_pretrained(
                                                             model_name = args.LLM, # YOUR MODEL YOU USED FOR TRAINING
                                                             max_seq_length = max_seq_length,
@@ -141,8 +141,8 @@ def main():
 
 
     LLM_answers = []
-    for i in range(len(data)):
-    #for i in range(10):
+    #for i in range(len(data)):
+    for i in range(10):
         print(f"Generating answer for row {i}...", flush=True)
         row = data[i]   
         inputs = tokenizer(row["text"], return_tensors="pt").to("cuda")

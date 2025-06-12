@@ -1,0 +1,67 @@
+/gpfs/home4/femilovayil/ENEXA_Demo2
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+True
+1
+input_folder: /scratch-local/femilovayil.12286635/ENEXA_Demo2/wiki_downloads/wiki_downloads_with_tables_adidas
+prompt_template: /scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/prompt_template_with_example.json
+target_entity_types: /scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/target_entity_types.json
+target_relations: /scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/target_relations_shorter.json
+NER_example: /scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/NER_example.json
+RE_example: /scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/RE_example.json
+LLM: FinaPolat/phi4_adaptable_IE
+temperature: 0.001
+max_tokens: 3072
+output_folder: /scratch-local/femilovayil.12286635/extraction_not_batched
+Target entity type categories
+3
+Target relation categories
+6
+Input data is created
+1080
+Data for inference is loaded
+1080
+{'article': 'Adidas', 'heading': 'Adidas', 'input type': 'table', 'url': 'https://en.wikipedia.org/wiki/Adidas', 'task': 'NER', 'schema': ['company', 'product', 'service', 'industry', 'brand', 'country', 'location', 'organization', 'person', 'position', 'event', 'award'], 'input text': 'article: Adidas, Adidas: [["Factory outlet in Herzogenaurach, Germany"], ["Formerly", "Gebrüder Dassler Schuhfabrik (1924–1949)"], ["Company type", "Public"], ["Traded as", "FWB:ADSDAX component"], ["Industry", "Textile,footwear"], ["Founded", "July\xa01924; 100\xa0years ago(1924-07)inHerzogenaurach, Germany (as Gebrüder Dassler Schuhfabrik)18\xa0August 1949; 75 years ago(1949-08-18)(as Adidas)[1]"], ["Founder", "Adolf Dassler"], ["Headquarters", "Herzogenaurach, Bavaria,Germany"], ["Area served", "Worldwide"], ["Key people", "Thomas Rabe(Chairman)[2]Bjørn Gulden (CEO)"], ["Products", "Apparel,footwear,sportswear,sports equipment,toiletries"], ["Revenue", "€23.683\xa0billion (2024)[3]"], ["Operating income", "€1.249\xa0billion (2024)[3]"], ["Net income", "€756\xa0million (2024)[3]"], ["Total assets", "€20.655\xa0billion (2024)[3]"], ["Total equity", "€5.868\xa0billion (2024)[3]"], ["Number of employees", "62,035 (2024)[3]"], ["Subsidiaries", "Adidas RuntasticMatix"], ["Website", "adidas.com"]]', 'prompt': 'Information Extraction is the process of automatically identifying and extracting structured information from unstructured text data. The goal is to transform raw text into meaningful data that can be easily analyzed and used in various applications. Named Entity Recognition (NER) and Relation Extraction are two common tasks in Information Extraction.\n\nNamed Entity Recognition involves identifying and classifying named entities such as people, organizations, locations, and other domain-specific concepts. Relation Extraction involves identifying and extracting relationships between entities.\n\nThe task at hand is NER: Named Entity Recognition.\n\nHere is an example of task execution:\n\n{\'Schema\': [\'Person\', \'Organization\', \'Location\', \'Date\', \'Product\'], \'Text\': \'The Eiffel Tower in Paris, designed by Gustave Eiffel, is one of the most famous landmarks in France.\', \'Entities\': [[\'Eiffel Tower\', \'Location\'], [\'Paris\', \'Location\'], [\'Gustave Eiffel\', \'Person\'], [\'France\', \'Location\']]}\n\nAnalyze the text and targets carefully, identify relevant information.\n\nExtract the information in the following format: `[["Entity", "Type"], ...]`. If no matching entities are found, return an **empty list**. Please provide only the extracted information without any explanations.\n\nSchema: ["company", "product", "service", "industry", "brand", "country", "location", "organization", "person", "position", "event", "award"]\nText: article: Adidas, Adidas: [["Factory outlet in Herzogenaurach, Germany"], ["Formerly", "Gebrüder Dassler Schuhfabrik (1924–1949)"], ["Company type", "Public"], ["Traded as", "FWB:ADSDAX component"], ["Industry", "Textile,footwear"], ["Founded", "July\xa01924; 100\xa0years ago(1924-07)inHerzogenaurach, Germany (as Gebrüder Dassler Schuhfabrik)18\xa0August 1949; 75 years ago(1949-08-18)(as Adidas)[1]"], ["Founder", "Adolf Dassler"], ["Headquarters", "Herzogenaurach, Bavaria,Germany"], ["Area served", "Worldwide"], ["Key people", "Thomas Rabe(Chairman)[2]Bjørn Gulden (CEO)"], ["Products", "Apparel,footwear,sportswear,sports equipment,toiletries"], ["Revenue", "€23.683\xa0billion (2024)[3]"], ["Operating income", "€1.249\xa0billion (2024)[3]"], ["Net income", "€756\xa0million (2024)[3]"], ["Total assets", "€20.655\xa0billion (2024)[3]"], ["Total equity", "€5.868\xa0billion (2024)[3]"], ["Number of employees", "62,035 (2024)[3]"], ["Subsidiaries", "Adidas RuntasticMatix"], ["Website", "adidas.com"]]\n'}
+Map:   0%|          | 0/1080 [00:00<?, ? examples/s]Map:  95%|█████████▍| 1024/1080 [00:00<00:00, 10150.49 examples/s]Map: 100%|██████████| 1080/1080 [00:00<00:00, 9823.58 examples/s] 
+Map:   0%|          | 0/1080 [00:00<?, ? examples/s]Map:  62%|██████▎   | 675/1080 [00:00<00:00, 6683.49 examples/s]Map: 100%|██████████| 1080/1080 [00:00<00:00, 5281.65 examples/s]
+Map:   0%|          | 0/1080 [00:00<?, ? examples/s]Map: 100%|██████████| 1080/1080 [00:00<00:00, 11177.91 examples/s]
+Data for inference is formatted
+1080
+{'article': 'Adidas', 'heading': 'Adidas', 'input type': 'table', 'url': 'https://en.wikipedia.org/wiki/Adidas', 'task': 'NER', 'schema': ['company', 'product', 'service', 'industry', 'brand', 'country', 'location', 'organization', 'person', 'position', 'event', 'award'], 'input text': 'article: Adidas, Adidas: [["Factory outlet in Herzogenaurach, Germany"], ["Formerly", "Gebrüder Dassler Schuhfabrik (1924–1949)"], ["Company type", "Public"], ["Traded as", "FWB:ADSDAX component"], ["Industry", "Textile,footwear"], ["Founded", "July\xa01924; 100\xa0years ago(1924-07)inHerzogenaurach, Germany (as Gebrüder Dassler Schuhfabrik)18\xa0August 1949; 75 years ago(1949-08-18)(as Adidas)[1]"], ["Founder", "Adolf Dassler"], ["Headquarters", "Herzogenaurach, Bavaria,Germany"], ["Area served", "Worldwide"], ["Key people", "Thomas Rabe(Chairman)[2]Bjørn Gulden (CEO)"], ["Products", "Apparel,footwear,sportswear,sports equipment,toiletries"], ["Revenue", "€23.683\xa0billion (2024)[3]"], ["Operating income", "€1.249\xa0billion (2024)[3]"], ["Net income", "€756\xa0million (2024)[3]"], ["Total assets", "€20.655\xa0billion (2024)[3]"], ["Total equity", "€5.868\xa0billion (2024)[3]"], ["Number of employees", "62,035 (2024)[3]"], ["Subsidiaries", "Adidas RuntasticMatix"], ["Website", "adidas.com"]]', 'text': '<|im_start|>system<|im_sep|>You are a helpful AI assistant specializing in Information Extraction (IE) tasks such as Named Entity Recognition (NER) or Relation Extraction (RE). Analyze the following text and provide the requested information.<|im_end|><|im_start|>user<|im_sep|>Information Extraction is the process of automatically identifying and extracting structured information from unstructured text data. The goal is to transform raw text into meaningful data that can be easily analyzed and used in various applications. Named Entity Recognition (NER) and Relation Extraction are two common tasks in Information Extraction.\n\nNamed Entity Recognition involves identifying and classifying named entities such as people, organizations, locations, and other domain-specific concepts. Relation Extraction involves identifying and extracting relationships between entities.\n\nThe task at hand is NER: Named Entity Recognition.\n\nHere is an example of task execution:\n\n{\'Schema\': [\'Person\', \'Organization\', \'Location\', \'Date\', \'Product\'], \'Text\': \'The Eiffel Tower in Paris, designed by Gustave Eiffel, is one of the most famous landmarks in France.\', \'Entities\': [[\'Eiffel Tower\', \'Location\'], [\'Paris\', \'Location\'], [\'Gustave Eiffel\', \'Person\'], [\'France\', \'Location\']]}\n\nAnalyze the text and targets carefully, identify relevant information.\n\nExtract the information in the following format: `[["Entity", "Type"], ...]`. If no matching entities are found, return an **empty list**. Please provide only the extracted information without any explanations.\n\nSchema: ["company", "product", "service", "industry", "brand", "country", "location", "organization", "person", "position", "event", "award"]\nText: article: Adidas, Adidas: [["Factory outlet in Herzogenaurach, Germany"], ["Formerly", "Gebrüder Dassler Schuhfabrik (1924–1949)"], ["Company type", "Public"], ["Traded as", "FWB:ADSDAX component"], ["Industry", "Textile,footwear"], ["Founded", "July\xa01924; 100\xa0years ago(1924-07)inHerzogenaurach, Germany (as Gebrüder Dassler Schuhfabrik)18\xa0August 1949; 75 years ago(1949-08-18)(as Adidas)[1]"], ["Founder", "Adolf Dassler"], ["Headquarters", "Herzogenaurach, Bavaria,Germany"], ["Area served", "Worldwide"], ["Key people", "Thomas Rabe(Chairman)[2]Bjørn Gulden (CEO)"], ["Products", "Apparel,footwear,sportswear,sports equipment,toiletries"], ["Revenue", "€23.683\xa0billion (2024)[3]"], ["Operating income", "€1.249\xa0billion (2024)[3]"], ["Net income", "€756\xa0million (2024)[3]"], ["Total assets", "€20.655\xa0billion (2024)[3]"], ["Total equity", "€5.868\xa0billion (2024)[3]"], ["Number of employees", "62,035 (2024)[3]"], ["Subsidiaries", "Adidas RuntasticMatix"], ["Website", "adidas.com"]]\n<|im_end|><|im_start|>assistant<|im_sep|>'}
+==((====))==  Unsloth 2025.3.19: Fast Llama patching. Transformers: 4.50.3.
+   \\   /|    NVIDIA A100-SXM4-40GB. Num GPUs = 1. Max memory: 39.496 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.6.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.2.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.29.post3. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:02<00:11,  2.38s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:04<00:09,  2.26s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:06<00:06,  2.21s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:08<00:04,  2.19s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:11<00:02,  2.19s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:13<00:00,  2.13s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:13<00:00,  2.18s/it]
+Unsloth: Will load FinaPolat/phi4_adaptable_IE as a legacy tokenizer.
+Generating answer for row 0...
+Generating answer for row 1...
+Generating answer for row 2...
+Generating answer for row 3...
+Generating answer for row 4...
+Generating answer for row 5...
+Generating answer for row 6...
+Generating answer for row 7...
+Generating answer for row 8...
+Generating answer for row 9...
+
+JOB STATISTICS
+==============
+Job ID: 12286635
+Cluster: snellius
+User/Group: femilovayil/femilovayil
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:51:00 core-walltime
+Job Wall-clock time: 00:02:50
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.

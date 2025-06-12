@@ -1,0 +1,12 @@
+{
+    "input_folder": "/scratch-local/femilovayil.12286635/ENEXA_Demo2/wiki_downloads/wiki_downloads_with_tables_adidas",
+    "prompt_template": "/scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/prompt_template_with_example.json",
+    "target_entity_types": "/scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/target_entity_types.json",
+    "target_relations": "/scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/target_relations_shorter.json",
+    "NER_example": "/scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/NER_example.json",
+    "RE_example": "/scratch-local/femilovayil.12286635/ENEXA_Demo2/input_files/RE_example.json",
+    "LLM": "FinaPolat/phi4_adaptable_IE",
+    "temperature": 0.001,
+    "max_tokens": 3072,
+    "output_folder": "/scratch-local/femilovayil.12286635/extraction_not_batched"
+}
