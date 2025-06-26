@@ -2,20 +2,10 @@
 # ENEXA Extractions Pipeline
 
 ## Step 1: Download Wikipedia articles
-
-We have two options:
-
-1. **Only text**  
    ```bash
    python download_wiki_articles_text_only.py
    ```
-
-2. **Text + Tables**  
-   ```bash
-   python download_wiki_articles_with_tables.py
-   ```
-
-Downloading Wikipedia pages is relatively quick depending on the number and volume of pages.
+Downloading Wikipedia page is quick.
 
 **This script requires:**
 - `--url_file` (JSON file with a list of Wikipedia URLs)
@@ -46,7 +36,7 @@ sbatch extract_triples_semiclosed_with_example.sh
 - `--RE_example` (JSON example for RE)
 - `--LLM` ("FinaPolat/phi4_adaptable_IE")
 - `--temperature` (default: 0.001)
-- `--max_tokens` (default: 3072)
+- `--max_tokens` (default: 8192)
 - `--output_folder` (directory to store `args.json` and `LLM_answers.jsonl`)
 
 **Important notes:**
@@ -54,13 +44,13 @@ sbatch extract_triples_semiclosed_with_example.sh
 - For each task (NER/RE) and target category, a new prompt is used.
 - Parallel execution is possible.
 - Dataset is looped:
-  - 3 NER categories
-  - 7 RE categories
-  - 2 tasks → 3 × 7 × 2 = 42 total loops
+  - 1 NER category
+  - 1 RE category
+  - 2 tasks → 1 × 1 × 2 = 2 times
 
 **Performance:**
 - A100 GPU node
-- Job wall-clock time: `01:27:51`
+- Job wall-clock time: `00:28:49`
 
 ---
 
@@ -72,13 +62,14 @@ python generate_Wikidata_candidates_for_linking.py
 
 **Requires:**
 - `--input_file` (output from Step 2)
-- `--num_candidates` (int)
+- `--num_candidates` (int) 
 - `--output_folder`
 
 **Performance:**
 - CPU node
-- Job wall-clock time: `01:37:42`
-- 17,652 extracted components
+- Job wall-clock time: `00:08:48`
+- 1167 extracted components (entities + properties)
+- 5 candidates per item
 
 ---
 
@@ -106,7 +97,7 @@ sbatch disambiguate.sh
 
 **Performance:**
 - A100 GPU node
-- Job wall-clock time: `01:09:50`
+- Job wall-clock time: `00:06:18`
 
 ---
 
