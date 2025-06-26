@@ -1,4 +1,3 @@
-/gpfs/home4/femilovayil/ENEXA_Demo2
 The following values were not passed to `accelerate launch` and had defaults used instead:
 	`--mixed_precision` was set to a value of `'no'`
 	`--dynamo_backend` was set to a value of `'no'`
@@ -7,16 +6,16 @@ To avoid this warning pass in values for each of the problematic parameters or r
 🦥 Unsloth Zoo will now patch everything to make training faster!
 True
 1
-input_folder: /scratch-local/femilovayil.12595104/ENEXA_Demo2/wiki_downloads/wiki_downloads_no_tables
-prompt_template: /scratch-local/femilovayil.12595104/ENEXA_Demo2/input_files/prompt_template_with_example.json
-target_entity_types: /scratch-local/femilovayil.12595104/ENEXA_Demo2/input_files/target_entity_types_4_adidas.json
-target_relations: /scratch-local/femilovayil.12595104/ENEXA_Demo2/input_files/target_relations_4_adidas.json
-NER_example: /scratch-local/femilovayil.12595104/ENEXA_Demo2/input_files/NER_example.json
-RE_example: /scratch-local/femilovayil.12595104/ENEXA_Demo2/input_files/RE_example.json
+input_folder: /scratch-local/ENEXA_Demo2/wiki_downloads/wiki_downloads_no_tables
+prompt_template: /scratch-local/ENEXA_Demo2/input_files/prompt_template_with_example.json
+target_entity_types: /scratch-local/ENEXA_Demo2/input_files/target_entity_types_4_adidas.json
+target_relations: /scratch-local/ENEXA_Demo2/input_files/target_relations_4_adidas.json
+NER_example: /scratch-local/ENEXA_Demo2/input_files/NER_example.json
+RE_example: /scratch-local/ENEXA_Demo2/input_files/RE_example.json
 LLM: FinaPolat/phi4_adaptable_IE
 temperature: 0.001
 max_tokens: 8192
-output_folder: /scratch-local/femilovayil.12595104/extraction_one_schema_per_task
+output_folder: /scratch-local/extraction_one_schema_per_task
 Target entity type categories
 1
 Target relation categories
@@ -28,9 +27,15 @@ Prompts are created
 Data for inference is loaded
 52
 {'prompt': 'Information Extraction is the process of automatically identifying and extracting structured information from unstructured text data. The goal is to transform raw text into meaningful data that can be easily analyzed and used in various applications. Named Entity Recognition (NER) and Relation Extraction are two common tasks in Information Extraction.\n\nNamed Entity Recognition involves identifying and classifying named entities such as people, organizations, locations, and other domain-specific concepts. Relation Extraction involves identifying and extracting relationships between entities.\n\nThe task at hand is NER: Named Entity Recognition.\n\nHere is an example of task execution:\n\n{\'Schema\': [\'Person\', \'Organization\', \'Location\', \'Date\', \'Product\'], \'Text\': \'The Eiffel Tower in Paris, designed by Gustave Eiffel, is one of the most famous landmarks in France.\', \'Entities\': [[\'Eiffel Tower\', \'Location\'], [\'Paris\', \'Location\'], [\'Gustave Eiffel\', \'Person\'], [\'France\', \'Location\']]}\n\nAnalyze the text and targets carefully, identify relevant information.\n\nExtract the information in the following format: `[["Entity", "Type"], ...]`. If no matching entities are found, return an **empty list**. Please provide only the extracted information without any explanations.\n\nSchema: ["company", "product", "service", "industry", "brand", "country", "location", "organization", "person", "founder", "position", "position", "event", "action", "founding", "accusition", "merger", "partnership", "expansion", "restructuring", "divestment", "sale", "bankruptcy", "financial_metric", "business_concept", "revenue", "profit", "loss", "investment", "funding", "market_share", "competition", "market_trend", "regulation", "innovation", "sustainability", "corporate_social_responsibility", "award", "date/time", "year", "specific_date", "period"]\nText: article: Adidas, Adidas: Adidas AG(German pronunciation:[ˈʔadiˌdas]ⓘ; stylized inall lowercasesince 1949)is a German athletic apparel and footwearcorporationheadquartered inHerzogenaurach, Bavaria, Germany. It is the largestsportswearmanufacturer inEurope, and the second largest in the world, afterNike.It is theholding companyfor theAdidas Group, which also owns an 8.33% stake of the football clubBayern Munich,andRuntastic, an Austrian fitness technology company. Adidas\'s revenue for 2024 was listed at €23.683billion. The company was started byAdolf Dasslerin his mother\'s house. He was joined by his elder brotherRudolfin 1924 under the nameGebrüder Dassler Schuhfabrik("Dassler Brothers Shoe Factory"). Dassler assisted in the development of spiked running shoes (spikes) for multiple athletic events. To enhance the quality of spiked athletic footwear, he transitioned from a previous model of heavy metal spikes to utilising canvas and rubber. Dassler persuaded U.S. sprinterJesse Owensto use his handmade spikes at the1936 Summer Olympics. In 1949, following a breakdown in the relationship between the brothers, Adolf created Adidas and Rudolf establishedPuma, which became Adidas\'s business rival. Thethree stripesare Adidas\'s identity mark, having been used on the company\'s clothing and shoe designs as a marketing aid. The branding, which Adidas bought in 1952 from Finnish sports companyKarhu Sportsfor the equivalent of €1,600 and two bottles of whiskey,became so successful that Dassler described Adidas as "The three stripes company".\n'}
-Map:   0%|          | 0/52 [00:00<?, ? examples/s]Map: 100%|██████████| 52/52 [00:00<00:00, 7181.55 examples/s]
-Map:   0%|          | 0/52 [00:00<?, ? examples/s]Map: 100%|██████████| 52/52 [00:00<00:00, 3177.83 examples/s]
-Map:   0%|          | 0/52 [00:00<?, ? examples/s]Map: 100%|██████████| 52/52 [00:00<00:00, 14434.40 examples/s]
+
+Map:   0%|          | 0/52 [00:00<?, ? examples/s]
+Map: 100%|██████████| 52/52 [00:00<00:00, 7181.55 examples/s]
+
+Map:   0%|          | 0/52 [00:00<?, ? examples/s]
+Map: 100%|██████████| 52/52 [00:00<00:00, 3177.83 examples/s]
+
+Map:   0%|          | 0/52 [00:00<?, ? examples/s]
+Map: 100%|██████████| 52/52 [00:00<00:00, 14434.40 examples/s]
 Data for inference is formatted
 52
 {'text': '<|im_start|>system<|im_sep|>You are a helpful AI assistant specializing in Information Extraction (IE) tasks such as Named Entity Recognition (NER) or Relation Extraction (RE). Analyze the following text and provide the requested information.<|im_end|><|im_start|>user<|im_sep|>Information Extraction is the process of automatically identifying and extracting structured information from unstructured text data. The goal is to transform raw text into meaningful data that can be easily analyzed and used in various applications. Named Entity Recognition (NER) and Relation Extraction are two common tasks in Information Extraction.\n\nNamed Entity Recognition involves identifying and classifying named entities such as people, organizations, locations, and other domain-specific concepts. Relation Extraction involves identifying and extracting relationships between entities.\n\nThe task at hand is NER: Named Entity Recognition.\n\nHere is an example of task execution:\n\n{\'Schema\': [\'Person\', \'Organization\', \'Location\', \'Date\', \'Product\'], \'Text\': \'The Eiffel Tower in Paris, designed by Gustave Eiffel, is one of the most famous landmarks in France.\', \'Entities\': [[\'Eiffel Tower\', \'Location\'], [\'Paris\', \'Location\'], [\'Gustave Eiffel\', \'Person\'], [\'France\', \'Location\']]}\n\nAnalyze the text and targets carefully, identify relevant information.\n\nExtract the information in the following format: `[["Entity", "Type"], ...]`. If no matching entities are found, return an **empty list**. Please provide only the extracted information without any explanations.\n\nSchema: ["company", "product", "service", "industry", "brand", "country", "location", "organization", "person", "founder", "position", "position", "event", "action", "founding", "accusition", "merger", "partnership", "expansion", "restructuring", "divestment", "sale", "bankruptcy", "financial_metric", "business_concept", "revenue", "profit", "loss", "investment", "funding", "market_share", "competition", "market_trend", "regulation", "innovation", "sustainability", "corporate_social_responsibility", "award", "date/time", "year", "specific_date", "period"]\nText: article: Adidas, Adidas: Adidas AG(German pronunciation:[ˈʔadiˌdas]ⓘ; stylized inall lowercasesince 1949)is a German athletic apparel and footwearcorporationheadquartered inHerzogenaurach, Bavaria, Germany. It is the largestsportswearmanufacturer inEurope, and the second largest in the world, afterNike.It is theholding companyfor theAdidas Group, which also owns an 8.33% stake of the football clubBayern Munich,andRuntastic, an Austrian fitness technology company. Adidas\'s revenue for 2024 was listed at €23.683billion. The company was started byAdolf Dasslerin his mother\'s house. He was joined by his elder brotherRudolfin 1924 under the nameGebrüder Dassler Schuhfabrik("Dassler Brothers Shoe Factory"). Dassler assisted in the development of spiked running shoes (spikes) for multiple athletic events. To enhance the quality of spiked athletic footwear, he transitioned from a previous model of heavy metal spikes to utilising canvas and rubber. Dassler persuaded U.S. sprinterJesse Owensto use his handmade spikes at the1936 Summer Olympics. In 1949, following a breakdown in the relationship between the brothers, Adolf created Adidas and Rudolf establishedPuma, which became Adidas\'s business rival. Thethree stripesare Adidas\'s identity mark, having been used on the company\'s clothing and shoe designs as a marketing aid. The branding, which Adidas bought in 1952 from Finnish sports companyKarhu Sportsfor the equivalent of €1,600 and two bottles of whiskey,became so successful that Dassler described Adidas as "The three stripes company".\n<|im_end|><|im_start|>assistant<|im_sep|>'}
@@ -40,7 +45,15 @@ O^O/ \_/ \    Torch: 2.6.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.2.0
 \        /    Bfloat16 = TRUE. FA [Xformers = 0.0.29.post3. FA2 = False]
  "-____-"     Free license: http://github.com/unslothai/unsloth
 Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:07<00:36,  7.37s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:14<00:29,  7.36s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:21<00:21,  7.28s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:29<00:14,  7.40s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:37<00:07,  7.68s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:44<00:00,  7.35s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:44<00:00,  7.40s/it]
+
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]
+Loading checkpoint shards:  17%|█▋        | 1/6 [00:07<00:36,  7.37s/it]
+Loading checkpoint shards:  33%|███▎      | 2/6 [00:14<00:29,  7.36s/it]
+Loading checkpoint shards:  50%|█████     | 3/6 [00:21<00:21,  7.28s/it]
+Loading checkpoint shards:  67%|██████▋   | 4/6 [00:29<00:14,  7.40s/it]
+Loading checkpoint shards:  83%|████████▎ | 5/6 [00:37<00:07,  7.68s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:44<00:00,  7.35s/it]
+Loading checkpoint shards: 100%|██████████| 6/6 [00:44<00:00,  7.40s/it]
 Unsloth: Will load FinaPolat/phi4_adaptable_IE as a legacy tokenizer.
 Generating answer for row 0...
 <|im_start|>system<|im_sep|>You are a helpful AI assistant specializing in Information Extraction (IE) tasks such as Named Entity Recognition (NER) or Relation Extraction (RE). Analyze the following text and provide the requested information.<|im_end|><|im_start|>user<|im_sep|>Information Extraction is the process of automatically identifying and extracting structured information from unstructured text data. The goal is to transform raw text into meaningful data that can be easily analyzed and used in various applications. Named Entity Recognition (NER) and Relation Extraction are two common tasks in Information Extraction.
@@ -983,7 +996,7 @@ JOB STATISTICS
 ==============
 Job ID: 12595104
 Cluster: snellius
-User/Group: femilovayil/femilovayil
+User/Group:
 State: RUNNING
 Nodes: 1
 Cores per node: 18

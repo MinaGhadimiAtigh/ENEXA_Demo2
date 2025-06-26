@@ -5,8 +5,6 @@
 #SBATCH -t 00:08:00
 #SBATCH -p gpu_a100
 #SBATCH --gpus-per-node=1
-#SBATCH --mail-type=BEGIN,END
-#SBATCH --mail-user=f.yilmazpolat@uva.nl
 
  
 #Loading modules

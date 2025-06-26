@@ -2,9 +2,7 @@
 #SBATCH -J test_GPT
 #Set job requirements
 #SBATCH -N 1
-#SBATCH -t 01:00:00
-#SBATCH --mail-type=BEGIN,END
-#SBATCH --mail-user=f.yilmazpolat@uva.nl
+#SBATCH -t 00:20:00
 
 #Loading modules
 module load 2023

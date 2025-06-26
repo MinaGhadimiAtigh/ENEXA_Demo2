@@ -1,4 +1,4 @@
-/gpfs/home4/femilovayil/ENEXA_Demo2
+/gpfs/home4/ENEXA_Demo2
 The following values were not passed to `accelerate launch` and had defaults used instead:
 	`--mixed_precision` was set to a value of `'no'`
 	`--dynamo_backend` was set to a value of `'no'`
@@ -7,12 +7,12 @@ To avoid this warning pass in values for each of the problematic parameters or r
 🦥 Unsloth Zoo will now patch everything to make training faster!
 True
 1
-input_file: /scratch-local/femilovayil.12636175/ENEXA_Demo2/candidates_adidas_one_schema/extraction_and_candidates.jsonl
-prompt_template: /scratch-local/femilovayil.12636175/ENEXA_Demo2/input_files/entity_disambiguation_template_can_reject.json
+input_file: /scratch-local/ENEXA_Demo2/candidates_adidas_one_schema/extraction_and_candidates.jsonl
+prompt_template: /scratch-local/ENEXA_Demo2/input_files/entity_disambiguation_template_can_reject.json
 LLM: FinaPolat/unsloth_llama3_8B_for_ED
 temperature: 0.001
 max_tokens: 5
-output_folder: /scratch-local/femilovayil.12636175/raged_output_one_schema
+output_folder: /scratch-local/raged_output_one_schema
 Processing item 0...
 Found 19 entities in item 0
 Processing item 1...
@@ -120,16 +120,31 @@ Found 6 triples in item 51
 Test Dataset loaded
 1167
 {'index': 0, 'item to disambiguate': 'Adidas AG', 'prompt': 'Entity linking is the process of determining the true identity of an entity mentioned in text by linking it to the correct entry in a knowledge base. Given a piece of input text where the mention is marked as follows: #mention#, a mention, and a list of candidates from Wikipedia, your goal is to select the candidate that most accurately represents the given mention based on the contextual information provided in the text. \n    Here is an example:\n     Text: #Amazon# is one of the largest e-commerce platforms in the world, founded by Jeff Bezos.\n        Entity Mention: Amazon \n      Candidates: [\n  "6891537 - Amazon Prime Video: Amazon Prime Video, or simply Prime Video, is an American subscription video on-demand over-the-top streaming and rental service of Amazon offered both as a stand-alone service and as part of Amazon\'s Prime subscription. The service primarily distributes films and television series produced or co-produced by Amazon MGM Studios or licensed to Amazon, as Amazon Originals, with the service also hosting content from other providers, content add-ons, live sporting events, and video rental and purchasing services.", \n "1701 - Amazon River: The Amazon River (UK: , US: ; Spanish: Río Amazonas, Portuguese: Rio Amazonas) in South America is the largest river by discharge volume of water in the world, and the longest or second-longest river system in the world, a title which is disputed with the Nile. The headwaters of the Apurímac River on Nevado Mismi had been considered for nearly a century the Amazon basin\'s most distant source until a 2014 study found it to be the headwaters of the Mantaro River on the Cordillera Rumi Cruz in Peru.", \n "90451 - Amazon (company): Amazon.com, Inc., doing business as Amazon (, AM-ə-zon; UK also , AM-ə-zən), is an American multinational technology company, engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It is considered one of the Big Five American technology companies, the other four being Alphabet (parent company of Google), Apple, Meta (parent company of Facebook), and Microsoft.", \n  "48139 - Amazon rainforest: The Amazon rainforest, also called Amazon jungle or Amazonia, is a moist broadleaf tropical rainforest in the Amazon biome that covers most of the Amazon basin of South America. This basin encompasses 7,000,000 km2 (2,700,000 sq mi), of which 6,000,000 km2 (2,300,000 sq mi) are covered by the rainforest.", \n "5962343 - Amazon S3: Amazon Simple Storage Service (S3) is a service offered by Amazon Web Services (AWS) that provides object storage through a web service interface. Amazon S3 uses the same scalable storage infrastructure that Amazon.com uses to run its e-commerce network.", \n "31354610 - Amazon Drive: Amazon Drive, formerly known as Amazon Cloud Drive, was a cloud storage application managed by Amazon. The service offered secure cloud storage, file backup, file sharing, and Photo printing.", \n "90451 - .amazon: Amazon.com, Inc., doing business as Amazon (, AM-ə-zon; UK also , AM-ə-zən), is an American multinational technology company, engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It is considered one of the Big Five American technology companies, the other four being Alphabet (parent company of Google), Apple, Meta (parent company of Facebook), and Microsoft."  \n] \n  Correct Answer: 90451\n      Now it is time to perform entity linking with the following inputs:\n        Text: article: Adidas, Adidas: #Adidas AG#(German pronunciation:[ˈʔadiˌdas]ⓘ; stylized inall lowercasesince 1949)is a German athletic apparel and footwearcorporationheadquartered inHerzogenaurach, Bavaria, Germany. It is the largestsportswearmanufacturer inEurope, and the second largest in the world, afterNike.It is theholding companyfor theAdidas Group, which also owns an 8.33% stake of the football clubBayern Munich,andRuntastic, an Austrian fitness technology company. Adidas\'s revenue for 2024 was listed at €23.683billion. The company was started byAdolf Dasslerin his mother\'s house. He was joined by his elder brotherRudolfin 1924 under the nameGebrüder Dassler Schuhfabrik("Dassler Brothers Shoe Factory"). Dassler assisted in the development of spiked running shoes (spikes) for multiple athletic events. To enhance the quality of spiked athletic footwear, he transitioned from a previous model of heavy metal spikes to utilising canvas and rubber. Dassler persuaded U.S. sprinterJesse Owensto use his handmade spikes at the1936 Summer Olympics. In 1949, following a breakdown in the relationship between the brothers, Adolf created Adidas and Rudolf establishedPuma, which became Adidas\'s business rival. Thethree stripesare Adidas\'s identity mark, having been used on the company\'s clothing and shoe designs as a marketing aid. The branding, which Adidas bought in 1952 from Finnish sports companyKarhu Sportsfor the equivalent of €1,600 and two bottles of whiskey,became so successful that Dassler described Adidas as "The three stripes company".\n        Entity Mention: Adidas AG\n        Candidates: [\n    "Q3895 - Adidas AG: German multinational corporation",\n    "Q132108367 - Adidas Ag: None",\n    "Q128019315 - adidas AG — Konzernabschluss zum 31.12.2018: scholarly article"\n]\n        Answer only with the candidate number that you think is the correct answer. Answer with \'None of the candidates\' if none of the candidates can be selected. Please do not include any additional information or explanation in your answer.'}
-Map:   0%|          | 0/1167 [00:00<?, ? examples/s]Map: 100%|██████████| 1167/1167 [00:00<00:00, 11659.64 examples/s]Map: 100%|██████████| 1167/1167 [00:00<00:00, 11442.19 examples/s]
-Map:   0%|          | 0/1167 [00:00<?, ? examples/s]Map:  44%|████▍     | 514/1167 [00:00<00:00, 5100.63 examples/s]Map: 100%|██████████| 1167/1167 [00:00<00:00, 4433.68 examples/s]Map: 100%|██████████| 1167/1167 [00:00<00:00, 4485.83 examples/s]
-Map:   0%|          | 0/1167 [00:00<?, ? examples/s]Map: 100%|██████████| 1167/1167 [00:00<00:00, 19336.00 examples/s]
+
+Map:   0%|          | 0/1167 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1167/1167 [00:00<00:00, 11659.64 examples/s]
+Map: 100%|██████████| 1167/1167 [00:00<00:00, 11442.19 examples/s]
+
+Map:   0%|          | 0/1167 [00:00<?, ? examples/s]
+Map:  44%|████▍     | 514/1167 [00:00<00:00, 5100.63 examples/s]
+Map: 100%|██████████| 1167/1167 [00:00<00:00, 4433.68 examples/s]
+Map: 100%|██████████| 1167/1167 [00:00<00:00, 4485.83 examples/s]
+
+Map:   0%|          | 0/1167 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1167/1167 [00:00<00:00, 19336.00 examples/s]
 ==((====))==  Unsloth 2025.6.2: Fast Llama patching. Transformers: 4.51.3.
    \\   /|    NVIDIA A100-SXM4-40GB. Num GPUs = 1. Max memory: 39.496 GB. Platform: Linux.
 O^O/ \_/ \    Torch: 2.6.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.2.0
 \        /    Bfloat16 = TRUE. FA [Xformers = 0.0.29.post3. FA2 = False]
  "-____-"     Free license: http://github.com/unslothai/unsloth
 Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.09s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.36s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.34s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  4.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.82s/it]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.09s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.36s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:21<00:07,  7.34s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  4.97s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:23<00:00,  5.82s/it]
 Generating answer for row 0...
 Index: 0
 Generating answer for row 1...
@@ -2469,7 +2484,7 @@ JOB STATISTICS
 ==============
 Job ID: 12636175
 Cluster: snellius
-User/Group: femilovayil/femilovayil
+User/Group:
 State: RUNNING
 Nodes: 1
 Cores per node: 18
