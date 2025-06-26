@@ -2,7 +2,7 @@
 #SBATCH -J extract_triples
 #Set job requirements
 #SBATCH -N 1
-#SBATCH -t 00:04:00
+#SBATCH -t 00:08:00
 #SBATCH -p gpu_a100
 #SBATCH --gpus-per-node=1
 #SBATCH --mail-type=BEGIN,END
@@ -20,14 +20,14 @@ cp -r $HOME/ENEXA_Demo2 "$TMPDIR"
 pwd
 
 #Create output directory on scratch
-mkdir "$TMPDIR"/raged_output_adidas_batched
+mkdir "$TMPDIR"/raged_output_one_schema
 
 #Execute the Python program.
 accelerate launch --num_processes=1 --num_machines=1 $TMPDIR/ENEXA_Demo2/link_items.py \
-                            --input_file $TMPDIR/ENEXA_Demo2/cand_gen_output/candidates_adidas/extraction_and_candidates.jsonl \
+                            --input_file $TMPDIR/ENEXA_Demo2/candidates_adidas_one_schema/extraction_and_candidates.jsonl \
                             --prompt_template $TMPDIR/ENEXA_Demo2/input_files/entity_disambiguation_template_can_reject.json \
-                            --LLM FinaPolat/unsloth_llama3_8B_for_ED \
-                            --output_folder $TMPDIR/raged_output_adidas_batched \
+                            --LLM "FinaPolat/unsloth_llama3_8B_for_ED" \
+                            --output_folder $TMPDIR/raged_output_one_schema \
  
 #Copy output directory from scratch to home
-cp -r "$TMPDIR"/raged_output_adidas_batched $HOME/ENEXA_Demo2/disambiguation_output
+cp -r "$TMPDIR"/raged_output_one_schema $HOME/ENEXA_Demo2/disambiguation_output

@@ -101,18 +101,61 @@ def main():
     input_data = read_jsonL(args.input_file)
     prompts = []
     for indx, i in enumerate(input_data):
-        for item in i["candidates"]:
-            cands = []
-            for c in item["candidates"]:
-                cands.append(f'{c["id"]} -- {c["label"]}: {c["description"]}')
-            prompt = template["formatter"].format(mention= item["item"],
-                                                  text = i["input text"].replace(item["item"], f'#{item["item"]}#'),
-                                                  candidates = json.dumps(cands),
-                                                  )
-            prompts.append({"index": indx,
-                               "item to disambiguate": item["item"],
-                               "prompt": prompt,
-                               })
+        print(f"Processing item {indx}...", flush=True)
+        if "entities" in i and len(i["entities"]) > 0:
+            print(f"Found {len(i['entities'])} entities in item {indx}", flush=True)
+            for ent in i["entities"]:
+                mention = ent["entity"]
+                cands = ent["candidates"]
+                text = i["input text"].replace(mention, f'#{mention}#')
+                if cands != "[]":
+                    prompt = template["formatter"].format(mention= mention,
+                                                          text = text,
+                                                          candidates = cands,)
+                    prompts.append({"index": indx,
+                                "item to disambiguate": mention,
+                                "prompt": prompt,
+                                })
+        elif "triples" in i and len(i["triples"]) > 0:
+            print(f"Found {len(i['triples'])} triples in item {indx}", flush=True)
+            for triple in i["triples"]:
+                if triple["subject candidates"] != "[]":
+                    mention = triple["subject"]
+                    cands = triple["subject candidates"]
+                    text = i["input text"].replace(mention, f'#{mention}#')
+                    prompt = template["formatter"].format(mention= mention,
+                                                            text = text,
+                                                            candidates = cands,)          
+                    prompts.append({"index": indx,
+                                "item to disambiguate": mention,
+                                "prompt": prompt,
+                                })
+                        
+                if triple["object candidates"] != "[]":
+                    mention = triple["object"]
+                    cands = triple["object candidates"]
+
+                    text = i["input text"].replace(mention, f'#{mention}#')
+                    prompt = template["formatter"].format(mention= mention,
+                                                            text = text,
+                                                            candidates = cands,)          
+                    prompts.append({"index": indx,
+                                "item to disambiguate": mention,
+                                "prompt": prompt,
+                                })
+                
+                if triple["predicate candidates"] != "[]":
+                    mention = triple["predicate"]
+                    cands = triple["predicate candidates"]
+                
+                    text = i["input text"].replace(mention, f'#{mention}#')
+                    prompt = template["formatter"].format(mention= mention,
+                                                            text = text,
+                                                            candidates = cands,)          
+                    prompts.append({"index": indx,
+                                "item to disambiguate": mention,
+                                "prompt": prompt,
+                                })
 
     # Load dataset
     data = Dataset.from_list(prompts)
@@ -126,7 +169,7 @@ def main():
     columns_to_remove = ["messages", "prompt"]
     data = data.map(lambda x: x, remove_columns=columns_to_remove)
 
-    max_seq_length = 3072
+    max_seq_length = 6144
     model, tokenizer = FastLanguageModel.from_pretrained(
                                                             model_name = args.LLM, # YOUR MODEL YOU USED FOR TRAINING
                                                             max_seq_length = max_seq_length,
@@ -141,8 +184,8 @@ def main():
 
 
     LLM_answers = []
-    #for i in range(len(data)):
-    for i in range(10):
+    for i in range(len(data)):
+    #for i in range(10):
         print(f"Generating answer for row {i}...", flush=True)
         row = data[i]   
         inputs = tokenizer(row["text"], return_tensors="pt").to("cuda")
@@ -155,17 +198,18 @@ def main():
         prompt_length = inputs['input_ids'].shape[1]
         generated_text = tokenizer.decode(outputs[0][prompt_length:], skip_special_tokens=True)
         #print("LLM answer", generated_text, flush=True)
+        print(f"Index: {row["index"]}")
         LLM_answers.append({"index": row["index"],
                             "item to disambiguate": row["item to disambiguate"],
                             "disambiguation output": generated_text,
-                            "candidates": input_data[row["index"]]["candidates"],
+                            "prompt": row["text"],
                             })
 
     write_json(LLM_answers[:10], os.path.join(args.output_folder, "LLM_answers_to_inspect.json"))
     # Group by index
     grouped = defaultdict(list)
     for entry in LLM_answers:
-        grouped[entry["index"]].append({
+        grouped[int(entry["index"])].append({
             "item": entry["item to disambiguate"],
             "output": entry["disambiguation output"]
         })

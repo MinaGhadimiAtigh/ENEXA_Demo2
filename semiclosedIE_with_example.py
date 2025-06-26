@@ -82,7 +82,7 @@ def main():
     parser.add_argument('--LLM', type=str, default="FinaPolat/phi4_adaptable_IE", help='The model to use for the test')
     #parser.add_argument('--batch_size', type=int, default=1, help='The batch size to use for the test')
     parser.add_argument('--temperature', type=int, default=0.001, help='The temperature to use for the test')
-    parser.add_argument('--max_tokens', type=int, default=3072, help='The maximum number of tokens to use for the test')
+    parser.add_argument('--max_tokens', type=int, default=8192, help='The maximum number of tokens to use for the test')
     parser.add_argument('--output_folder', type=str, default="ENEXA_Demo2/IE_extraction_output", help='The output folder where the resulting triples will be stored')
     args = parser.parse_args()
 
@@ -104,31 +104,42 @@ def main():
     RE_example = load_json(args.RE_example)
 
     input_data = []
+    prompts = []
     for file in os.listdir(args.input_folder):
         if file.endswith(".json"):
             file_path = os.path.join(args.input_folder, file)
             data = load_json(file_path)
+            print(f"Processing file: {file}", flush=True)
+            print(f"Number of articles in {file}: {len(data)}", flush=True)
+            # If the file is a Wikipedia dump, it should contain a list of articles
+            # Each article is a dictionary with "url", "heading", "paragraphs", and "table" keys
             for item in data:
                 if "url" in item:
                     url = item["url"]
                 #NER: Named Entity Recognition
                 if "heading" and "paragraphs" in item:
-                    for paragraph in item["paragraphs"]:
-                        for t in target_entity_types:
-                            text = f'article: {file.split(".")[0]}, {item["heading"]}: {paragraph}'
-                            prompt = template["formatter"].format(task= "NER: Named Entity Recognition",
+                    merges_parags = " ".join(item["paragraphs"])
+                    #print(merges_parags, flush=True)
+                    for t in target_entity_types:
+                        #print(f"Target entity types: {t['types']}", flush=True)
+                        text = f'article: {file.split(".")[0]}, {item["heading"]}: {merges_parags}'
+                        prompt = template["formatter"].format(task= "NER: Named Entity Recognition",
                                                                 example= NER_example,
                                                                 schema=json.dumps(t["types"], ensure_ascii=False),
                                                                 inputs= text,
                                                                 output_format = '[["Entity", "Type"], ...]')
-                            input_data.append({"article": file.split(".")[0],
-                                                "heading": item["heading"],
-                                               "input type": "paragraph",
-                                               "url": url,
-                                                "task": "NER",
-                                                "schema": t["types"],
-                                                "input text": text,
-                                                "prompt": prompt})
+                        #print(prompt, flush=True)
+                        
+                        input_data.append({"article": file.split(".")[0],
+                                            "heading": item["heading"],
+                                            "input type": "paragraph",
+                                            "url": url,
+                                            "task": "NER",
+                                            "schema": t["types"],
+                                            "input text": text,
+                                            "prompt": prompt})
+                        prompts.append({"prompt": prompt})
+
                 if "heading" and "table" in item:
                     for t in target_entity_types:
                         text = f'article: {file.split(".")[0]}, {item["heading"]}: {json.dumps(item["table"], ensure_ascii=False)}'
@@ -145,25 +156,31 @@ def main():
                                             "schema": t["types"],
                                             "input text": text,
                                             "prompt": prompt})
+                        prompts.append({"prompt": prompt})
 
                 #RE: Relation Extraction
                 if "heading" and "paragraphs" in item:
-                    for paragraph in item["paragraphs"]:
-                        for p in target_relations:
-                            text = f'article: {file.split(".")[0]}, {item["heading"]}: {paragraph}'
-                            prompt = template["formatter"].format(task= "RE: Relation Extraction",
+                    merges_parags = " ".join(item["paragraphs"])
+                    #print(merges_parags, flush=True)
+                    for p in target_relations:
+                        #print(f"Target relations: {p['relations']}", flush=True)
+                        text = f'article: {file.split(".")[0]}, {item["heading"]}: {" ".join(item["paragraphs"])}'
+                        prompt = template["formatter"].format(task= "RE: Relation Extraction",
                                                                   example= RE_example,
                                                                   schema=json.dumps(p["relations"], ensure_ascii=False),
                                                                   inputs= text,
                                                                   output_format = '[["Subject", "Relation", "Object"], ...]')
-                            input_data.append({"article": file.split(".")[0],
-                                               "heading": item["heading"],
-                                               "input type": "paragraph",
-                                               "url": url,
-                                               "task": "RE",
-                                               "schema": p["relations"],
-                                               "input text": text,
-                                               "prompt": prompt})
+                        #print(prompt, flush=True)
+                        input_data.append({"article": file.split(".")[0],
+                                            "heading": item["heading"],
+                                            "input type": "paragraph",
+                                            "url": url,
+                                            "task": "RE",
+                                            "schema": p["relations"],
+                                            "input text": text,
+                                            "prompt": prompt})
+                        prompts.append({"prompt": prompt})
+
                 if "heading" and "table" in item:
                     for p in target_relations: 
                         text = f'article: {file.split(".")[0]}, {item["heading"]}: {json.dumps(item["table"], ensure_ascii=False)}'  
@@ -180,12 +197,13 @@ def main():
                                             "schema": p["relations"],
                                             "input text": text,
                                             "prompt": prompt})
+                        prompts.append({"prompt": prompt})
 
-    print("Input data is created", flush=True)
+    print("Prompts are created", flush=True)
     print(len(input_data), flush=True)
 
     # Load dataset
-    dataset = Dataset.from_list(input_data)
+    dataset = Dataset.from_list(prompts)
     print("Data for inference is loaded", flush=True)
     print(len(dataset), flush=True)
     print(dataset[0], flush=True)
@@ -220,11 +238,11 @@ def main():
     # start_time = time.time()  # Start timing
 
     LLM_answers = []
-    #for i in range(len(data)):
-    for i in range(10):
-        print(f"Generating answer for row {i}...", flush=True)
-        row = data[i]   
-        inputs = tokenizer(row["text"], return_tensors="pt").to("cuda")
+    for i in range(len(data)):
+    #for i in range(5):
+        print(f"Generating answer for row {i}...", flush=True)   
+        print(data[i]["text"], flush=True)
+        inputs = tokenizer(data[i]["text"], return_tensors="pt").to("cuda")
         outputs = model.generate(input_ids=inputs['input_ids'], 
                                   attention_mask=inputs["attention_mask"], 
                                   max_new_tokens = args.max_tokens,
@@ -234,6 +252,7 @@ def main():
         prompt_length = inputs['input_ids'].shape[1]
         generated_text = tokenizer.decode(outputs[0][prompt_length:], skip_special_tokens=True)
         #print("LLM answer", generated_text, flush=True)
+        row = input_data[i]
         LLM_answers.append({
                     "article": row["article"],
                     "heading": row["heading"],
@@ -242,6 +261,7 @@ def main():
                     "task": row["task"],
                     "schema": row["schema"],
                     "input text": row["input text"],
+                    "prompt": row["prompt"],
                     "LLM answer": generated_text,
                 })
 

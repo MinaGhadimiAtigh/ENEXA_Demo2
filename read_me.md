@@ -78,5 +78,51 @@
         --output_folder (a folder the to save the ttl file)
     
 
+-----------------------------------------------------------------------------------------------
+
+# Shorter Version:
+
+## Step 1:
+    ### Downdoad Wikipedia articles without tables. This reduces the volume of extraction two to four times.
+
+    ```python download_wiki_articles_text_only.py```
+
+## Step 2:
+    ### Extract information from downloaded Wikipedia pages.
+        Use only one but extended schema for NER: "ENEXA_Demo2/input_files/target_entity_types_4_adidas.json"
+        Use only one but extended schema for RE: "ENEXA_Demo2/input_files/target_relations_4_adidas.json"
+    ```python semiclosedIE_with_example.py```
+    2 (task) x 1 (NER category) x 1 (RE category ) = 2 loops through the dataset
+
+    Job Wall-clock time: 00:28:49
+
+## Step 3:
+    ### Generate candidates for each extracted triple components using Wikidata API.
+        Make a set of entities and relations
+        Query Wikidata to generate 4 candidates per item
+        Store the items in a dictionary.
+
+    Job Wall-clock time: 00:08:48
+
+## Step 4: 
+
+    ### Linking: Select the correct Wikidata entity/property ID using our disambiguation model for each extracted triple component. 
+    ```python link_items.py```
+
+    Job Wall-clock time: 00:06:18
+
+## Step 5: 
+    ### Create a ttl file with the resulting extraction. 
+    ```python make_ttl_file.py```
+
+
+
+    
+
+
+
+
+
+
 
 

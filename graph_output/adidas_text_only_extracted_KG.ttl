@@ -1,0 +1,2970 @@
+@prefix adaptableIE: <http://example.org/enexa-adaptableIE/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+adaptableIE:100_meter_sprint a adaptableIE:Event ;
+    rdfs:label "100 meter sprint"^^xsd:string ;
+    owl:sameAs wiki:Q164761 .
+
+adaptableIE:14_june_2012 a adaptableIE:SpecificDate ;
+    rdfs:label "14 June 2012"^^xsd:string ;
+    owl:sameAs wiki:Q17981594 .
+
+adaptableIE:16000 a adaptableIE:FinancialMetric ;
+    rdfs:label "16,000"^^xsd:string .
+
+adaptableIE:16_billion a adaptableIE:FinancialMetric ;
+    rdfs:label "1.6 billion"^^xsd:string .
+
+adaptableIE:180_tbwa a adaptableIE:Organization ;
+    rdfs:label "180/ TBWA"^^xsd:string .
+
+adaptableIE:18_august_1949 a adaptableIE:SpecificDate ;
+    rdfs:label "18 August 1949"^^xsd:string ;
+    owl:sameAs wiki:Q69279026 .
+
+adaptableIE:1924 a adaptableIE:Year ;
+    rdfs:label "1924"^^xsd:string ;
+    owl:sameAs wiki:Q2173 .
+
+adaptableIE:1936_summer_olympics a adaptableIE:Event ;
+    rdfs:label "1936 Summer Olympics"^^xsd:string ;
+    owl:sameAs wiki:Q8150 .
+
+adaptableIE:1947 a adaptableIE:Year ;
+    rdfs:label "1947"^^xsd:string ;
+    owl:sameAs wiki:Q5263 .
+
+adaptableIE:1952 a adaptableIE:Year ;
+    rdfs:label "1952"^^xsd:string ;
+    owl:sameAs wiki:Q5272 .
+
+adaptableIE:1960_summer_olympics a adaptableIE:Event ;
+    rdfs:label "1960 Summer Olympics"^^xsd:string ;
+    owl:sameAs wiki:Q8415 .
+
+adaptableIE:1963 a adaptableIE:Year ;
+    rdfs:label "1963"^^xsd:string ;
+    owl:sameAs wiki:Q2755 .
+
+adaptableIE:1970_fifa_world_cup a adaptableIE:Event ;
+    rdfs:label "1970 FIFA World Cup"^^xsd:string ;
+    owl:sameAs wiki:Q132664 .
+
+adaptableIE:1987 a adaptableIE:Year ;
+    rdfs:label "1987"^^xsd:string ;
+    owl:sameAs wiki:Q2429 .
+
+adaptableIE:199 a adaptableIE:FinancialMetric ;
+    rdfs:label "$199"^^xsd:string .
+
+adaptableIE:1990 a adaptableIE:Year ;
+    rdfs:label "1990"^^xsd:string ;
+    owl:sameAs wiki:Q2064 .
+
+adaptableIE:1992 a adaptableIE:Year ;
+    rdfs:label "1992"^^xsd:string ;
+    owl:sameAs wiki:Q2060 .
+
+adaptableIE:1997 a adaptableIE:Year ;
+    rdfs:label "1997"^^xsd:string ;
+    owl:sameAs wiki:Q2088 .
+
+adaptableIE:1_fc_herzogenaurach a adaptableIE:Organization ;
+    rdfs:label "1 FC Herzogenaurach"^^xsd:string ;
+    adaptableIE:endorsedBy adaptableIE:puma_se .
+
+adaptableIE:2000 a adaptableIE:Year ;
+    rdfs:label "2000"^^xsd:string ;
+    owl:sameAs wiki:Q1985 .
+
+adaptableIE:2011 a adaptableIE:Year ;
+    rdfs:label "2011"^^xsd:string ;
+    owl:sameAs wiki:Q1994 .
+
+adaptableIE:2012 a adaptableIE:Datetime,
+        adaptableIE:Year ;
+    rdfs:label "2012"^^xsd:string ;
+    owl:sameAs wiki:Q1990 .
+
+adaptableIE:2012_07_16 a adaptableIE:Date ;
+    rdfs:label "2012-07-16"^^xsd:string ;
+    owl:sameAs wiki:Q17981721 .
+
+adaptableIE:2014_04 a adaptableIE:Date ;
+    rdfs:label "2014-04"^^xsd:string ;
+    owl:sameAs wiki:Q7131201 .
+
+adaptableIE:2017_ncaa_division_i_mens_basketball_corruption_scandal a adaptableIE:Event ;
+    rdfs:label "2017 NCAA Division I men's basketball corruption scandal"^^xsd:string .
+
+adaptableIE:2018 a adaptableIE:Year ;
+    rdfs:label "2018"^^xsd:string ;
+    owl:sameAs wiki:Q25291 .
+
+adaptableIE:2022 a adaptableIE:Datetime,
+        adaptableIE:Year ;
+    rdfs:label "2022"^^xsd:string ;
+    owl:sameAs wiki:Q49625 .
+
+adaptableIE:2023 a adaptableIE:Datetime ;
+    rdfs:label "2023"^^xsd:string ;
+    owl:sameAs wiki:Q49622 .
+
+adaptableIE:240_million a adaptableIE:FinancialMetric ;
+    rdfs:label "$240 million"^^xsd:string .
+
+adaptableIE:2439_million a adaptableIE:FinancialMetric ;
+    rdfs:label "€243.9 million"^^xsd:string .
+
+adaptableIE:25_billion a adaptableIE:FinancialMetric ;
+    rdfs:label "$2.5 billion"^^xsd:string .
+
+adaptableIE:425_million a adaptableIE:FinancialMetric ;
+    rdfs:label "$425 million"^^xsd:string .
+
+adaptableIE:434479_million a adaptableIE:FinancialMetric ;
+    rdfs:label "€434.479 million"^^xsd:string .
+
+adaptableIE:4485_billion a adaptableIE:FinancialMetric ;
+    rdfs:label "4.485 billion"^^xsd:string .
+
+adaptableIE:683514_million a adaptableIE:FinancialMetric ;
+    rdfs:label "€683.514 million"^^xsd:string .
+
+adaptableIE:Accusition a owl:Class ;
+    rdfs:label "accusition"^^xsd:string ;
+    owl:sameAs wiki:Q1363768 .
+
+adaptableIE:Bankruptcy a owl:Class ;
+    rdfs:label "bankruptcy"^^xsd:string ;
+    owl:sameAs wiki:Q152074 .
+
+adaptableIE:Competition a owl:Class ;
+    rdfs:label "competition"^^xsd:string ;
+    owl:sameAs wiki:Q319676 .
+
+adaptableIE:CorporateSocialResponsibility a owl:Class ;
+    rdfs:label "corporate_social_responsibility"^^xsd:string ;
+    owl:sameAs wiki:Q218600 .
+
+adaptableIE:Divestment a owl:Class ;
+    rdfs:label "divestment"^^xsd:string ;
+    owl:sameAs wiki:Q1200733 .
+
+adaptableIE:Expansion a owl:Class ;
+    rdfs:label "expansion"^^xsd:string ;
+    owl:sameAs wiki:Q19841649 .
+
+adaptableIE:Founding a owl:Class ;
+    rdfs:label "founding"^^xsd:string ;
+    owl:sameAs wiki:Q3075355 .
+
+adaptableIE:Funding a owl:Class ;
+    rdfs:label "funding"^^xsd:string ;
+    owl:sameAs wiki:Q6055890 .
+
+adaptableIE:Industry a owl:Class ;
+    rdfs:label "industry"^^xsd:string ;
+    owl:sameAs wiki:Q8148 .
+
+adaptableIE:Innovation a owl:Class ;
+    rdfs:label "innovation"^^xsd:string ;
+    owl:sameAs wiki:Q174165 .
+
+adaptableIE:Investment a owl:Class ;
+    rdfs:label "investment"^^xsd:string ;
+    owl:sameAs wiki:Q4290 .
+
+adaptableIE:Loss a owl:Class ;
+    rdfs:label "loss"^^xsd:string ;
+    owl:sameAs wiki: .
+
+adaptableIE:MarketShare a owl:Class ;
+    rdfs:label "market_share"^^xsd:string ;
+    owl:sameAs wiki:Q828814 .
+
+adaptableIE:MarketTrend a owl:Class ;
+    rdfs:label "market_trend"^^xsd:string ;
+    owl:sameAs wiki:Q1004322 .
+
+adaptableIE:Merger a owl:Class ;
+    rdfs:label "merger"^^xsd:string ;
+    owl:sameAs wiki:Q1363768 .
+
+adaptableIE:Partnership a owl:Class ;
+    rdfs:label "partnership"^^xsd:string ;
+    owl:sameAs wiki:Q728646 .
+
+adaptableIE:Period a owl:Class ;
+    rdfs:label "period"^^xsd:string ;
+    owl:sameAs wiki:Q392928 .
+
+adaptableIE:Profit a owl:Class ;
+    rdfs:label "profit"^^xsd:string ;
+    owl:sameAs wiki:Q2112073 .
+
+adaptableIE:Regulation a owl:Class ;
+    rdfs:label "regulation"^^xsd:string ;
+    owl:sameAs wiki:Q428148 .
+
+adaptableIE:Restructuring a owl:Class ;
+    rdfs:label "restructuring"^^xsd:string ;
+    owl:sameAs wiki:Q1376796 .
+
+adaptableIE:Revenue a owl:Class ;
+    rdfs:label "revenue"^^xsd:string ;
+    owl:sameAs wiki:Q850210 .
+
+adaptableIE:Sale a owl:Class ;
+    rdfs:label "sale"^^xsd:string ;
+    owl:sameAs wiki:Q291046 .
+
+adaptableIE:Service a owl:Class ;
+    rdfs:label "service"^^xsd:string ;
+    owl:sameAs wiki:Q7406919 .
+
+adaptableIE:Sustainability a owl:Class ;
+    rdfs:label "sustainability"^^xsd:string ;
+    owl:sameAs wiki:Q219416 .
+
+adaptableIE:acquired a owl:ObjectProperty ;
+    rdfs:label "acquired"^^xsd:string ;
+    owl:sameAs wiki:P11812 .
+
+adaptableIE:acquiredFrom a owl:ObjectProperty ;
+    rdfs:label "acquired_from"^^xsd:string ;
+    owl:sameAs wiki:P11812 .
+
+adaptableIE:acquiredTrademarkFrom a owl:ObjectProperty ;
+    rdfs:label "acquired_trademark_from"^^xsd:string .
+
+adaptableIE:actsAs a owl:ObjectProperty ;
+    rdfs:label "acts_as"^^xsd:string .
+
+adaptableIE:addressed a owl:ObjectProperty ;
+    rdfs:label "addressed"^^xsd:string ;
+    owl:sameAs wiki:P1817 .
+
+adaptableIE:adi_dassler a adaptableIE:Person ;
+    rdfs:label "Adi Dassler"^^xsd:string ;
+    owl:sameAs wiki:Q76751 .
+
+adaptableIE:adidas_adipure a adaptableIE:Product ;
+    rdfs:label "Adidas adiPure"^^xsd:string .
+
+adaptableIE:adidas_barricade_tour a adaptableIE:Product ;
+    rdfs:label "Adidas Barricade Tour"^^xsd:string .
+
+adaptableIE:adidas_boost_energy_league a adaptableIE:Event ;
+    rdfs:label "Adidas Boost Energy League"^^xsd:string .
+
+adaptableIE:adidas_by_stella_mccartney a adaptableIE:Product ;
+    rdfs:label "Adidas by Stella McCartney"^^xsd:string .
+
+adaptableIE:adidas_eqt a adaptableIE:Product ;
+    rdfs:label "Adidas EQT"^^xsd:string .
+
+adaptableIE:adidas_equipment_kb8 a adaptableIE:Product ;
+    rdfs:label "Adidas Equipment KB8"^^xsd:string .
+
+adaptableIE:adidas_futurecraft_biofabric a adaptableIE:Product ;
+    rdfs:label "Adidas Futurecraft Biofabric"^^xsd:string .
+
+adaptableIE:adidas_golf a adaptableIE:Product ;
+    rdfs:label "Adidas Golf"^^xsd:string .
+
+adaptableIE:adidas_gtx_pro a adaptableIE:Product ;
+    rdfs:label "Adidas GTX-PRO"^^xsd:string .
+
+adaptableIE:adidas_gtx_pro_t a adaptableIE:Product ;
+    rdfs:label "Adidas GTX Pro-T"^^xsd:string .
+
+adaptableIE:adidas_incurza a adaptableIE:Product ;
+    rdfs:label "Adidas Incurza"^^xsd:string .
+
+adaptableIE:adidas_lacrosse a adaptableIE:Product ;
+    rdfs:label "Adidas Lacrosse"^^xsd:string .
+
+adaptableIE:adidas_libro a adaptableIE:Product ;
+    rdfs:label "Adidas Libro"^^xsd:string .
+
+adaptableIE:adidas_m_blaster a adaptableIE:Product ;
+    rdfs:label "Adidas M-Blaster"^^xsd:string .
+
+adaptableIE:adidas_national_lacrosse_classic a adaptableIE:Event ;
+    rdfs:label "Adidas National Lacrosse Classic"^^xsd:string .
+
+adaptableIE:adidas_nhl a adaptableIE:Product ;
+    rdfs:label "Adidas NHL"^^xsd:string .
+
+adaptableIE:adidas_originals a adaptableIE:Brand ;
+    rdfs:label "Adidas Originals"^^xsd:string ;
+    adaptableIE:designedToFocusOn adaptableIE:earlier_designs ;
+    adaptableIE:remainedAPopularLifestyleIcon adaptableIE:true ;
+    owl:sameAs wiki:Q4682711 .
+
+adaptableIE:adidas_pellara a adaptableIE:Product ;
+    rdfs:label "Adidas Pellara"^^xsd:string .
+
+adaptableIE:adidas_performance a adaptableIE:Brand ;
+    rdfs:label "Adidas Performance"^^xsd:string ;
+    adaptableIE:designedToMaintain adaptableIE:devotion_to_the_athlete .
+
+adaptableIE:adidas_pro_model a adaptableIE:Product ;
+    rdfs:label "Adidas Pro Model"^^xsd:string .
+
+adaptableIE:adidas_shelltoe a adaptableIE:Product ;
+    rdfs:label "Adidas Shelltoe"^^xsd:string .
+
+adaptableIE:adidas_skateboarding a adaptableIE:Product ;
+    rdfs:label "Adidas Skateboarding"^^xsd:string .
+
+adaptableIE:adidas_stripe_sided_polyester_suits a adaptableIE:Product ;
+    rdfs:label "Adidas stripe-sided polyester suits"^^xsd:string .
+
+adaptableIE:adidas_superstar a adaptableIE:Product ;
+    rdfs:label "Adidas Superstar"^^xsd:string ;
+    owl:sameAs wiki:Q357048 .
+
+adaptableIE:adidass_business_practisesethics a adaptableIE:Criticism ;
+    rdfs:label "Adidas's business practises/ethics"^^xsd:string .
+
+adaptableIE:adidass_commitment_to_worker_welfare a adaptableIE:Criticism ;
+    rdfs:label "Adidas's commitment to worker welfare"^^xsd:string .
+
+adaptableIE:adolf_adi_dassler a adaptableIE:Person ;
+    rdfs:label "Adolf 'Adi' Dassler"^^xsd:string .
+
+adaptableIE:adolf_dasslers_wife rdfs:label "Adolf Dassler's wife"^^xsd:string ;
+    adaptableIE:convinced adaptableIE:american_soldiers .
+
+adaptableIE:advertising_campaign a adaptableIE:Action ;
+    rdfs:label "advertising campaign"^^xsd:string ;
+    owl:sameAs wiki:Q1761818 .
+
+adaptableIE:agreedTo a owl:ObjectProperty ;
+    rdfs:label "agreed_to"^^xsd:string .
+
+adaptableIE:aimedToTieAllBrandsAndLabelsTogether a owl:ObjectProperty ;
+    rdfs:label "aimed_to_tie_all_brands_and_labels_together"^^xsd:string .
+
+adaptableIE:amelia_randall_dassler a adaptableIE:Person ;
+    rdfs:label "Amelia Randall Dassler"^^xsd:string .
+
+adaptableIE:amer_sports a adaptableIE:Company ;
+    rdfs:label "Amer Sports"^^xsd:string ;
+    owl:sameAs wiki:Q152695 .
+
+adaptableIE:amstrad_cpc a adaptableIE:Platform ;
+    rdfs:label "Amstrad CPC"^^xsd:string ;
+    owl:sameAs wiki:Q478829 .
+
+adaptableIE:announcedAcquisitionOf a owl:ObjectProperty ;
+    rdfs:label "announced_acquisition_of"^^xsd:string .
+
+adaptableIE:announcedDealToBecome a owl:ObjectProperty ;
+    rdfs:label "announced_deal_to_become"^^xsd:string .
+
+adaptableIE:apologizedFor a owl:ObjectProperty ;
+    rdfs:label "apologized_for"^^xsd:string .
+
+adaptableIE:apology a adaptableIE:Action ;
+    rdfs:label "apology"^^xsd:string ;
+    owl:sameAs wiki:Q273668 .
+
+adaptableIE:apparel a adaptableIE:Product ;
+    rdfs:label "Apparel"^^xsd:string ;
+    owl:sameAs wiki:Q11828862 .
+
+adaptableIE:armin_hary a adaptableIE:Person ;
+    rdfs:label "Armin Hary"^^xsd:string ;
+    owl:sameAs wiki:Q57678 .
+
+adaptableIE:asAt a owl:ObjectProperty ;
+    rdfs:label "as_at"^^xsd:string .
+
+adaptableIE:ashworth a adaptableIE:Company ;
+    rdfs:label "Ashworth"^^xsd:string ;
+    owl:sameAs wiki:Q4806211 .
+
+adaptableIE:asia a adaptableIE:Location ;
+    rdfs:label "Asia"^^xsd:string ;
+    owl:sameAs wiki:Q48 .
+
+adaptableIE:asia_pacific a adaptableIE:Location ;
+    rdfs:label "Asia Pacific"^^xsd:string ;
+    owl:sameAs wiki:Q1070940 .
+
+adaptableIE:asv_herzogenaurach a adaptableIE:Organization ;
+    rdfs:label "ASV Herzogenaurach"^^xsd:string ;
+    adaptableIE:endorsedBy adaptableIE:adidas ;
+    owl:sameAs wiki:Q298129 .
+
+adaptableIE:atp_tennis_tournament a adaptableIE:Event ;
+    rdfs:label "ATP Tennis Tournament"^^xsd:string ;
+    owl:sameAs wiki:Q26863790 .
+
+adaptableIE:authentic_brands_group a adaptableIE:Company ;
+    rdfs:label "Authentic Brands Group"^^xsd:string ;
+    owl:sameAs wiki:Q17004742 .
+
+adaptableIE:bayern_m%C3%BCnchen a adaptableIE:Organization ;
+    rdfs:label "Bayern München"^^xsd:string ;
+    owl:sameAs wiki:Q15789 .
+
+adaptableIE:becameAStapleOf a owl:ObjectProperty ;
+    rdfs:label "became_a_staple_of"^^xsd:string .
+
+adaptableIE:becameBuyersOf a owl:ObjectProperty ;
+    rdfs:label "became_buyers_of"^^xsd:string .
+
+adaptableIE:becameTheGlobalMarketingStrategySloganFor a owl:ObjectProperty ;
+    rdfs:label "became_the_global_marketing_strategy_slogan_for"^^xsd:string .
+
+adaptableIE:believe_in_5ive a adaptableIE:Campaign ;
+    rdfs:label "Believe in 5ive"^^xsd:string,
+        "Believe_in_5ive"^^xsd:string ;
+    adaptableIE:isACampaignFor adaptableIE:2006_2007_nba_season .
+
+adaptableIE:bella_beck_dassler a adaptableIE:Person ;
+    rdfs:label "Bella Beck Dassler"^^xsd:string .
+
+adaptableIE:bella_hadid a adaptableIE:Person ;
+    rdfs:label "Bella Hadid"^^xsd:string ;
+    owl:sameAs wiki:Q21286612 .
+
+adaptableIE:bollywood_actor a adaptableIE:Occupation ;
+    rdfs:label "Bollywood actor"^^xsd:string .
+
+adaptableIE:bryant a adaptableIE:Organization ;
+    rdfs:label "Bryant"^^xsd:string ;
+    owl:sameAs wiki:Q79427 .
+
+adaptableIE:bucknell a adaptableIE:Organization ;
+    rdfs:label "Bucknell"^^xsd:string ;
+    owl:sameAs wiki:Q3444679 .
+
+adaptableIE:cancellation a adaptableIE:Action ;
+    rdfs:label "cancellation"^^xsd:string ;
+    owl:sameAs wiki:Q54806642 .
+
+adaptableIE:cancelled a owl:ObjectProperty ;
+    rdfs:label "cancelled"^^xsd:string .
+
+adaptableIE:caused a owl:ObjectProperty ;
+    rdfs:label "caused"^^xsd:string .
+
+adaptableIE:changedNameTo a owl:ObjectProperty ;
+    rdfs:label "changed_name_to"^^xsd:string .
+
+adaptableIE:christchurch a adaptableIE:Location ;
+    rdfs:label "Christchurch"^^xsd:string ;
+    owl:sameAs wiki:Q79990 .
+
+adaptableIE:collaboratedWith a owl:ObjectProperty ;
+    rdfs:label "collaborated_with"^^xsd:string .
+
+adaptableIE:commodore_64 a adaptableIE:Platform ;
+    rdfs:label "Commodore 64"^^xsd:string ;
+    owl:sameAs wiki:Q99775 .
+
+adaptableIE:commodore_amiga a adaptableIE:Platform ;
+    rdfs:label "Commodore Amiga"^^xsd:string ;
+    owl:sameAs wiki:Q100047 .
+
+adaptableIE:considers a owl:ObjectProperty ;
+    rdfs:label "considers"^^xsd:string .
+
+adaptableIE:consumer_advocate_groups a adaptableIE:Organization ;
+    rdfs:label "Consumer advocate groups"^^xsd:string .
+
+adaptableIE:converse a adaptableIE:Company ;
+    rdfs:label "Converse"^^xsd:string ;
+    owl:sameAs wiki:Q319515 .
+
+adaptableIE:convinced a owl:ObjectProperty ;
+    rdfs:label "convinced"^^xsd:string .
+
+adaptableIE:copa_mundial a adaptableIE:Product ;
+    rdfs:label "Copa Mundial"^^xsd:string ;
+    owl:sameAs wiki:Q1571917 .
+
+adaptableIE:creating_the_new a adaptableIE:Strategy ;
+    rdfs:label "Creating the New"^^xsd:string,
+        "Creating_the_New"^^xsd:string ;
+    adaptableIE:isLaunchedIn adaptableIE:2015 ;
+    adaptableIE:isTheStrategicBusinessPlanFor adaptableIE:adidas ;
+    adaptableIE:lastsUntil adaptableIE:2020 ;
+    owl:sameAs wiki:Q119471427 .
+
+adaptableIE:cricket a adaptableIE:Sport ;
+    rdfs:label "cricket"^^xsd:string ;
+    owl:sameAs wiki:Q5375 .
+
+adaptableIE:dallas_cowboys a adaptableIE:Organization ;
+    rdfs:label "Dallas Cowboys"^^xsd:string ;
+    owl:sameAs wiki:Q204862 .
+
+adaptableIE:danell_leyva a adaptableIE:Person ;
+    rdfs:label "Danell Leyva"^^xsd:string ;
+    owl:sameAs wiki:Q640546 .
+
+adaptableIE:dassler_brothers_shoe_factory a adaptableIE:Company ;
+    rdfs:label "Dassler Brothers Shoe Factory"^^xsd:string ;
+    owl:sameAs wiki:Q12062941 .
+
+adaptableIE:dave_thomas a adaptableIE:Person ;
+    rdfs:label "Dave Thomas"^^xsd:string ;
+    owl:sameAs wiki:Q2627090 .
+
+adaptableIE:david_stern a adaptableIE:Person ;
+    rdfs:label "David Stern"^^xsd:string ;
+    adaptableIE:wasContacted adaptableIE:adidas ;
+    owl:sameAs wiki:Q347958 .
+
+adaptableIE:dealtWith a owl:ObjectProperty ;
+    rdfs:label "dealt_with"^^xsd:string .
+
+adaptableIE:delaware a adaptableIE:Organization ;
+    rdfs:label "Delaware"^^xsd:string ;
+    owl:sameAs wiki:Q1393 .
+
+adaptableIE:delhi_daredevils a adaptableIE:Organization ;
+    rdfs:label "Delhi Daredevils"^^xsd:string ;
+    owl:sameAs wiki:Q48734832 .
+
+adaptableIE:designed a owl:ObjectProperty ;
+    rdfs:label "designed"^^xsd:string ;
+    owl:sameAs wiki:P287 .
+
+adaptableIE:designedFor a owl:ObjectProperty ;
+    rdfs:label "designed_for"^^xsd:string ;
+    owl:sameAs wiki:P2360 .
+
+adaptableIE:designedToFocusOn a owl:ObjectProperty ;
+    rdfs:label "designed_to_focus_on"^^xsd:string .
+
+adaptableIE:designedToMaintain a owl:ObjectProperty ;
+    rdfs:label "designed_to_maintain"^^xsd:string .
+
+adaptableIE:dicks_sporting_goods a adaptableIE:Organization ;
+    rdfs:label "Dick's Sporting Goods"^^xsd:string ;
+    owl:sameAs wiki:Q5272601 .
+
+adaptableIE:divested a owl:ObjectProperty ;
+    rdfs:label "divested"^^xsd:string .
+
+adaptableIE:dividedTheBrandInto a owl:ObjectProperty ;
+    rdfs:label "divided_the_brand_into"^^xsd:string .
+
+adaptableIE:dongguan_shoe_factory a adaptableIE:Location ;
+    rdfs:label "Dongguan shoe factory"^^xsd:string .
+
+adaptableIE:eiffel_tower a adaptableIE:Location ;
+    rdfs:label "Eiffel Tower"^^xsd:string ;
+    owl:sameAs wiki:Q243 .
+
+adaptableIE:endorsed a owl:ObjectProperty ;
+    rdfs:label "endorsed"^^xsd:string ;
+    owl:sameAs wiki:P859 .
+
+adaptableIE:endorsedBy a owl:ObjectProperty ;
+    rdfs:label "endorsed_by"^^xsd:string ;
+    owl:sameAs wiki:P859 .
+
+adaptableIE:enforces a owl:ObjectProperty ;
+    rdfs:label "enforces"^^xsd:string .
+
+adaptableIE:equipment a adaptableIE:Product ;
+    rdfs:label "Equipment"^^xsd:string ;
+    owl:sameAs wiki:Q10273457 .
+
+adaptableIE:establishedGuidelinesWith a owl:ObjectProperty ;
+    rdfs:label "established_guidelines_with"^^xsd:string .
+
+adaptableIE:europe a adaptableIE:Location ;
+    rdfs:label "Europe"^^xsd:string ;
+    owl:sameAs wiki:Q46 .
+
+adaptableIE:featured a owl:ObjectProperty ;
+    rdfs:label "featured"^^xsd:string ;
+    owl:sameAs wiki:P1441 .
+
+adaptableIE:field_hockey a adaptableIE:Sport ;
+    rdfs:label "Field hockey"^^xsd:string ;
+    owl:sameAs wiki:Q1455 .
+
+adaptableIE:fifa a adaptableIE:Organization ;
+    rdfs:label "FIFA"^^xsd:string ;
+    owl:sameAs wiki:Q253414 .
+
+adaptableIE:fifa_world_cup a adaptableIE:Event ;
+    rdfs:label "FIFA World Cup"^^xsd:string ;
+    owl:sameAs wiki:Q19317 .
+
+adaptableIE:fifayouth_group a adaptableIE:Organization ;
+    rdfs:label "FIFAYouth Group"^^xsd:string .
+
+adaptableIE:filedForPersonalBankruptcy a owl:ObjectProperty ;
+    rdfs:label "filed_for_personal_bankruptcy"^^xsd:string .
+
+adaptableIE:filedLawsuitAgainst a owl:ObjectProperty ;
+    rdfs:label "filed_lawsuit_against"^^xsd:string .
+
+adaptableIE:filedLawsuitsAgainst a owl:ObjectProperty ;
+    rdfs:label "filed_lawsuits_against"^^xsd:string .
+
+adaptableIE:filedLawsuitsInYear a owl:ObjectProperty ;
+    rdfs:label "filed_lawsuits_in_year"^^xsd:string .
+
+adaptableIE:finnish a adaptableIE:Country ;
+    rdfs:label "Finnish"^^xsd:string ;
+    owl:sameAs wiki:Q1412 .
+
+adaptableIE:five a adaptableIE:Company ;
+    rdfs:label "Five"^^xsd:string ;
+    owl:sameAs wiki:Q24791 .
+
+adaptableIE:formed a owl:ObjectProperty ;
+    rdfs:label "formed"^^xsd:string ;
+    owl:sameAs wiki:P740 .
+
+adaptableIE:formula_one a adaptableIE:Event ;
+    rdfs:label "Formula One"^^xsd:string ;
+    owl:sameAs wiki:Q1968 .
+
+adaptableIE:founded a owl:ObjectProperty ;
+    rdfs:label "founded"^^xsd:string ;
+    owl:sameAs wiki:P112 .
+
+adaptableIE:france a adaptableIE:Country,
+        adaptableIE:Location ;
+    rdfs:label "France"^^xsd:string ;
+    owl:sameAs wiki:Q142 .
+
+adaptableIE:gopnik a adaptableIE:Subculture ;
+    rdfs:label "Gopnik"^^xsd:string ;
+    owl:sameAs wiki:Q634894 .
+
+adaptableIE:green_fitness_gmbh a adaptableIE:Organization ;
+    rdfs:label "Green Fitness GmbH"^^xsd:string .
+
+adaptableIE:gustave_eiffel a adaptableIE:Person ;
+    rdfs:label "Gustave Eiffel"^^xsd:string ;
+    owl:sameAs wiki:Q20882 .
+
+adaptableIE:hadDesignChangeFrom a owl:ObjectProperty ;
+    rdfs:label "had_design_change_from"^^xsd:string .
+
+adaptableIE:hadOwnershipOf a owl:ObjectProperty ;
+    rdfs:label "had_ownership_of"^^xsd:string .
+
+adaptableIE:hadRank a owl:ObjectProperty ;
+    rdfs:label "had_rank"^^xsd:string ;
+    owl:sameAs wiki:P1352 .
+
+adaptableIE:hadRevenueOf a owl:ObjectProperty ;
+    rdfs:label "had_revenue_of"^^xsd:string ;
+    owl:sameAs wiki:P2139 .
+
+adaptableIE:hadWorkforce a owl:ObjectProperty ;
+    rdfs:label "had_workforce"^^xsd:string .
+
+adaptableIE:hasBusinessLocationsIn a owl:ObjectProperty ;
+    rdfs:label "has_business_locations_in"^^xsd:string .
+
+adaptableIE:hasBusinessRival a owl:ObjectProperty ;
+    rdfs:label "has_business_rival"^^xsd:string .
+
+adaptableIE:hasCeo a owl:ObjectProperty ;
+    rdfs:label "has_CEO"^^xsd:string ;
+    owl:sameAs wiki:P169 .
+
+adaptableIE:hasFeatures a owl:ObjectProperty ;
+    rdfs:label "has_features"^^xsd:string ;
+    owl:sameAs wiki:P1354 .
+
+adaptableIE:hasGlobalCorporateHeadquartersIn a owl:ObjectProperty ;
+    rdfs:label "has_global_corporate_headquarters_in"^^xsd:string .
+
+adaptableIE:hasIdentityMark a owl:ObjectProperty ;
+    rdfs:label "has_identity_mark"^^xsd:string .
+
+adaptableIE:hasImportantBusinessTrends a owl:ObjectProperty ;
+    rdfs:label "has_important_business_trends"^^xsd:string .
+
+adaptableIE:hasLocalPrice a owl:ObjectProperty ;
+    rdfs:label "has_local_price"^^xsd:string .
+
+adaptableIE:hasOrganizationalRole a owl:ObjectProperty ;
+    rdfs:label "has_organizational_role"^^xsd:string .
+
+adaptableIE:hasProductLine a owl:ObjectProperty ;
+    rdfs:label "has_product_line"^^xsd:string .
+
+adaptableIE:hasRevenueTargetYear a owl:ObjectProperty ;
+    rdfs:label "has_revenue_target_year"^^xsd:string .
+
+adaptableIE:hasStakeOf a owl:ObjectProperty ;
+    rdfs:label "has_stake_of"^^xsd:string .
+
+adaptableIE:hasVarieties a owl:ObjectProperty ;
+    rdfs:label "has_varieties"^^xsd:string .
+
+adaptableIE:hasWebsiteFor a owl:ObjectProperty ;
+    rdfs:label "has_website_for"^^xsd:string ;
+    owl:sameAs wiki:P10225 .
+
+adaptableIE:helsinki a adaptableIE:Location ;
+    rdfs:label "Helsinki"^^xsd:string ;
+    owl:sameAs wiki:Q8407 .
+
+adaptableIE:herbert_burdenski a adaptableIE:Person ;
+    rdfs:label "Herbert Burdenski"^^xsd:string ;
+    owl:sameAs wiki:Q455789 .
+
+adaptableIE:herbert_hainer a adaptableIE:Person ;
+    rdfs:label "Herbert Hainer"^^xsd:string ;
+    owl:sameAs wiki:Q71147 .
+
+adaptableIE:herzogenaurach_bavaria_germany a adaptableIE:Location ;
+    rdfs:label "Herzogenaurach, Bavaria, Germany"^^xsd:string .
+
+adaptableIE:hintedAt a owl:ObjectProperty ;
+    rdfs:label "hinted_at"^^xsd:string .
+
+adaptableIE:hitler_youth a adaptableIE:Organization ;
+    rdfs:label "Hitler Youth"^^xsd:string ;
+    owl:sameAs wiki:Q38791 .
+
+adaptableIE:hopedToDoubleRevenueFrom a owl:ObjectProperty ;
+    rdfs:label "hoped_to_double_revenue_from"^^xsd:string .
+
+adaptableIE:horst_dassler a adaptableIE:Person ;
+    rdfs:label "Horst Dassler"^^xsd:string ;
+    owl:sameAs wiki:Q73470 .
+
+adaptableIE:ian_bell a adaptableIE:Person ;
+    rdfs:label "Ian Bell"^^xsd:string ;
+    owl:sameAs wiki:Q767692 .
+
+adaptableIE:ilie_nastase a adaptableIE:Person ;
+    rdfs:label "Ilie Nastase"^^xsd:string ;
+    owl:sameAs wiki:Q106113 .
+
+adaptableIE:impossible_is_nothing a adaptableIE:Campaign ;
+    rdfs:label "Impossible is Nothing"^^xsd:string,
+        "Impossible_is_Nothing"^^xsd:string ;
+    adaptableIE:significantWorkWasDoneBy adaptableIE:tbwachiatday ;
+    adaptableIE:wasDevelopedBy adaptableIE:180tbwa ;
+    adaptableIE:wasLaunchedIn adaptableIE:2004 ;
+    owl:sameAs wiki:Q18161378 .
+
+adaptableIE:inYear a owl:ObjectProperty ;
+    rdfs:label "in_Year"^^xsd:string .
+
+adaptableIE:includes a owl:ObjectProperty ;
+    rdfs:label "includes"^^xsd:string .
+
+adaptableIE:india a adaptableIE:Country ;
+    rdfs:label "India"^^xsd:string ;
+    owl:sameAs wiki:Q668 .
+
+adaptableIE:indian_cricketer a adaptableIE:Occupation ;
+    rdfs:label "Indian cricketer"^^xsd:string .
+
+adaptableIE:indian_national_cricket_team a adaptableIE:Organization ;
+    rdfs:label "Indian national cricket team"^^xsd:string .
+
+adaptableIE:indicted a adaptableIE:Action ;
+    rdfs:label "indicted"^^xsd:string .
+
+adaptableIE:indonesia a adaptableIE:Country ;
+    rdfs:label "Indonesia"^^xsd:string ;
+    owl:sameAs wiki:Q252 .
+
+adaptableIE:introduced a owl:ObjectProperty ;
+    rdfs:label "introduced"^^xsd:string ;
+    owl:sameAs wiki:P4584 .
+
+adaptableIE:involvedIn a owl:ObjectProperty ;
+    rdfs:label "involved_in"^^xsd:string .
+
+adaptableIE:isACampaignFor a owl:ObjectProperty ;
+    rdfs:label "is_a_campaign_for"^^xsd:string .
+
+adaptableIE:isACollaborationBetween a owl:ObjectProperty ;
+    rdfs:label "is_a_collaboration_between"^^xsd:string .
+
+adaptableIE:isFeaturedIn a owl:ObjectProperty ;
+    rdfs:label "is_featured_in"^^xsd:string ;
+    owl:sameAs wiki:P1441 .
+
+adaptableIE:isHeadquarteredIn a owl:ObjectProperty ;
+    rdfs:label "is_headquartered_in"^^xsd:string .
+
+adaptableIE:isKnownFor a owl:ObjectProperty ;
+    rdfs:label "is_known_for"^^xsd:string ;
+    owl:sameAs wiki:P2561,
+        wiki:P800 .
+
+adaptableIE:isLaunchedIn a owl:ObjectProperty ;
+    rdfs:label "is_launched_in"^^xsd:string ;
+    owl:sameAs wiki:P577 .
+
+adaptableIE:isLocatedIn a owl:ObjectProperty ;
+    rdfs:label "is_located_in"^^xsd:string .
+
+adaptableIE:isTheStrategicBusinessPlanFor a owl:ObjectProperty ;
+    rdfs:label "is_the_strategic_business_plan_for"^^xsd:string .
+
+adaptableIE:ivan_lendl a adaptableIE:Person ;
+    rdfs:label "Ivan Lendl"^^xsd:string ;
+    owl:sameAs wiki:Q182736 .
+
+adaptableIE:jake_dalton a adaptableIE:Person ;
+    rdfs:label "Jake Dalton"^^xsd:string ;
+    owl:sameAs wiki:Q6118519 .
+
+adaptableIE:james_gatto a adaptableIE:Person ;
+    rdfs:label "James Gatto"^^xsd:string ;
+    adaptableIE:role adaptableIE:adidas_executive .
+
+adaptableIE:java a adaptableIE:Location ;
+    rdfs:label "Java"^^xsd:string ;
+    owl:sameAs wiki:Q3757 .
+
+adaptableIE:jesse_jackson a adaptableIE:Person ;
+    rdfs:label "Jesse Jackson"^^xsd:string ;
+    adaptableIE:threatened adaptableIE:boycott ;
+    owl:sameAs wiki:Q310586 .
+
+adaptableIE:john_wooden a adaptableIE:Person ;
+    rdfs:label "John Wooden"^^xsd:string ;
+    owl:sameAs wiki:Q551032 .
+
+adaptableIE:jordyn_wieber a adaptableIE:Person ;
+    rdfs:label "Jordyn Wieber"^^xsd:string ;
+    owl:sameAs wiki:Q602245 .
+
+adaptableIE:josy_barthelofluxembourg a adaptableIE:Person ;
+    rdfs:label "Josy BarthelofLuxembourg"^^xsd:string .
+
+adaptableIE:july a adaptableIE:Month ;
+    rdfs:label "July"^^xsd:string ;
+    owl:sameAs wiki:Q121 .
+
+adaptableIE:karen_parkin a adaptableIE:Person ;
+    rdfs:label "Karen Parkin"^^xsd:string ;
+    adaptableIE:addressed adaptableIE:workforce_diversity ;
+    adaptableIE:offeredApology adaptableIE:adidas ;
+    adaptableIE:resignedIn adaptableIE:june_2020 ;
+    adaptableIE:steppedDown adaptableIE:adidas ;
+    adaptableIE:supports adaptableIE:racial_justice_progress_at_adidas ;
+    owl:sameAs wiki:Q56703526 .
+
+adaptableIE:kevin_pietersen a adaptableIE:Person ;
+    rdfs:label "Kevin Pietersen"^^xsd:string ;
+    owl:sameAs wiki:Q1398682 .
+
+adaptableIE:keyTrendsFor a owl:ObjectProperty ;
+    rdfs:label "key_trends_for"^^xsd:string .
+
+adaptableIE:knownFor a owl:ObjectProperty ;
+    rdfs:label "known_for"^^xsd:string ;
+    owl:sameAs wiki:P2561 .
+
+adaptableIE:kps_capital_partners a adaptableIE:Organization ;
+    rdfs:label "KPS Capital Partners"^^xsd:string ;
+    owl:sameAs wiki:Q19604440 .
+
+adaptableIE:labour_behind_the_label a adaptableIE:Organization ;
+    rdfs:label "Labour Behind the Label"^^xsd:string ;
+    owl:sameAs wiki:Q6467382 .
+
+adaptableIE:lastsUntil a owl:ObjectProperty ;
+    rdfs:label "lasts_until"^^xsd:string .
+
+adaptableIE:launched a owl:ObjectProperty ;
+    rdfs:label "launched"^^xsd:string .
+
+adaptableIE:launched3stripeLogo a owl:ObjectProperty ;
+    rdfs:label "launched_3-stripe logo"^^xsd:string .
+
+adaptableIE:launchedAround a owl:ObjectProperty ;
+    rdfs:label "launched_around"^^xsd:string .
+
+adaptableIE:launchedCampaign a owl:ObjectProperty ;
+    rdfs:label "launched_campaign"^^xsd:string .
+
+adaptableIE:launchedJointVentureWith a owl:ObjectProperty ;
+    rdfs:label "launched_joint_venture_with"^^xsd:string .
+
+adaptableIE:launchedProduct a owl:ObjectProperty ;
+    rdfs:label "launched_product"^^xsd:string .
+
+adaptableIE:launchedTrefoilLogo a owl:ObjectProperty ;
+    rdfs:label "launched_Trefoil logo"^^xsd:string .
+
+adaptableIE:lawsuits a adaptableIE:Action ;
+    rdfs:label "lawsuits"^^xsd:string ;
+    owl:sameAs wiki:Q96389593 .
+
+adaptableIE:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located_in"^^xsd:string ;
+    owl:sameAs wiki:P131 .
+
+adaptableIE:loughborough_university a adaptableIE:Organization ;
+    rdfs:label "Loughborough University"^^xsd:string ;
+    owl:sameAs wiki:Q1434547 .
+
+adaptableIE:louis_dreyfus a adaptableIE:Person ;
+    rdfs:label "Louis-Dreyfus"^^xsd:string ;
+    owl:sameAs wiki:Q16661304 .
+
+adaptableIE:lynchburg a adaptableIE:Organization ;
+    rdfs:label "Lynchburg"^^xsd:string ;
+    owl:sameAs wiki:Q844012 .
+
+adaptableIE:madeDuplicateOf a owl:ObjectProperty ;
+    rdfs:label "made_duplicate_of"^^xsd:string .
+
+adaptableIE:madonna a adaptableIE:Person ;
+    rdfs:label "Madonna"^^xsd:string ;
+    owl:sameAs wiki:Q1744 .
+
+adaptableIE:major_league_baseball a adaptableIE:Organization ;
+    rdfs:label "Major League Baseball"^^xsd:string ;
+    owl:sameAs wiki:Q1163715 .
+
+adaptableIE:malibu_tennis_camp a adaptableIE:Organization ;
+    rdfs:label "Malibu Tennis Camp"^^xsd:string .
+
+adaptableIE:manufactures a owl:ObjectProperty ;
+    rdfs:label "manufactures"^^xsd:string ;
+    owl:sameAs wiki:P1056 .
+
+adaptableIE:mason a adaptableIE:Location ;
+    rdfs:label "Mason"^^xsd:string ;
+    owl:sameAs wiki:Q982490 .
+
+adaptableIE:massacreOf a owl:ObjectProperty ;
+    rdfs:label "massacre_of"^^xsd:string .
+
+adaptableIE:massacre_of_11_israeli_athletes a adaptableIE:Event ;
+    rdfs:label "massacre of 11 Israeli athletes"^^xsd:string .
+
+adaptableIE:mcdonalds_all_american_uniforms a adaptableIE:Product ;
+    rdfs:label "McDonald's All-American uniforms"^^xsd:string .
+
+adaptableIE:mckayla_maroney a adaptableIE:Person ;
+    rdfs:label "McKayla Maroney"^^xsd:string ;
+    owl:sameAs wiki:Q241847 .
+
+adaptableIE:mercedes a adaptableIE:Organization ;
+    rdfs:label "Mercedes"^^xsd:string ;
+    owl:sameAs wiki:Q36008 .
+
+adaptableIE:mid_2014 a adaptableIE:Datetime ;
+    rdfs:label "mid-2014"^^xsd:string .
+
+adaptableIE:minister a adaptableIE:Position ;
+    rdfs:label "Minister"^^xsd:string ;
+    owl:sameAs wiki:Q83307 .
+
+adaptableIE:ministerOf a owl:ObjectProperty ;
+    rdfs:label "minister_of"^^xsd:string ;
+    owl:sameAs wiki:P5054 .
+
+adaptableIE:mumbai_indians a adaptableIE:Organization ;
+    rdfs:label "Mumbai Indians"^^xsd:string ;
+    owl:sameAs wiki:Q1195237 .
+
+adaptableIE:named a owl:ObjectProperty ;
+    rdfs:label "named"^^xsd:string ;
+    owl:sameAs wiki:P138 .
+
+adaptableIE:national_basketball_association a adaptableIE:Organization ;
+    rdfs:label "National Basketball Association"^^xsd:string ;
+    owl:sameAs wiki:Q155223 .
+
+adaptableIE:national_rugby_league a adaptableIE:Event ;
+    rdfs:label "National Rugby League"^^xsd:string ;
+    owl:sameAs wiki:Q1140630 .
+
+adaptableIE:national_socialist_motor_corps a adaptableIE:Organization ;
+    rdfs:label "National Socialist Motor Corps"^^xsd:string ;
+    owl:sameAs wiki:Q301856 .
+
+adaptableIE:nba a adaptableIE:Organization ;
+    rdfs:label "NBA"^^xsd:string ;
+    owl:sameAs wiki:Q155223 .
+
+adaptableIE:nbdl a adaptableIE:Organization ;
+    rdfs:label "NBDL"^^xsd:string ;
+    owl:sameAs wiki:Q842793 .
+
+adaptableIE:new_jersey_institute_of_technology a adaptableIE:Organization ;
+    rdfs:label "New Jersey Institute of Technology"^^xsd:string ;
+    owl:sameAs wiki:Q3272013 .
+
+adaptableIE:new_york_yankees a adaptableIE:Organization ;
+    rdfs:label "New York Yankees"^^xsd:string ;
+    owl:sameAs wiki:Q213417 .
+
+adaptableIE:new_zealand a adaptableIE:Country,
+        adaptableIE:Location ;
+    rdfs:label "New Zealand"^^xsd:string ;
+    owl:sameAs wiki:Q664 .
+
+adaptableIE:nike a adaptableIE:Company ;
+    rdfs:label "Nike"^^xsd:string ;
+    owl:sameAs wiki:Q483915 .
+
+adaptableIE:nippon_professional_baseball a adaptableIE:Organization ;
+    rdfs:label "Nippon Professional Baseball"^^xsd:string ;
+    owl:sameAs wiki:Q1146127 .
+
+adaptableIE:nordhausen_university_of_applied_sciences a adaptableIE:Organization ;
+    rdfs:label "Nordhausen University of Applied Sciences"^^xsd:string ;
+    owl:sameAs wiki:Q1391209 .
+
+adaptableIE:nsdap a adaptableIE:Organization ;
+    rdfs:label "NSDAP"^^xsd:string ;
+    owl:sameAs wiki:Q7320 .
+
+adaptableIE:occurredOnDate a owl:ObjectProperty ;
+    rdfs:label "occurred_on_date"^^xsd:string .
+
+adaptableIE:offeredApology a owl:ObjectProperty ;
+    rdfs:label "offered_apology"^^xsd:string .
+
+adaptableIE:olympic_gold a adaptableIE:Award ;
+    rdfs:label "Olympic gold"^^xsd:string ;
+    owl:sameAs wiki:Q15243387 .
+
+adaptableIE:olympique_de_marseille a adaptableIE:Organization ;
+    rdfs:label "Olympique de Marseille"^^xsd:string ;
+    owl:sameAs wiki:Q132885 .
+
+adaptableIE:operates a owl:ObjectProperty ;
+    rdfs:label "operates"^^xsd:string ;
+    owl:sameAs wiki:P121 .
+
+adaptableIE:ownsStakeIn a owl:ObjectProperty ;
+    rdfs:label "owns_stake_in"^^xsd:string .
+
+adaptableIE:pairsWith a owl:ObjectProperty ;
+    rdfs:label "pairs_with"^^xsd:string .
+
+adaptableIE:panarub_factory a adaptableIE:Location ;
+    rdfs:label "Panarub factory"^^xsd:string .
+
+adaptableIE:paris a adaptableIE:Location ;
+    rdfs:label "Paris"^^xsd:string ;
+    owl:sameAs wiki:Q90 .
+
+adaptableIE:participatedIn a owl:ObjectProperty ;
+    rdfs:label "participated_in"^^xsd:string ;
+    owl:sameAs wiki:P1344 .
+
+adaptableIE:pel%C3%A9 a adaptableIE:Person ;
+    rdfs:label "Pelé"^^xsd:string ;
+    owl:sameAs wiki:Q12897 .
+
+adaptableIE:persuaded a owl:ObjectProperty ;
+    rdfs:label "persuaded"^^xsd:string .
+
+adaptableIE:peter_moore a adaptableIE:Person ;
+    rdfs:label "Peter Moore"^^xsd:string ;
+    owl:sameAs wiki:Q3267767 .
+
+adaptableIE:pr_firms a adaptableIE:Organization ;
+    rdfs:label "PR firms"^^xsd:string .
+
+adaptableIE:presentingAUnifiedImageToConsumersInterestedIn a owl:ObjectProperty ;
+    rdfs:label "presenting_a_unified_image_to_consumers_interested_in"^^xsd:string .
+
+adaptableIE:pro_kabaddi_league a adaptableIE:Event ;
+    rdfs:label "Pro Kabaddi League"^^xsd:string ;
+    owl:sameAs wiki:Q17069491 .
+
+adaptableIE:produced a owl:ObjectProperty ;
+    rdfs:label "produced"^^xsd:string ;
+    owl:sameAs wiki:P1056,
+        wiki:P176 .
+
+adaptableIE:prohibitedUsageOf a owl:ObjectProperty ;
+    rdfs:label "prohibited_usage_of"^^xsd:string .
+
+adaptableIE:providedOutfitsFor a owl:ObjectProperty ;
+    rdfs:label "provided_outfits_for"^^xsd:string .
+
+adaptableIE:provides a owl:ObjectProperty ;
+    rdfs:label "provides"^^xsd:string ;
+    owl:sameAs wiki:P1056 .
+
+adaptableIE:pt_kizone a adaptableIE:Location ;
+    rdfs:label "PT Kizone"^^xsd:string .
+
+adaptableIE:pune_warriors_india a adaptableIE:Organization ;
+    rdfs:label "Pune Warriors India"^^xsd:string ;
+    owl:sameAs wiki:Q3520740 .
+
+adaptableIE:racial_diversity_controversy a adaptableIE:Event ;
+    rdfs:label "racial diversity controversy"^^xsd:string .
+
+adaptableIE:racial_justice a adaptableIE:BusinessConcept ;
+    rdfs:label "racial justice"^^xsd:string ;
+    owl:sameAs wiki:Q56056755 .
+
+adaptableIE:racism a adaptableIE:BusinessConcept ;
+    rdfs:label "racism"^^xsd:string ;
+    owl:sameAs wiki:Q8461 .
+
+adaptableIE:ravindra_jadeja a adaptableIE:Person ;
+    rdfs:label "Ravindra Jadeja"^^xsd:string ;
+    owl:sameAs wiki:Q2721457 .
+
+adaptableIE:rebel_sport a adaptableIE:Company ;
+    rdfs:label "Rebel Sport"^^xsd:string ;
+    adaptableIE:considers adaptableIE:selling_below_cost ;
+    owl:sameAs wiki:Q110190372 .
+
+adaptableIE:releasedNewVersionOf a owl:ObjectProperty ;
+    rdfs:label "released_new_version_of"^^xsd:string .
+
+adaptableIE:remainedAPopularLifestyleIcon a owl:ObjectProperty ;
+    rdfs:label "remained_a_popular_life-style_icon"^^xsd:string .
+
+adaptableIE:removed a owl:ObjectProperty ;
+    rdfs:label "removed"^^xsd:string .
+
+adaptableIE:represents a owl:ObjectProperty ;
+    rdfs:label "represents"^^xsd:string ;
+    owl:sameAs wiki:P1268 .
+
+adaptableIE:resembled a owl:ObjectProperty ;
+    rdfs:label "resembled"^^xsd:string .
+
+adaptableIE:resignedIn a owl:ObjectProperty ;
+    rdfs:label "resigned_in"^^xsd:string .
+
+adaptableIE:rivalOf a owl:ObjectProperty ;
+    rdfs:label "rival_of"^^xsd:string ;
+    owl:sameAs wiki:P7047 .
+
+adaptableIE:role a owl:ObjectProperty ;
+    rdfs:label "role"^^xsd:string ;
+    owl:sameAs wiki:P2868 .
+
+adaptableIE:royal_challengers_bangalore a adaptableIE:Organization ;
+    rdfs:label "Royal Challengers Bangalore"^^xsd:string ;
+    owl:sameAs wiki:Q105626564 .
+
+adaptableIE:ruda a adaptableIE:Company ;
+    rdfs:label "Ruda"^^xsd:string ;
+    owl:sameAs wiki:Q53348 .
+
+adaptableIE:sachin_tendulkar a adaptableIE:Person ;
+    rdfs:label "Sachin Tendulkar"^^xsd:string ;
+    owl:sameAs wiki:Q9488 .
+
+adaptableIE:salman_butt a adaptableIE:Person ;
+    rdfs:label "Salman Butt"^^xsd:string ;
+    owl:sameAs wiki:Q3273844 .
+
+adaptableIE:sch%C3%B6ler__micke_sportartikel_vertriebs_gmbh a adaptableIE:Organization ;
+    rdfs:label "Schöler & Micke Sportartikel Vertriebs GmbH"^^xsd:string .
+
+adaptableIE:sells a owl:ObjectProperty ;
+    rdfs:label "sells"^^xsd:string .
+
+adaptableIE:sellsOnlineThrough a owl:ObjectProperty ;
+    rdfs:label "sells_online_through"^^xsd:string .
+
+adaptableIE:servedPrisonSentence a owl:ObjectProperty ;
+    rdfs:label "served_prison_sentence"^^xsd:string .
+
+adaptableIE:shackle a adaptableIE:Product ;
+    rdfs:label "shackle"^^xsd:string ;
+    owl:sameAs wiki:Q1430961 .
+
+adaptableIE:signed a owl:ObjectProperty ;
+    rdfs:label "signed"^^xsd:string ;
+    owl:sameAs wiki:P1891 .
+
+adaptableIE:signedWith a owl:ObjectProperty ;
+    rdfs:label "signed_with"^^xsd:string ;
+    owl:sameAs wiki:P1891 .
+
+adaptableIE:significantWorkWasDoneBy a owl:ObjectProperty ;
+    rdfs:label "significant_work_was_done_by"^^xsd:string .
+
+adaptableIE:sl_72 a adaptableIE:Product ;
+    rdfs:label "SL 72"^^xsd:string ;
+    adaptableIE:wasCreatedFor adaptableIE:1972_munich_olympics .
+
+adaptableIE:social_media_outcry a adaptableIE:Event ;
+    rdfs:label "social media outcry"^^xsd:string .
+
+adaptableIE:sold a owl:ObjectProperty ;
+    rdfs:label "sold"^^xsd:string ;
+    owl:sameAs wiki:P2294,
+        wiki:P7163 .
+
+adaptableIE:sony_playstation a adaptableIE:Platform ;
+    rdfs:label "Sony PlayStation"^^xsd:string ;
+    owl:sameAs wiki:Q1323662 .
+
+adaptableIE:sos_childrens_villages a adaptableIE:Organization ;
+    rdfs:label "SOS Children's Villages"^^xsd:string ;
+    owl:sameAs wiki:Q462794 .
+
+adaptableIE:soviet_tracksuits rdfs:label "Soviet tracksuits"^^xsd:string ;
+    adaptableIE:hadDesignChangeFrom adaptableIE:three_stripes_to_one_red_stripe .
+
+adaptableIE:sponsors a owl:ObjectProperty ;
+    rdfs:label "sponsors"^^xsd:string ;
+    owl:sameAs wiki:P859 .
+
+adaptableIE:sports_bras a adaptableIE:Product ;
+    rdfs:label "sports bras"^^xsd:string ;
+    owl:sameAs wiki:Q28188413 .
+
+adaptableIE:sportswear a adaptableIE:Product ;
+    rdfs:label "Sportswear"^^xsd:string ;
+    owl:sameAs wiki:Q645292 .
+
+adaptableIE:stefan_edberg a adaptableIE:Person ;
+    rdfs:label "Stefan Edberg"^^xsd:string ;
+    owl:sameAs wiki:Q189542 .
+
+adaptableIE:steffi_graf a adaptableIE:Person ;
+    rdfs:label "Steffi Graf"^^xsd:string ;
+    owl:sameAs wiki:Q11662 .
+
+adaptableIE:steppedDown a owl:ObjectProperty ;
+    rdfs:label "stepped_down"^^xsd:string .
+
+adaptableIE:style_essentials rdfs:label "Style Essentials"^^xsd:string ;
+    adaptableIE:dealtWith adaptableIE:fashion_market .
+
+adaptableIE:sued a owl:ObjectProperty ;
+    rdfs:label "sued"^^xsd:string .
+
+adaptableIE:suppliedTo a owl:ObjectProperty ;
+    rdfs:label "supplied_to"^^xsd:string .
+
+adaptableIE:supports a owl:ObjectProperty ;
+    rdfs:label "supports"^^xsd:string .
+
+adaptableIE:taken_off_the_market a adaptableIE:Action ;
+    rdfs:label "taken off the market"^^xsd:string .
+
+adaptableIE:tbwa_chiat_day a adaptableIE:Organization ;
+    rdfs:label "TBWA Chiat Day"^^xsd:string .
+
+adaptableIE:threatened a owl:ObjectProperty ;
+    rdfs:label "threatened"^^xsd:string .
+
+adaptableIE:tookOffMarket a owl:ObjectProperty ;
+    rdfs:label "took_off_market"^^xsd:string .
+
+adaptableIE:trademarkAcquisitionCost a owl:ObjectProperty ;
+    rdfs:label "trademark_acquisition_cost"^^xsd:string .
+
+adaptableIE:trefoil_logo a adaptableIE:Product ;
+    rdfs:label "Trefoil logo"^^xsd:string .
+
+adaptableIE:u_mumba a adaptableIE:Organization ;
+    rdfs:label "U Mumba"^^xsd:string ;
+    owl:sameAs wiki:Q18211185 .
+
+adaptableIE:ucla a adaptableIE:Organization ;
+    rdfs:label "UCLA"^^xsd:string ;
+    owl:sameAs wiki:Q174710 .
+
+adaptableIE:uefa_euro_2016 a adaptableIE:Event ;
+    rdfs:label "UEFA Euro 2016"^^xsd:string ;
+    owl:sameAs wiki:Q189571 .
+
+adaptableIE:united_states a adaptableIE:Country ;
+    rdfs:label "United States"^^xsd:string ;
+    owl:sameAs wiki:Q30 .
+
+adaptableIE:united_states_army a adaptableIE:Organization ;
+    rdfs:label "United States Army"^^xsd:string ;
+    owl:sameAs wiki:Q9212 .
+
+adaptableIE:united_students_against_sweatshops a adaptableIE:Organization ;
+    rdfs:label "United Students Against Sweatshops"^^xsd:string ;
+    owl:sameAs wiki:Q17040305 .
+
+adaptableIE:us25_million a adaptableIE:FinancialMetric ;
+    rdfs:label "US$25 million"^^xsd:string .
+
+adaptableIE:usa_gymnastics a adaptableIE:Organization ;
+    rdfs:label "USA Gymnastics"^^xsd:string ;
+    owl:sameAs wiki:Q7865813 .
+
+adaptableIE:used a owl:ObjectProperty ;
+    rdfs:label "used"^^xsd:string ;
+    owl:sameAs wiki:P1535 .
+
+adaptableIE:usesMaterial a owl:ObjectProperty ;
+    rdfs:label "uses_material"^^xsd:string .
+
+adaptableIE:war_on_want a adaptableIE:Organization ;
+    rdfs:label "War on Want"^^xsd:string ;
+    owl:sameAs wiki:Q7968725 .
+
+adaptableIE:wasA a owl:ObjectProperty ;
+    rdfs:label "was_a"^^xsd:string .
+
+adaptableIE:wasContacted a owl:ObjectProperty ;
+    rdfs:label "was_contacted"^^xsd:string .
+
+adaptableIE:wasCreatedFor a owl:ObjectProperty ;
+    rdfs:label "was_created_for"^^xsd:string ;
+    owl:sameAs wiki:P170 .
+
+adaptableIE:wasDevelopedBy a owl:ObjectProperty ;
+    rdfs:label "was_developed_by"^^xsd:string ;
+    owl:sameAs wiki:P178 .
+
+adaptableIE:wasFormedFrom a owl:ObjectProperty ;
+    rdfs:label "was_formed_from"^^xsd:string ;
+    owl:sameAs wiki:P740 .
+
+adaptableIE:wasFoundedBy a owl:ObjectProperty ;
+    rdfs:label "was_founded_by"^^xsd:string ;
+    owl:sameAs wiki:P112 .
+
+adaptableIE:wasFoundedIn a owl:ObjectProperty ;
+    rdfs:label "was_founded_in"^^xsd:string ;
+    owl:sameAs wiki:P112 .
+
+adaptableIE:wasLaunchedIn a owl:ObjectProperty ;
+    rdfs:label "was_launched_in"^^xsd:string ;
+    owl:sameAs wiki:P577 .
+
+adaptableIE:wasOneOfTheFirstToEnter a owl:ObjectProperty ;
+    rdfs:label "was_one_of_the_first_to_enter"^^xsd:string .
+
+adaptableIE:west_germany a adaptableIE:Country ;
+    rdfs:label "West Germany"^^xsd:string ;
+    owl:sameAs wiki:Q713750 .
+
+adaptableIE:west_germany_national_football_team a adaptableIE:Organization ;
+    rdfs:label "West Germany national football team"^^xsd:string ;
+    owl:sameAs wiki:Q43310 .
+
+adaptableIE:western_province_rugby_union a adaptableIE:Organization ;
+    rdfs:label "Western Province rugby union"^^xsd:string .
+
+adaptableIE:william_anderson a adaptableIE:Person ;
+    rdfs:label "William Anderson"^^xsd:string ;
+    owl:sameAs wiki:Q2577868 .
+
+adaptableIE:withdrew a owl:ObjectProperty ;
+    rdfs:label "withdrew"^^xsd:string .
+
+adaptableIE:withdrew_and_apologized a adaptableIE:Action ;
+    rdfs:label "withdrew and apologized"^^xsd:string .
+
+adaptableIE:wnba a adaptableIE:Organization ;
+    rdfs:label "WNBA"^^xsd:string ;
+    owl:sameAs wiki:Q2593221 .
+
+adaptableIE:woodworm a adaptableIE:Company ;
+    rdfs:label "Woodworm"^^xsd:string ;
+    owl:sameAs wiki:Q3770794 .
+
+adaptableIE:workplace a adaptableIE:Location ;
+    rdfs:label "workplace"^^xsd:string ;
+    owl:sameAs wiki:Q628858 .
+
+adaptableIE:world a adaptableIE:Location ;
+    rdfs:label "world"^^xsd:string .
+
+adaptableIE:world_war_i a adaptableIE:Event ;
+    rdfs:label "World War I"^^xsd:string ;
+    owl:sameAs wiki:Q361 .
+
+adaptableIE:world_war_ii a adaptableIE:Event ;
+    rdfs:label "World War II"^^xsd:string ;
+    owl:sameAs wiki:Q362 .
+
+adaptableIE:xinjiang a adaptableIE:Location ;
+    rdfs:label "Xinjiang"^^xsd:string ;
+    owl:sameAs wiki:Q34800 .
+
+adaptableIE:y_3 a adaptableIE:Brand ;
+    rdfs:label "Y-3"^^xsd:string ;
+    adaptableIE:isACollaborationBetween adaptableIE:adidas_and_yohji_yamamoto ;
+    adaptableIE:represents adaptableIE:yohji_yamamoto_and_three_stripes_of_adidas ;
+    owl:sameAs wiki:Q54995127 .
+
+adaptableIE:year a owl:ObjectProperty ;
+    rdfs:label "year"^^xsd:string ;
+    owl:sameAs wiki:P577 .
+
+adaptableIE:yohji_yamamoto a adaptableIE:Person ;
+    rdfs:label "Yohji Yamamoto"^^xsd:string ;
+    owl:sameAs wiki:Q707890 .
+
+adaptableIE:yue_yuen_industrial_holdings a adaptableIE:Company ;
+    rdfs:label "Yue Yuen Industrial Holdings"^^xsd:string ;
+    owl:sameAs wiki:Q698467 .
+
+adaptableIE:zx_spectrum a adaptableIE:Platform ;
+    rdfs:label "ZX spectrum"^^xsd:string ;
+    owl:sameAs wiki:Q23882 .
+
+adaptableIE:11_israeli_athletes rdfs:label "11 Israeli athletes"^^xsd:string .
+
+adaptableIE:1600 a adaptableIE:FinancialMetric ;
+    rdfs:label "€1,600"^^xsd:string .
+
+adaptableIE:180tbwa rdfs:label "180/TBWA"^^xsd:string .
+
+adaptableIE:1949 a adaptableIE:Year ;
+    rdfs:label "1949"^^xsd:string ;
+    owl:sameAs wiki:Q5188 .
+
+adaptableIE:1949_08_18 rdfs:label "1949-08-18"^^xsd:string ;
+    owl:sameAs wiki:Q69279026 .
+
+adaptableIE:1967 a adaptableIE:SpecificDate ;
+    rdfs:label "1967"^^xsd:string ;
+    owl:sameAs wiki:Q2648 .
+
+adaptableIE:1971 rdfs:label "1971"^^xsd:string ;
+    owl:sameAs wiki:Q2475 .
+
+adaptableIE:1972_munich_olympics a adaptableIE:Event ;
+    rdfs:label "1972 Munich Olympics"^^xsd:string ;
+    adaptableIE:massacreOf adaptableIE:11_israeli_athletes .
+
+adaptableIE:1980_summer_olympics a adaptableIE:Event ;
+    rdfs:label "1980 Summer Olympics"^^xsd:string ;
+    owl:sameAs wiki:Q8450 .
+
+adaptableIE:1994 a adaptableIE:Year ;
+    rdfs:label "1994"^^xsd:string ;
+    owl:sameAs wiki:Q2067 .
+
+adaptableIE:2004 rdfs:label "2004"^^xsd:string ;
+    owl:sameAs wiki:Q2014 .
+
+adaptableIE:2006_2007_nba_season rdfs:label "2006-2007_NBA_season"^^xsd:string .
+
+adaptableIE:2015 a adaptableIE:Datetime,
+        adaptableIE:Year ;
+    rdfs:label "2015"^^xsd:string ;
+    owl:sameAs wiki:Q2002 .
+
+adaptableIE:2016 a adaptableIE:Datetime ;
+    rdfs:label "2016"^^xsd:string ;
+    owl:sameAs wiki:Q25245 .
+
+adaptableIE:2017 a adaptableIE:Datetime ;
+    rdfs:label "2017"^^xsd:string ;
+    owl:sameAs wiki:Q25290 .
+
+adaptableIE:2024 rdfs:label "2024"^^xsd:string ;
+    owl:sameAs wiki:Q49619 .
+
+adaptableIE:23683_billion a adaptableIE:FinancialMetric ;
+    rdfs:label "€23.683 billion"^^xsd:string .
+
+adaptableIE:3_stripe_logo a adaptableIE:Product ;
+    rdfs:label "3-Stripe logo"^^xsd:string,
+        "3-stripe logo"^^xsd:string ;
+    adaptableIE:acquiredFrom adaptableIE:karhu_sports .
+
+adaptableIE:584_billion rdfs:label "€5.84 billion"^^xsd:string .
+
+adaptableIE:75_billion rdfs:label "$7.5 billion"^^xsd:string .
+
+adaptableIE:833 rdfs:label "8.33%"^^xsd:string .
+
+adaptableIE:Award a owl:Class ;
+    rdfs:label "award"^^xsd:string ;
+    owl:sameAs wiki:Q618779 .
+
+adaptableIE:Month a owl:Class .
+
+adaptableIE:Strategy a owl:Class .
+
+adaptableIE:Subculture a owl:Class .
+
+adaptableIE:adidas__salomon_ag rdfs:label "Adidas- Salomon AG"^^xsd:string .
+
+adaptableIE:adidas_ag a adaptableIE:Company ;
+    rdfs:label "Adidas AG"^^xsd:string,
+        "Adidas-AG"^^xsd:string ;
+    adaptableIE:isKnownFor adaptableIE:largest_manufacturer_of_sports_bras_in_europe,
+        adaptableIE:second_largest_manufacturer_of_sports_bras_in_the_world ;
+    adaptableIE:launchedAround adaptableIE:1949_08_18 ;
+    owl:sameAs wiki:Q3895 .
+
+adaptableIE:adidas_and_yohji_yamamoto rdfs:label "Adidas_and_Yohji_Yamamoto"^^xsd:string .
+
+adaptableIE:adidas_barricade_tour_model rdfs:label "Adidas Barricade tour model"^^xsd:string .
+
+adaptableIE:adidas_beau_jeu a adaptableIE:Product ;
+    rdfs:label "Adidas Beau Jeu"^^xsd:string ;
+    owl:sameAs wiki:Q21468507 .
+
+adaptableIE:adidas_brazuca a adaptableIE:Product ;
+    rdfs:label "Adidas Brazuca"^^xsd:string ;
+    owl:sameAs wiki:Q903284 .
+
+adaptableIE:adidas_championship_football a adaptableIE:Product ;
+    rdfs:label "Adidas Championship Football"^^xsd:string ;
+    owl:sameAs wiki:Q4682709 .
+
+adaptableIE:adidas_confirmed_app a adaptableIE:Product ;
+    rdfs:label "Adidas Confirmed app"^^xsd:string .
+
+adaptableIE:adidas_eqt_support_9317 a adaptableIE:Product ;
+    rdfs:label "Adidas EQT Support 93/17"^^xsd:string .
+
+adaptableIE:adidas_eqt_support_adv a adaptableIE:Product ;
+    rdfs:label "Adidas EQT Support ADV"^^xsd:string .
+
+adaptableIE:adidas_eqt_support_ultra a adaptableIE:Product ;
+    rdfs:label "Adidas EQT Support Ultra"^^xsd:string .
+
+adaptableIE:adidas_executive rdfs:label "Adidas executive"^^xsd:string .
+
+adaptableIE:adidas_feather a adaptableIE:Product ;
+    rdfs:label "Adidas Feather"^^xsd:string .
+
+adaptableIE:adidas_finale a adaptableIE:Product ;
+    rdfs:label "Adidas Finale"^^xsd:string ;
+    owl:sameAs wiki:Q357017 .
+
+adaptableIE:adidas_golf_accessories rdfs:label "Adidas golf accessories"^^xsd:string .
+
+adaptableIE:adidas_golf_clothing rdfs:label "Adidas golf clothing"^^xsd:string .
+
+adaptableIE:adidas_golf_footwear rdfs:label "Adidas golf footwear"^^xsd:string .
+
+adaptableIE:adidas_gymnastics_pants rdfs:label "Adidas gymnastics pants"^^xsd:string .
+
+adaptableIE:adidas_gymnastics_shorts rdfs:label "Adidas gymnastics shorts"^^xsd:string .
+
+adaptableIE:adidas_is_all_in a adaptableIE:Campaign ;
+    rdfs:label "Adidas is all in"^^xsd:string,
+        "Adidas_is_all_in"^^xsd:string ;
+    adaptableIE:aimedToTieAllBrandsAndLabelsTogether adaptableIE:true ;
+    adaptableIE:becameTheGlobalMarketingStrategySloganFor adaptableIE:adidas ;
+    adaptableIE:presentingAUnifiedImageToConsumersInterestedIn adaptableIE:sports_fashion_street_music_and_pop_culture .
+
+adaptableIE:adidas_kabaddi_equipment rdfs:label "Adidas Kabaddi equipment"^^xsd:string .
+
+adaptableIE:adidas_lacrosse_boots rdfs:label "Adidas lacrosse boots"^^xsd:string .
+
+adaptableIE:adidas_lacrosse_equipment rdfs:label "Adidas lacrosse equipment"^^xsd:string .
+
+adaptableIE:adidas_lacrosse_gloves rdfs:label "Adidas lacrosse gloves"^^xsd:string .
+
+adaptableIE:adidas_lacrosse_protective_gear rdfs:label "Adidas lacrosse protective gear"^^xsd:string .
+
+adaptableIE:adidas_lacrosse_sticks rdfs:label "Adidas lacrosse sticks"^^xsd:string .
+
+adaptableIE:adidas_lifestyle_shoes rdfs:label "Adidas lifestyle shoes"^^xsd:string .
+
+adaptableIE:adidas_masterblaster_elite a adaptableIE:Product ;
+    rdfs:label "Adidas MasterBlaster Elite"^^xsd:string .
+
+adaptableIE:adidas_mens_competition_shirts rdfs:label "Adidas men's competition shirts"^^xsd:string .
+
+adaptableIE:adidas_mens_gymnastics_wear rdfs:label "Adidas men's gymnastics wear"^^xsd:string .
+
+adaptableIE:adidas_nmd_r1 a adaptableIE:Product ;
+    rdfs:label "Adidas NMD R1"^^xsd:string .
+
+adaptableIE:adidas_nmd_xr1 a adaptableIE:Product ;
+    rdfs:label "Adidas NMD XR1"^^xsd:string .
+
+adaptableIE:adidas_power_soccer a adaptableIE:Product ;
+    rdfs:label "Adidas power soccer"^^xsd:string ;
+    owl:sameAs wiki:Q2824396 .
+
+adaptableIE:adidas_predator a adaptableIE:Product ;
+    rdfs:label "Adidas Predator"^^xsd:string ;
+    owl:sameAs wiki:Q420789 .
+
+adaptableIE:adidas_replicas a adaptableIE:Product ;
+    rdfs:label "Adidas replicas"^^xsd:string,
+        "Adidas_replicas"^^xsd:string ;
+    adaptableIE:named adaptableIE:springblade .
+
+adaptableIE:adidas_response a adaptableIE:Product ;
+    rdfs:label "Adidas Response"^^xsd:string .
+
+adaptableIE:adidas_running_shoes rdfs:label "Adidas running shoes"^^xsd:string .
+
+adaptableIE:adidas_skateboarding_shoes rdfs:label "Adidas skateboarding shoes"^^xsd:string .
+
+adaptableIE:adidas_telstar a adaptableIE:Product ;
+    rdfs:label "Adidas Telstar"^^xsd:string ;
+    owl:sameAs wiki:Q644994 .
+
+adaptableIE:adidas_tennis_racquets rdfs:label "Adidas tennis racquets"^^xsd:string .
+
+adaptableIE:adidas_womens_gymnastics_wear rdfs:label "Adidas women's gymnastics wear"^^xsd:string .
+
+adaptableIE:adilette a adaptableIE:Product ;
+    rdfs:label "Adilette"^^xsd:string ;
+    adaptableIE:designedFor adaptableIE:locker_room ;
+    adaptableIE:hasVarieties adaptableIE:colour_scheme,
+        adaptableIE:different_colours ;
+    owl:sameAs wiki:Q2824455 .
+
+adaptableIE:adipu rdfs:label "adiPu"^^xsd:string ;
+    owl:sameAs wiki:Q4682953 .
+
+adaptableIE:adipure rdfs:label "adiPure"^^xsd:string ;
+    owl:sameAs wiki:Q4682574 .
+
+adaptableIE:adissage a adaptableIE:Product ;
+    rdfs:label "Adissage"^^xsd:string ;
+    adaptableIE:hasFeatures adaptableIE:massage_nubs .
+
+adaptableIE:al_rihla a adaptableIE:Product ;
+    rdfs:label "Al Rihla"^^xsd:string ;
+    owl:sameAs wiki:Q111432258 .
+
+adaptableIE:alessandro_del_piero a adaptableIE:Person ;
+    rdfs:label "Alessandro Del Piero"^^xsd:string ;
+    owl:sameAs wiki:Q624 .
+
+adaptableIE:alexander_wang a adaptableIE:Person ;
+    rdfs:label "Alexander Wang"^^xsd:string ;
+    owl:sameAs wiki:Q705844 .
+
+adaptableIE:all_blacks a adaptableIE:Organization ;
+    rdfs:label "All Blacks"^^xsd:string ;
+    owl:sameAs wiki:Q55801 .
+
+adaptableIE:all_blacks_replica_rugby_jersey a adaptableIE:Product ;
+    rdfs:label "All Blacks replica rugby jersey"^^xsd:string ;
+    adaptableIE:hasLocalPrice adaptableIE:nz220 .
+
+adaptableIE:amazon a adaptableIE:Ecommerce ;
+    rdfs:label "Amazon"^^xsd:string ;
+    owl:sameAs wiki:Q3884 .
+
+adaptableIE:american_soldiers rdfs:label "American soldiers"^^xsd:string ;
+    adaptableIE:becameBuyersOf adaptableIE:dassler_brothers_shoes .
+
+adaptableIE:andy_murray a adaptableIE:Person ;
+    rdfs:label "Andy Murray"^^xsd:string ;
+    owl:sameAs wiki:Q10125 .
+
+adaptableIE:anti_tank_weapons a adaptableIE:Product ;
+    rdfs:label "anti-tank weapons"^^xsd:string .
+
+adaptableIE:argentina a adaptableIE:Country ;
+    rdfs:label "Argentina"^^xsd:string ;
+    owl:sameAs wiki:Q414 .
+
+adaptableIE:argentina_mens_national_field_hockey_team rdfs:label "Argentina men's national field hockey team"^^xsd:string ;
+    owl:sameAs wiki:Q645934 .
+
+adaptableIE:argentina_womens_national_field_hockey_team rdfs:label "Argentina women's national field hockey team"^^xsd:string ;
+    owl:sameAs wiki:Q645937 .
+
+adaptableIE:arjen_robben a adaptableIE:Person ;
+    rdfs:label "Arjen Robben"^^xsd:string ;
+    owl:sameAs wiki:Q43913 .
+
+adaptableIE:athletic_footwear rdfs:label "athletic footwear"^^xsd:string ;
+    owl:sameAs wiki:Q43853066 .
+
+adaptableIE:australia a adaptableIE:Location ;
+    rdfs:label "Australia"^^xsd:string ;
+    owl:sameAs wiki:Q408 .
+
+adaptableIE:australia_field_hockey_team rdfs:label "Australia field hockey team"^^xsd:string .
+
+adaptableIE:austria rdfs:label "Austria"^^xsd:string ;
+    owl:sameAs wiki:Q40 .
+
+adaptableIE:bad_bunny a adaptableIE:Person ;
+    rdfs:label "Bad Bunny"^^xsd:string ;
+    owl:sameAs wiki:Q44333953 .
+
+adaptableIE:bavaria rdfs:label "Bavaria"^^xsd:string ;
+    owl:sameAs wiki:Q980 .
+
+adaptableIE:beeston a adaptableIE:Organization ;
+    rdfs:label "Beeston"^^xsd:string ;
+    owl:sameAs wiki:Q814121 .
+
+adaptableIE:belgium a adaptableIE:Country ;
+    rdfs:label "Belgium"^^xsd:string ;
+    owl:sameAs wiki:Q31 .
+
+adaptableIE:belgium_field_hockey_team rdfs:label "Belgium field hockey team"^^xsd:string .
+
+adaptableIE:bernard_tapie a adaptableIE:Person ;
+    rdfs:label "Bernard Tapie"^^xsd:string ;
+    adaptableIE:acquired adaptableIE:adidas ;
+    adaptableIE:filedForPersonalBankruptcy adaptableIE:1994 ;
+    adaptableIE:ministerOf adaptableIE:urban_affairs ;
+    adaptableIE:servedPrisonSentence adaptableIE:la_sant%C3%A9_prison ;
+    owl:sameAs wiki:Q728645 .
+
+adaptableIE:beyonc%C3%A9 a adaptableIE:Person ;
+    rdfs:label "Beyoncé"^^xsd:string ;
+    owl:sameAs wiki:Q36153 .
+
+adaptableIE:bj%C3%B8rn_gulden a adaptableIE:Person ;
+    rdfs:label "Bjørn Gulden"^^xsd:string ;
+    owl:sameAs wiki:Q370191 .
+
+adaptableIE:boycott a adaptableIE:Action ;
+    rdfs:label "boycott"^^xsd:string ;
+    owl:sameAs wiki:Q179366 .
+
+adaptableIE:brandon_knight a adaptableIE:Person ;
+    rdfs:label "Brandon Knight"^^xsd:string ;
+    owl:sameAs wiki:Q935879 .
+
+adaptableIE:british_and_irish_lions a adaptableIE:Organization ;
+    rdfs:label "British and Irish Lions"^^xsd:string ;
+    owl:sameAs wiki:Q733600 .
+
+adaptableIE:budding_actor rdfs:label "budding_actor"^^xsd:string .
+
+adaptableIE:business_trends a adaptableIE:BusinessConcept ;
+    rdfs:label "Business trends"^^xsd:string ;
+    adaptableIE:asAt adaptableIE:december_31 ;
+    adaptableIE:keyTrendsFor adaptableIE:adidas .
+
+adaptableIE:candace_parker a adaptableIE:Person ;
+    rdfs:label "Candace Parker"^^xsd:string ;
+    owl:sameAs wiki:Q242278 .
+
+adaptableIE:chauncey_billups a adaptableIE:Person ;
+    rdfs:label "Chauncey Billups"^^xsd:string ;
+    owl:sameAs wiki:Q298531 .
+
+adaptableIE:chile a adaptableIE:Country ;
+    rdfs:label "Chile"^^xsd:string ;
+    owl:sameAs wiki:Q298 .
+
+adaptableIE:collin_morikawa a adaptableIE:Person ;
+    rdfs:label "Collin Morikawa"^^xsd:string ;
+    owl:sameAs wiki:Q25316367 .
+
+adaptableIE:colombia a adaptableIE:Country ;
+    rdfs:label "Colombia"^^xsd:string ;
+    owl:sameAs wiki:Q739 .
+
+adaptableIE:colour_scheme rdfs:label "colour scheme"^^xsd:string ;
+    adaptableIE:includes adaptableIE:warning_orange_and_purple ;
+    owl:sameAs wiki:Q859170 .
+
+adaptableIE:company_logo rdfs:label "company logo"^^xsd:string .
+
+adaptableIE:controversy a adaptableIE:Event ;
+    rdfs:label "controversy"^^xsd:string ;
+    owl:sameAs wiki:Q1255828 .
+
+adaptableIE:copa_mundial_moulded_boot rdfs:label "Copa Mundial moulded boot"^^xsd:string .
+
+adaptableIE:cr%C3%A9dit_lyonnais a adaptableIE:Organization ;
+    rdfs:label "Crédit Lyonnais"^^xsd:string ;
+    adaptableIE:acquired adaptableIE:adidas ;
+    adaptableIE:sold adaptableIE:adidas ;
+    owl:sameAs wiki:Q779722 .
+
+adaptableIE:cricket_footwear rdfs:label "cricket footwear"^^xsd:string .
+
+adaptableIE:criticism_adidass_business_practisesethics_and_commitment_to_worker_welfare_have_been_scrutinised_and_often_criticised rdfs:label "Criticism: Adidas's business practises/ethics and commitment to worker welfare have been scrutinised and often criticised."^^xsd:string .
+
+adaptableIE:cross_border_agreements rdfs:label "cross-border agreements"^^xsd:string .
+
+adaptableIE:daley_thompsons_olympic_challenge a adaptableIE:Product ;
+    rdfs:label "Daley Thompson's Olympic Challenge"^^xsd:string ;
+    owl:sameAs wiki:Q55405635 .
+
+adaptableIE:damian_lillard a adaptableIE:Person ;
+    rdfs:label "Damian Lillard"^^xsd:string ;
+    owl:sameAs wiki:Q622308 .
+
+adaptableIE:daniel_berger a adaptableIE:Person ;
+    rdfs:label "Daniel Berger"^^xsd:string ;
+    owl:sameAs wiki:Q5216549 .
+
+adaptableIE:dassler_brothers_shoes rdfs:label "Dassler brothers' shoes"^^xsd:string .
+
+adaptableIE:dassler_shoes rdfs:label "Dassler shoes"^^xsd:string ;
+    adaptableIE:knownFor adaptableIE:spiked_running_shoes ;
+    adaptableIE:usesMaterial adaptableIE:canvas_and_rubber .
+
+adaptableIE:david_beckham a adaptableIE:Person ;
+    rdfs:label "David Beckham"^^xsd:string ;
+    owl:sameAs wiki:Q10520 .
+
+adaptableIE:december_31 a adaptableIE:SpecificDate ;
+    rdfs:label "December 31"^^xsd:string ;
+    owl:sameAs wiki:Q2912 .
+
+adaptableIE:derrick_rose a adaptableIE:Person ;
+    rdfs:label "Derrick Rose"^^xsd:string ;
+    owl:sameAs wiki:Q205326 .
+
+adaptableIE:devotion_to_the_athlete rdfs:label "devotion_to_the_athlete"^^xsd:string .
+
+adaptableIE:different_colours rdfs:label "different colours"^^xsd:string .
+
+adaptableIE:donovan_mitchell a adaptableIE:Person ;
+    rdfs:label "Donovan Mitchell"^^xsd:string ;
+    owl:sameAs wiki:Q30122104 .
+
+adaptableIE:dwayne_bravo a adaptableIE:Person ;
+    rdfs:label "Dwayne Bravo"^^xsd:string ;
+    owl:sameAs wiki:Q3038629 .
+
+adaptableIE:earlier_designs rdfs:label "earlier_designs"^^xsd:string .
+
+adaptableIE:earvin_ngapeth a adaptableIE:Person ;
+    rdfs:label "Earvin N'Gapeth"^^xsd:string ;
+    owl:sameAs wiki:Q3046479 .
+
+adaptableIE:east_grinstead a adaptableIE:Organization ;
+    rdfs:label "East Grinstead"^^xsd:string ;
+    owl:sameAs wiki:Q1277887 .
+
+adaptableIE:england_field_hockey_team rdfs:label "England field hockey team"^^xsd:string .
+
+adaptableIE:facebook rdfs:label "Facebook"^^xsd:string ;
+    owl:sameAs wiki:Q355 .
+
+adaptableIE:fashion_market rdfs:label "fashion_market"^^xsd:string ;
+    owl:sameAs wiki:Q57551165 .
+
+adaptableIE:feelloveusehate a adaptableIE:Campaign ;
+    rdfs:label "FeelLoveUseHate"^^xsd:string ;
+    adaptableIE:featured adaptableIE:virat_kohli .
+
+adaptableIE:finnish_sports_company rdfs:label "Finnish sports company"^^xsd:string .
+
+adaptableIE:fit_smart_wristband rdfs:label "Fit Smart wristband"^^xsd:string ;
+    adaptableIE:pairsWith adaptableIE:micoach_app .
+
+adaptableIE:fitness_world_trading a adaptableIE:Company ;
+    rdfs:label "Fitness World Trading"^^xsd:string .
+
+adaptableIE:five_ten rdfs:label "Five Ten"^^xsd:string ;
+    owl:sameAs wiki:Q3746269 .
+
+adaptableIE:football_kits rdfs:label "football kits"^^xsd:string .
+
+adaptableIE:forced_labourers a adaptableIE:Person ;
+    rdfs:label "forced labourers"^^xsd:string .
+
+adaptableIE:france_national_team a adaptableIE:Organization ;
+    rdfs:label "France national team"^^xsd:string .
+
+adaptableIE:franz_beckenbauer_tracksuit a adaptableIE:Product ;
+    rdfs:label "Franz Beckenbauer tracksuit"^^xsd:string ;
+    adaptableIE:inYear adaptableIE:1967 .
+
+adaptableIE:gareth_bale a adaptableIE:Person ;
+    rdfs:label "Gareth Bale"^^xsd:string ;
+    owl:sameAs wiki:Q184586 .
+
+adaptableIE:george_weah a adaptableIE:Person ;
+    rdfs:label "George Weah"^^xsd:string ;
+    owl:sameAs wiki:Q173139 .
+
+adaptableIE:germany_field_hockey_team rdfs:label "Germany field hockey team"^^xsd:string .
+
+adaptableIE:gilbert_arenas a adaptableIE:Person ;
+    rdfs:label "Gilbert Arenas"^^xsd:string ;
+    owl:sameAs wiki:Q310108 .
+
+adaptableIE:gold_coast_titans a adaptableIE:Organization ;
+    rdfs:label "Gold Coast Titans"^^xsd:string ;
+    owl:sameAs wiki:Q3109995 .
+
+adaptableIE:gopnik_subculture rdfs:label "Gopnik subculture"^^xsd:string .
+
+adaptableIE:heavy_metal_spikes rdfs:label "heavy metal spikes"^^xsd:string .
+
+adaptableIE:heineken_cup a adaptableIE:Event ;
+    rdfs:label "Heineken Cup"^^xsd:string ;
+    owl:sameAs wiki:Q877423 .
+
+adaptableIE:herzogenaurach a adaptableIE:Location ;
+    rdfs:label "Herzogenaurach"^^xsd:string ;
+    adaptableIE:hasOrganizationalRole adaptableIE:adidas,
+        adaptableIE:puma_se ;
+    owl:sameAs wiki:Q1615401 .
+
+adaptableIE:highest_revenues_ever rdfs:label "highest revenues ever"^^xsd:string .
+
+adaptableIE:hoodies rdfs:label "hoodies"^^xsd:string ;
+    owl:sameAs wiki:Q134249758 .
+
+adaptableIE:hungary a adaptableIE:Country ;
+    rdfs:label "Hungary"^^xsd:string ;
+    owl:sameAs wiki:Q28 .
+
+adaptableIE:iker_casillas a adaptableIE:Person ;
+    rdfs:label "Iker Casillas"^^xsd:string ;
+    owl:sameAs wiki:Q11584 .
+
+adaptableIE:iman_shumpert a adaptableIE:Person ;
+    rdfs:label "Iman Shumpert"^^xsd:string ;
+    owl:sameAs wiki:Q716081 .
+
+adaptableIE:incurza rdfs:label "Incurza"^^xsd:string .
+
+adaptableIE:indian_audience rdfs:label "Indian audience"^^xsd:string .
+
+adaptableIE:italian_national_rugby_team a adaptableIE:Organization ;
+    rdfs:label "Italian national rugby team"^^xsd:string ;
+    owl:sameAs wiki:Q113135 .
+
+adaptableIE:italy a adaptableIE:Country ;
+    rdfs:label "Italy"^^xsd:string ;
+    owl:sameAs wiki:Q38 .
+
+adaptableIE:ivan_zaytsev a adaptableIE:Person ;
+    rdfs:label "Ivan Zaytsev"^^xsd:string ;
+    owl:sameAs wiki:Q661579 .
+
+adaptableIE:jabong a adaptableIE:Ecommerce ;
+    rdfs:label "Jabong"^^xsd:string ;
+    owl:sameAs wiki:Q6110251 .
+
+adaptableIE:jabulani a adaptableIE:Product ;
+    rdfs:label "Jabulani"^^xsd:string ;
+    owl:sameAs wiki:Q191564 .
+
+adaptableIE:jackets rdfs:label "jackets"^^xsd:string .
+
+adaptableIE:james_harden a adaptableIE:Person ;
+    rdfs:label "James Harden"^^xsd:string ;
+    owl:sameAs wiki:Q136678 .
+
+adaptableIE:james_rodr%C3%ADguez a adaptableIE:Person ;
+    rdfs:label "James Rodríguez"^^xsd:string ;
+    owl:sameAs wiki:Q368441 .
+
+adaptableIE:japan a adaptableIE:Country ;
+    rdfs:label "Japan"^^xsd:string ;
+    owl:sameAs wiki:Q17 .
+
+adaptableIE:jeremy_lin a adaptableIE:Person ;
+    rdfs:label "Jeremy Lin"^^xsd:string ;
+    owl:sameAs wiki:Q309590 .
+
+adaptableIE:jesse_owens a adaptableIE:Person ;
+    rdfs:label "Jesse Owens"^^xsd:string ;
+    adaptableIE:used adaptableIE:dassler_shoes ;
+    owl:sameAs wiki:Q52651 .
+
+adaptableIE:john_wall a adaptableIE:Person ;
+    rdfs:label "John Wall"^^xsd:string ;
+    owl:sameAs wiki:Q337370 .
+
+adaptableIE:jonah_hill a adaptableIE:Person ;
+    rdfs:label "Jonah Hill"^^xsd:string ;
+    owl:sameAs wiki:Q313388 .
+
+adaptableIE:jude_bellingham a adaptableIE:Person ;
+    rdfs:label "Jude Bellingham"^^xsd:string ;
+    owl:sameAs wiki:Q66241169 .
+
+adaptableIE:july_20_2024 a adaptableIE:Datetime ;
+    rdfs:label "July 20, 2024"^^xsd:string ;
+    owl:sameAs wiki:Q69307235 .
+
+adaptableIE:june_2020 a adaptableIE:Datetime ;
+    rdfs:label "June 2020"^^xsd:string ;
+    owl:sameAs wiki:Q55281155 .
+
+adaptableIE:k_l_rahul a adaptableIE:Person ;
+    rdfs:label "K. L. Rahul"^^xsd:string ;
+    owl:sameAs wiki:Q6668646 .
+
+adaptableIE:kak%C3%A1 a adaptableIE:Person ;
+    rdfs:label "Kaká"^^xsd:string ;
+    owl:sameAs wiki:Q203258 .
+
+adaptableIE:kareem_abdul_jabbar a adaptableIE:Person ;
+    rdfs:label "Kareem Abdul-Jabbar"^^xsd:string ;
+    owl:sameAs wiki:Q179051 .
+
+adaptableIE:karlie_kloss a adaptableIE:Person ;
+    rdfs:label "Karlie Kloss"^^xsd:string ;
+    owl:sameAs wiki:Q292749 .
+
+adaptableIE:kasper_r%C3%B8rsted a adaptableIE:Person ;
+    rdfs:label "Kasper Rørsted"^^xsd:string ;
+    owl:sameAs wiki:Q1735157 .
+
+adaptableIE:kevin_garnett a adaptableIE:Person ;
+    rdfs:label "Kevin Garnett"^^xsd:string ;
+    owl:sameAs wiki:Q189240 .
+
+adaptableIE:kieron_pollard a adaptableIE:Person ;
+    rdfs:label "Kieron Pollard"^^xsd:string ;
+    owl:sameAs wiki:Q3530594 .
+
+adaptableIE:kobe_bryant a adaptableIE:Person ;
+    rdfs:label "Kobe Bryant"^^xsd:string ;
+    owl:sameAs wiki:Q25369 .
+
+adaptableIE:la_sant%C3%A9_prison a adaptableIE:Location ;
+    rdfs:label "La Santé prison"^^xsd:string ;
+    owl:sameAs wiki:Q290432 .
+
+adaptableIE:largest_manufacturer_of_sports_bras_in_europe rdfs:label "largest manufacturer of sports bras in Europe"^^xsd:string .
+
+adaptableIE:lasith_malinga a adaptableIE:Person ;
+    rdfs:label "Lasith Malinga"^^xsd:string ;
+    owl:sameAs wiki:Q2312779 .
+
+adaptableIE:leggings rdfs:label "leggings"^^xsd:string ;
+    owl:sameAs wiki:Q660782 .
+
+adaptableIE:libro rdfs:label "Libro"^^xsd:string ;
+    owl:sameAs wiki:Q571 .
+
+adaptableIE:lionel_messi a adaptableIE:Person ;
+    rdfs:label "Lionel Messi"^^xsd:string ;
+    owl:sameAs wiki:Q615 .
+
+adaptableIE:locker_room rdfs:label "locker room"^^xsd:string ;
+    owl:sameAs wiki:Q1070054 .
+
+adaptableIE:london a adaptableIE:Location ;
+    rdfs:label "London"^^xsd:string ;
+    owl:sameAs wiki:Q92561 .
+
+adaptableIE:ludvig_%C3%A5berg a adaptableIE:Person ;
+    rdfs:label "Ludvig Åberg"^^xsd:string ;
+    owl:sameAs wiki:Q106510108 .
+
+adaptableIE:luis_su%C3%A1rez a adaptableIE:Person ;
+    rdfs:label "Luis Suárez"^^xsd:string ;
+    owl:sameAs wiki:Q26517 .
+
+adaptableIE:m rdfs:label "M"^^xsd:string ;
+    adaptableIE:hintedAt adaptableIE:moscow ;
+    owl:sameAs wiki:Q96 .
+
+adaptableIE:m_blaster rdfs:label "M-Blaster"^^xsd:string .
+
+adaptableIE:major_league_soccer a adaptableIE:Organization ;
+    rdfs:label "Major League Soccer"^^xsd:string ;
+    owl:sameAs wiki:Q18543 .
+
+adaptableIE:manchester_united a adaptableIE:Organization ;
+    rdfs:label "Manchester United"^^xsd:string ;
+    owl:sameAs wiki:Q18656 .
+
+adaptableIE:marketing_in_russia rdfs:label "Marketing in Russia"^^xsd:string .
+
+adaptableIE:maxfli a adaptableIE:Company ;
+    rdfs:label "Maxfli"^^xsd:string ;
+    owl:sameAs wiki:Q6795483 .
+
+adaptableIE:mens_t_shirts rdfs:label "men's t-shirts"^^xsd:string .
+
+adaptableIE:mexico a adaptableIE:Country ;
+    rdfs:label "Mexico"^^xsd:string ;
+    owl:sameAs wiki:Q96 .
+
+adaptableIE:micoach_app a adaptableIE:Product ;
+    rdfs:label "miCoach app"^^xsd:string ;
+    adaptableIE:actsAs adaptableIE:personal_trainer .
+
+adaptableIE:mohamed_salah a adaptableIE:Person ;
+    rdfs:label "Mohamed Salah"^^xsd:string ;
+    owl:sameAs wiki:Q1354960 .
+
+adaptableIE:moscow a adaptableIE:Location ;
+    rdfs:label "Moscow"^^xsd:string ;
+    owl:sameAs wiki:Q649 .
+
+adaptableIE:munich a adaptableIE:Location ;
+    rdfs:label "Munich"^^xsd:string ;
+    owl:sameAs wiki:Q1726 .
+
+adaptableIE:myntra a adaptableIE:Ecommerce ;
+    rdfs:label "Myntra"^^xsd:string ;
+    owl:sameAs wiki:Q6947830 .
+
+adaptableIE:national_hockey_league a adaptableIE:Organization ;
+    rdfs:label "National Hockey League"^^xsd:string ;
+    owl:sameAs wiki:Q1215892 .
+
+adaptableIE:nba_clothing_provider rdfs:label "NBA clothing provider"^^xsd:string .
+
+adaptableIE:ncaa_division_i_mens_basketball_corruption_scandal rdfs:label "NCAA Division I men's basketball corruption scandal"^^xsd:string ;
+    adaptableIE:year adaptableIE:2017 .
+
+adaptableIE:netherlands_field_hockey_team rdfs:label "Netherlands field hockey team"^^xsd:string .
+
+adaptableIE:new_zealand_rugby_union a adaptableIE:Organization ;
+    rdfs:label "New Zealand Rugby Union"^^xsd:string ;
+    owl:sameAs wiki:Q1788081 .
+
+adaptableIE:nick_dunlap a adaptableIE:Person ;
+    rdfs:label "Nick Dunlap"^^xsd:string ;
+    owl:sameAs wiki:Q124329596 .
+
+adaptableIE:nick_taylor a adaptableIE:Person ;
+    rdfs:label "Nick Taylor"^^xsd:string ;
+    owl:sameAs wiki:Q7028025 .
+
+adaptableIE:ninja a adaptableIE:Person ;
+    rdfs:label "Ninja"^^xsd:string ;
+    owl:sameAs wiki:Q50825725 .
+
+adaptableIE:nz220 a adaptableIE:FinancialMetric ;
+    rdfs:label "NZ$220"^^xsd:string .
+
+adaptableIE:pants rdfs:label "pants"^^xsd:string ;
+    owl:sameAs wiki:Q39908 .
+
+adaptableIE:paul_pogba a adaptableIE:Person ;
+    rdfs:label "Paul Pogba"^^xsd:string ;
+    owl:sameAs wiki:Q129027 .
+
+adaptableIE:pellara rdfs:label "Pellara"^^xsd:string .
+
+adaptableIE:personal_trainer rdfs:label "personal trainer"^^xsd:string ;
+    owl:sameAs wiki:Q762121 .
+
+adaptableIE:pharrell_williams a adaptableIE:Person ;
+    rdfs:label "Pharrell Williams"^^xsd:string ;
+    owl:sameAs wiki:Q14313 .
+
+adaptableIE:portland a adaptableIE:Location ;
+    rdfs:label "Portland"^^xsd:string ;
+    owl:sameAs wiki:Q6106 .
+
+adaptableIE:public_relations_disaster rdfs:label "public relations disaster"^^xsd:string .
+
+adaptableIE:puma_india a adaptableIE:Company ;
+    rdfs:label "Puma India"^^xsd:string .
+
+adaptableIE:racial_justice_progress_at_adidas rdfs:label "racial justice progress at Adidas"^^xsd:string .
+
+adaptableIE:raf_simons a adaptableIE:Person ;
+    rdfs:label "Raf Simons"^^xsd:string ;
+    owl:sameAs wiki:Q1347583 .
+
+adaptableIE:ranveer_singh a adaptableIE:Person ;
+    rdfs:label "Ranveer Singh"^^xsd:string ;
+    adaptableIE:wasA adaptableIE:budding_actor ;
+    owl:sameAs wiki:Q902879 .
+
+adaptableIE:reading a adaptableIE:Organization ;
+    rdfs:label "Reading"^^xsd:string ;
+    owl:sameAs wiki:Q161491 .
+
+adaptableIE:refereekits rdfs:label "refereekits"^^xsd:string .
+
+adaptableIE:robert_louis__dreyfus a adaptableIE:Person ;
+    rdfs:label "Robert Louis- Dreyfus"^^xsd:string ;
+    adaptableIE:acquired adaptableIE:adidas ;
+    adaptableIE:hasCeo adaptableIE:adidas .
+
+adaptableIE:rs_805_crores a adaptableIE:FinancialMetric ;
+    rdfs:label "Rs. 805 crores"^^xsd:string .
+
+adaptableIE:san_francisco rdfs:label "San_Francisco"^^xsd:string ;
+    owl:sameAs wiki:Q62 .
+
+adaptableIE:santiossage a adaptableIE:Product ;
+    rdfs:label "Santiossage"^^xsd:string ;
+    adaptableIE:hasFeatures adaptableIE:massage_nubs .
+
+adaptableIE:second_largest_manufacturer_of_sports_bras_in_the_world rdfs:label "second largest manufacturer of sports bras in the world"^^xsd:string .
+
+adaptableIE:selling_below_cost rdfs:label "selling below cost"^^xsd:string .
+
+adaptableIE:shoe_designs rdfs:label "shoe designs"^^xsd:string .
+
+adaptableIE:skechers a adaptableIE:Company ;
+    rdfs:label "Skechers"^^xsd:string ;
+    adaptableIE:madeDuplicateOf adaptableIE:stan_smith ;
+    adaptableIE:produced adaptableIE:adidas_replicas ;
+    owl:sameAs wiki:Q2945643 .
+
+adaptableIE:snapdeal a adaptableIE:Ecommerce ;
+    rdfs:label "Snapdeal"^^xsd:string ;
+    owl:sameAs wiki:Q7547283 .
+
+adaptableIE:son_heung_min a adaptableIE:Person ;
+    rdfs:label "Son Heung-min"^^xsd:string ;
+    owl:sameAs wiki:Q439722 .
+
+adaptableIE:sonny_bill_williams a adaptableIE:Person ;
+    rdfs:label "Sonny Bill Williams"^^xsd:string ;
+    owl:sameAs wiki:Q2481789 .
+
+adaptableIE:south_african_stormers a adaptableIE:Organization ;
+    rdfs:label "South African Stormers"^^xsd:string .
+
+adaptableIE:soviet_union a adaptableIE:Organization ;
+    rdfs:label "Soviet Union"^^xsd:string ;
+    adaptableIE:prohibitedUsageOf adaptableIE:company_logo ;
+    owl:sameAs wiki:Q15180 .
+
+adaptableIE:soviet_unions_team rdfs:label "Soviet Union's team"^^xsd:string .
+
+adaptableIE:spain_field_hockey_team rdfs:label "Spain field hockey team"^^xsd:string .
+
+adaptableIE:spikes rdfs:label "spikes"^^xsd:string ;
+    owl:sameAs wiki:Q2090200 .
+
+adaptableIE:sports_fashion_street_music_and_pop_culture rdfs:label "sports_fashion_street_music_and_pop_culture"^^xsd:string .
+
+adaptableIE:sportwart_in_the_hitler_youth rdfs:label "Sportwart in the Hitler Youth"^^xsd:string .
+
+adaptableIE:springblade a adaptableIE:Product ;
+    rdfs:label "Springblade"^^xsd:string ;
+    owl:sameAs wiki:Q122386791 .
+
+adaptableIE:stan_smith a adaptableIE:Person,
+        adaptableIE:Product ;
+    rdfs:label "Stan Smith"^^xsd:string ;
+    owl:sameAs wiki:Q357044,
+        wiki:Q54657 .
+
+adaptableIE:steven_gerrard a adaptableIE:Person ;
+    rdfs:label "Steven Gerrard"^^xsd:string ;
+    owl:sameAs wiki:Q459830 .
+
+adaptableIE:super_rugby a adaptableIE:Event ;
+    rdfs:label "Super Rugby"^^xsd:string ;
+    owl:sameAs wiki:Q855988 .
+
+adaptableIE:sweatshops rdfs:label "sweatshops"^^xsd:string ;
+    owl:sameAs wiki:Q59123332 .
+
+adaptableIE:sweden a adaptableIE:Country ;
+    rdfs:label "Sweden"^^xsd:string ;
+    owl:sameAs wiki:Q34 .
+
+adaptableIE:taiwan a adaptableIE:Location ;
+    rdfs:label "Taiwan"^^xsd:string ;
+    owl:sameAs wiki:Q865 .
+
+adaptableIE:tbwachiatday rdfs:label "TBWAChiatDay"^^xsd:string ;
+    adaptableIE:isLocatedIn adaptableIE:san_francisco .
+
+adaptableIE:teamgeist a adaptableIE:Product ;
+    rdfs:label "Teamgeist"^^xsd:string ;
+    owl:sameAs wiki:Q326850 .
+
+adaptableIE:the_three_stripes_company rdfs:label "The three stripes company"^^xsd:string .
+
+adaptableIE:thomas_m%C3%BCller a adaptableIE:Person ;
+    rdfs:label "Thomas Müller"^^xsd:string ;
+    owl:sameAs wiki:Q43666 .
+
+adaptableIE:three_main_groups rdfs:label "three_main_groups"^^xsd:string .
+
+adaptableIE:three_stripes a adaptableIE:Brand ;
+    rdfs:label "three stripes"^^xsd:string ;
+    adaptableIE:resembled adaptableIE:m ;
+    owl:sameAs wiki:Q7798009 .
+
+adaptableIE:three_stripes_to_one_red_stripe rdfs:label "three stripes to one red stripe"^^xsd:string .
+
+adaptableIE:tim_duncan a adaptableIE:Person ;
+    rdfs:label "Tim Duncan"^^xsd:string ;
+    owl:sameAs wiki:Q193020 .
+
+adaptableIE:tokyo a adaptableIE:Location ;
+    rdfs:label "Tokyo"^^xsd:string ;
+    owl:sameAs wiki:Q1490 .
+
+adaptableIE:toronto a adaptableIE:Location ;
+    rdfs:label "Toronto"^^xsd:string ;
+    owl:sameAs wiki:Q172 .
+
+adaptableIE:tracy_mcgrady a adaptableIE:Person ;
+    rdfs:label "Tracy McGrady"^^xsd:string ;
+    owl:sameAs wiki:Q202295 .
+
+adaptableIE:trae_young a adaptableIE:Person ;
+    rdfs:label "Trae Young"^^xsd:string ;
+    owl:sameAs wiki:Q29045112 .
+
+adaptableIE:two_bottles_of_whiskey a adaptableIE:FinancialMetric ;
+    rdfs:label "Two bottles of whiskey"^^xsd:string,
+        "two bottles of whiskey"^^xsd:string .
+
+adaptableIE:tyrrell_hatton a adaptableIE:Person ;
+    rdfs:label "Tyrrell Hatton"^^xsd:string ;
+    owl:sameAs wiki:Q2458211 .
+
+adaptableIE:uefa_champions_league a adaptableIE:Event ;
+    rdfs:label "UEFA Champions League"^^xsd:string ;
+    owl:sameAs wiki:Q18756 .
+
+adaptableIE:urban_affairs a adaptableIE:Position ;
+    rdfs:label "Urban Affairs"^^xsd:string ;
+    owl:sameAs wiki:Q20749093 .
+
+adaptableIE:wales a adaptableIE:Country ;
+    rdfs:label "Wales"^^xsd:string ;
+    owl:sameAs wiki:Q25 .
+
+adaptableIE:warning_orange_and_purple rdfs:label "warning (orange) and purple"^^xsd:string .
+
+adaptableIE:wehrmacht a adaptableIE:Organization ;
+    rdfs:label "Wehrmacht"^^xsd:string ;
+    owl:sameAs wiki:Q128781 .
+
+adaptableIE:western_province_rugby_union_team rdfs:label "Western Province rugby union team"^^xsd:string .
+
+adaptableIE:womens_t_shirts rdfs:label "women's t-shirts"^^xsd:string .
+
+adaptableIE:workforce_diversity rdfs:label "workforce diversity"^^xsd:string ;
+    owl:sameAs wiki:Q1230595 .
+
+adaptableIE:world_cup rdfs:label "World Cup"^^xsd:string ;
+    owl:sameAs wiki:Q19317 .
+
+adaptableIE:xavi a adaptableIE:Person ;
+    rdfs:label "Xavi"^^xsd:string ;
+    owl:sameAs wiki:Q21282989 .
+
+adaptableIE:yohji_yamamoto_and_three_stripes_of_adidas rdfs:label "Yohji_Yamamoto_and_three_stripes_of_Adidas"^^xsd:string .
+
+adaptableIE:zinedine_zidane a adaptableIE:Person ;
+    rdfs:label "Zinedine Zidane"^^xsd:string ;
+    owl:sameAs wiki:Q1835 .
+
+wiki:Q119471427 wiki:P577 wiki:Q2002 .
+
+wiki:Q18161378 wiki:P577 wiki:Q2014 .
+
+wiki:Q298129 wiki:P859 wiki:Q3895 .
+
+wiki:Q56703526 wiki:P1817 wiki:Q1230595 .
+
+adaptableIE:1972 rdfs:label "1972"^^xsd:string ;
+    owl:sameAs wiki:Q2476 .
+
+adaptableIE:1972_summer_olympics a adaptableIE:Event ;
+    rdfs:label "1972 Summer Olympics"^^xsd:string ;
+    owl:sameAs wiki:Q8438 .
+
+adaptableIE:2020 a adaptableIE:Year ;
+    rdfs:label "2020"^^xsd:string ;
+    owl:sameAs wiki:Q25337 .
+
+adaptableIE:Criticism a owl:Class .
+
+adaptableIE:Date a owl:Class .
+
+adaptableIE:Founder a owl:Class ;
+    rdfs:label "founder"^^xsd:string ;
+    owl:sameAs wiki:Q4479442 .
+
+adaptableIE:Occupation a owl:Class .
+
+adaptableIE:Position a owl:Class ;
+    rdfs:label "position"^^xsd:string ;
+    owl:sameAs wiki:Q828803 .
+
+adaptableIE:Sport a owl:Class .
+
+adaptableIE:adidas_1 a adaptableIE:Product ;
+    rdfs:label "Adidas 1"^^xsd:string ;
+    owl:sameAs wiki:Q4682708 .
+
+adaptableIE:adolf_dassler a adaptableIE:Founder,
+        adaptableIE:Person ;
+    rdfs:label "Adolf Dassler"^^xsd:string ;
+    adaptableIE:formed adaptableIE:adidas_ag ;
+    adaptableIE:founded adaptableIE:gebr%C3%BCder_dassler_schuhfabrik ;
+    adaptableIE:hadRank adaptableIE:sportwart_in_the_hitler_youth ;
+    adaptableIE:hasOrganizationalRole adaptableIE:adidas ;
+    adaptableIE:persuaded adaptableIE:jesse_owens ;
+    owl:sameAs wiki:Q76751 .
+
+adaptableIE:bayern_munich a adaptableIE:Organization ;
+    rdfs:label "Bayern Munich"^^xsd:string ;
+    adaptableIE:hasStakeOf adaptableIE:833 ;
+    owl:sameAs wiki:Q15789 .
+
+adaptableIE:canvas_and_rubber rdfs:label "canvas and rubber"^^xsd:string .
+
+adaptableIE:clothing rdfs:label "clothing"^^xsd:string ;
+    owl:sameAs wiki:Q11460 .
+
+adaptableIE:gebr%C3%BCder_dassler_schuhfabrik a adaptableIE:Company ;
+    rdfs:label "Gebrüder Dassler Schuhfabrik"^^xsd:string ;
+    adaptableIE:hadWorkforce adaptableIE:forced_labourers ;
+    adaptableIE:locatedIn adaptableIE:herzogenaurach_germany ;
+    adaptableIE:produced adaptableIE:anti_tank_weapons ;
+    adaptableIE:suppliedTo adaptableIE:wehrmacht ;
+    owl:sameAs wiki:Q12062941 .
+
+adaptableIE:germany a adaptableIE:Country,
+        adaptableIE:Location ;
+    rdfs:label "Germany"^^xsd:string ;
+    owl:sameAs wiki:Q183 .
+
+adaptableIE:herzogenaurach_germany a adaptableIE:Location ;
+    rdfs:label "Herzogenaurach, Germany"^^xsd:string .
+
+adaptableIE:jeremy_scott a adaptableIE:Person ;
+    rdfs:label "Jeremy Scott"^^xsd:string ;
+    owl:sameAs wiki:Q14484510 .
+
+adaptableIE:karhu_sports a adaptableIE:Company ;
+    rdfs:label "Karhu Sports"^^xsd:string .
+
+adaptableIE:massage_nubs rdfs:label "massage nubs"^^xsd:string .
+
+adaptableIE:ncaa a adaptableIE:Organization ;
+    rdfs:label "NCAA"^^xsd:string ;
+    owl:sameAs wiki:Q271805 .
+
+adaptableIE:puma a adaptableIE:Brand,
+        adaptableIE:Company ;
+    rdfs:label "Puma"^^xsd:string ;
+    adaptableIE:wasFoundedBy adaptableIE:adolf_dassler,
+        adaptableIE:rudolf_dassler ;
+    adaptableIE:wasFoundedIn adaptableIE:1949 ;
+    owl:sameAs wiki:Q157064 .
+
+adaptableIE:reebok a adaptableIE:Company ;
+    rdfs:label "Reebok"^^xsd:string ;
+    owl:sameAs wiki:Q466183 .
+
+adaptableIE:rudolf_dassler a adaptableIE:Founder,
+        adaptableIE:Person ;
+    rdfs:label "Rudolf Dassler"^^xsd:string ;
+    adaptableIE:formed adaptableIE:puma ;
+    adaptableIE:hasOrganizationalRole adaptableIE:puma_se ;
+    owl:sameAs wiki:Q61237 .
+
+adaptableIE:runtastic a adaptableIE:Company,
+        adaptableIE:Organization ;
+    rdfs:label "Runtastic"^^xsd:string ;
+    adaptableIE:isHeadquarteredIn adaptableIE:austria ;
+    owl:sameAs wiki:Q7380124 .
+
+adaptableIE:salomon_group a adaptableIE:Company ;
+    rdfs:label "Salomon Group"^^xsd:string .
+
+adaptableIE:shackle_sneakers rdfs:label "shackle sneakers"^^xsd:string ;
+    adaptableIE:caused adaptableIE:controversy .
+
+adaptableIE:soviet_themed_items a adaptableIE:Product ;
+    rdfs:label "Soviet themed items"^^xsd:string .
+
+adaptableIE:spain a adaptableIE:Country,
+        adaptableIE:Location ;
+    rdfs:label "Spain"^^xsd:string ;
+    owl:sameAs wiki:Q29,
+        wiki:Q42267 .
+
+adaptableIE:spiked_running_shoes rdfs:label "spiked running shoes"^^xsd:string .
+
+adaptableIE:stella_mccartney a adaptableIE:Person ;
+    rdfs:label "Stella McCartney"^^xsd:string ;
+    owl:sameAs wiki:Q232812 .
+
+adaptableIE:true rdfs:label "true"^^xsd:string .
+
+adaptableIE:virat_kohli a adaptableIE:Person ;
+    rdfs:label "Virat Kohli"^^xsd:string ;
+    adaptableIE:signedWith adaptableIE:puma_india ;
+    owl:sameAs wiki:Q213854 .
+
+wiki:Q2824455 wiki:P2360 wiki:Q1070054 .
+
+wiki:Q728645 wiki:P11812 wiki:Q3895 ;
+    wiki:P5054 wiki:Q20749093 .
+
+wiki:Q779722 wiki:P11812 wiki:Q3895 ;
+    wiki:P7163 wiki:Q3895 .
+
+adaptableIE:BusinessConcept a owl:Class ;
+    rdfs:label "business_concept"^^xsd:string ;
+    owl:sameAs wiki:Q1425089 .
+
+adaptableIE:sl_72_sneaker_advertising_campaign rdfs:label "SL 72 sneaker advertising campaign"^^xsd:string ;
+    adaptableIE:occurredOnDate adaptableIE:july_20_2024 .
+
+adaptableIE:taylormade_golf_company a adaptableIE:Company ;
+    rdfs:label "TaylorMade Golf Company"^^xsd:string ;
+    owl:sameAs wiki:Q1380797 .
+
+wiki:Q61237 wiki:P740 wiki:Q157064 .
+
+adaptableIE:Campaign a owl:Class .
+
+adaptableIE:Ecommerce a owl:Class .
+
+adaptableIE:SpecificDate a owl:Class .
+
+adaptableIE:puma_se a adaptableIE:Company ;
+    rdfs:label "Puma SE"^^xsd:string ;
+    owl:sameAs wiki:Q157064 .
+
+wiki:Q157064 wiki:P112 wiki:Q5188,
+        wiki:Q61237,
+        wiki:Q76751 .
+
+wiki:Q76751 wiki:P112 wiki:Q12062941 ;
+    wiki:P740 wiki:Q3895 .
+
+adaptableIE:Platform a owl:Class .
+
+adaptableIE:Brand a owl:Class ;
+    rdfs:label "brand"^^xsd:string ;
+    owl:sameAs wiki:Q431289 .
+
+wiki:Q3895 wiki:P1056 wiki:Q111432258,
+        wiki:Q11460,
+        wiki:Q134249758,
+        wiki:Q18543,
+        wiki:Q191564,
+        wiki:Q19317,
+        wiki:Q21468507,
+        wiki:Q2824455,
+        wiki:Q326850,
+        wiki:Q357017,
+        wiki:Q39908,
+        wiki:Q420789,
+        wiki:Q4682574,
+        wiki:Q4682953,
+        wiki:Q571,
+        wiki:Q644994,
+        wiki:Q660782,
+        wiki:Q903284 ;
+    wiki:P112 wiki:Q61237,
+        wiki:Q76751 ;
+    wiki:P11812 wiki:Q1380797,
+        wiki:Q466183,
+        wiki:Q6795483,
+        wiki:Q728645,
+        wiki:Q7380124,
+        wiki:Q779722 ;
+    wiki:P121 wiki:Q59123332 ;
+    wiki:P1344 wiki:Q8450 ;
+    wiki:P1441 wiki:Q2824396,
+        wiki:Q4682709,
+        wiki:Q55405635 ;
+    wiki:P169 wiki:Q1735157,
+        wiki:Q370191 ;
+    wiki:P1891 wiki:Q902879 ;
+    wiki:P2139 wiki:Q49619 ;
+    wiki:P287 wiki:Q14484510 ;
+    wiki:P4584 wiki:Q4682708 ;
+    wiki:P7047 wiki:Q157064 ;
+    wiki:P740 wiki:Q12062941 ;
+    wiki:P859 wiki:Q10520,
+        wiki:Q106510108,
+        wiki:Q113135,
+        wiki:Q11584,
+        wiki:Q124329596,
+        wiki:Q1277887,
+        wiki:Q129027,
+        wiki:Q1354960,
+        wiki:Q136678,
+        wiki:Q15789,
+        wiki:Q161491,
+        wiki:Q17,
+        wiki:Q173139,
+        wiki:Q1788081,
+        wiki:Q179051,
+        wiki:Q183,
+        wiki:Q1835,
+        wiki:Q184586,
+        wiki:Q18756,
+        wiki:Q189240,
+        wiki:Q193020,
+        wiki:Q202295,
+        wiki:Q203258,
+        wiki:Q205326,
+        wiki:Q21282989,
+        wiki:Q2312779,
+        wiki:Q242278,
+        wiki:Q2458211,
+        wiki:Q2481789,
+        wiki:Q25,
+        wiki:Q25316367,
+        wiki:Q25369,
+        wiki:Q26517,
+        wiki:Q28,
+        wiki:Q29045112,
+        wiki:Q298,
+        wiki:Q298531,
+        wiki:Q30122104,
+        wiki:Q3038629,
+        wiki:Q3046479,
+        wiki:Q309590,
+        wiki:Q31,
+        wiki:Q310108,
+        wiki:Q3109995,
+        wiki:Q337370,
+        wiki:Q34,
+        wiki:Q3530594,
+        wiki:Q368441,
+        wiki:Q38,
+        wiki:Q414,
+        wiki:Q42267,
+        wiki:Q43666,
+        wiki:Q43913,
+        wiki:Q439722,
+        wiki:Q459830,
+        wiki:Q5216549,
+        wiki:Q55801,
+        wiki:Q615,
+        wiki:Q622308,
+        wiki:Q624,
+        wiki:Q645934,
+        wiki:Q645937,
+        wiki:Q661579,
+        wiki:Q66241169,
+        wiki:Q6668646,
+        wiki:Q7028025,
+        wiki:Q716081,
+        wiki:Q733600,
+        wiki:Q739,
+        wiki:Q814121,
+        wiki:Q855988,
+        wiki:Q877423,
+        wiki:Q935879,
+        wiki:Q96 .
+
+adaptableIE:Action a owl:Class ;
+    rdfs:label "action"^^xsd:string ;
+    owl:sameAs wiki:Q4026292 .
+
+adaptableIE:Datetime a owl:Class ;
+    rdfs:label "date/time"^^xsd:string ;
+    owl:sameAs wiki:Q205892 .
+
+adaptableIE:adidas a adaptableIE:Brand,
+        adaptableIE:Company,
+        adaptableIE:Organization,
+        adaptableIE:Product ;
+    rdfs:label "Adidas"^^xsd:string ;
+    adaptableIE:acquired adaptableIE:3_stripe_logo,
+        adaptableIE:bernard_tapie,
+        adaptableIE:cr%C3%A9dit_lyonnais,
+        adaptableIE:maxfli,
+        adaptableIE:reebok,
+        adaptableIE:runtastic,
+        adaptableIE:salomon_group,
+        adaptableIE:taylormade_golf_company ;
+    adaptableIE:acquiredTrademarkFrom adaptableIE:finnish_sports_company,
+        adaptableIE:karhu_sports ;
+    adaptableIE:agreedTo adaptableIE:andy_murray,
+        adaptableIE:manchester_united,
+        adaptableIE:national_hockey_league ;
+    adaptableIE:announcedAcquisitionOf adaptableIE:five_ten ;
+    adaptableIE:announcedDealToBecome adaptableIE:nba_clothing_provider ;
+    adaptableIE:apologizedFor adaptableIE:sl_72_sneaker_advertising_campaign ;
+    adaptableIE:becameAStapleOf adaptableIE:gopnik_subculture ;
+    adaptableIE:cancelled adaptableIE:shackle_sneakers ;
+    adaptableIE:changedNameTo adaptableIE:adidas__salomon_ag ;
+    adaptableIE:collaboratedWith adaptableIE:alexander_wang,
+        adaptableIE:bad_bunny,
+        adaptableIE:beyonc%C3%A9,
+        adaptableIE:jeremy_scott,
+        adaptableIE:jonah_hill,
+        adaptableIE:karlie_kloss,
+        adaptableIE:ninja,
+        adaptableIE:pharrell_williams,
+        adaptableIE:raf_simons,
+        adaptableIE:stella_mccartney ;
+    adaptableIE:designed adaptableIE:jeremy_scott ;
+    adaptableIE:divested adaptableIE:reebok,
+        adaptableIE:taylormade_golf_company ;
+    adaptableIE:dividedTheBrandInto adaptableIE:three_main_groups ;
+    adaptableIE:endorsed adaptableIE:gilbert_arenas,
+        adaptableIE:kevin_garnett,
+        adaptableIE:kobe_bryant ;
+    adaptableIE:enforces adaptableIE:cross_border_agreements ;
+    adaptableIE:establishedGuidelinesWith adaptableIE:ncaa ;
+    adaptableIE:filedLawsuitAgainst adaptableIE:fitness_world_trading ;
+    adaptableIE:filedLawsuitsAgainst adaptableIE:skechers ;
+    adaptableIE:filedLawsuitsInYear adaptableIE:2016 ;
+    adaptableIE:hadOwnershipOf adaptableIE:taylormade_golf_company ;
+    adaptableIE:hadRevenueOf adaptableIE:2024,
+        adaptableIE:23683_billion,
+        adaptableIE:584_billion,
+        adaptableIE:75_billion,
+        adaptableIE:highest_revenues_ever ;
+    adaptableIE:hasBusinessLocationsIn adaptableIE:australia,
+        adaptableIE:london,
+        adaptableIE:portland,
+        adaptableIE:spain,
+        adaptableIE:taiwan,
+        adaptableIE:tokyo,
+        adaptableIE:toronto ;
+    adaptableIE:hasBusinessRival adaptableIE:puma ;
+    adaptableIE:hasCeo adaptableIE:bj%C3%B8rn_gulden,
+        adaptableIE:kasper_r%C3%B8rsted,
+        adaptableIE:robert_louis__dreyfus ;
+    adaptableIE:hasGlobalCorporateHeadquartersIn adaptableIE:herzogenaurach_germany ;
+    adaptableIE:hasIdentityMark adaptableIE:three_stripes ;
+    adaptableIE:hasImportantBusinessTrends adaptableIE:business_trends ;
+    adaptableIE:hasProductLine adaptableIE:athletic_footwear,
+        adaptableIE:canvas_and_rubber,
+        adaptableIE:clothing,
+        adaptableIE:heavy_metal_spikes,
+        adaptableIE:shoe_designs,
+        adaptableIE:spiked_running_shoes,
+        adaptableIE:spikes ;
+    adaptableIE:hasRevenueTargetYear adaptableIE:2020 ;
+    adaptableIE:hasWebsiteFor adaptableIE:indian_audience ;
+    adaptableIE:hopedToDoubleRevenueFrom adaptableIE:rs_805_crores ;
+    adaptableIE:introduced adaptableIE:adidas_1 ;
+    adaptableIE:involvedIn adaptableIE:ncaa_division_i_mens_basketball_corruption_scandal ;
+    adaptableIE:isFeaturedIn adaptableIE:adidas_championship_football,
+        adaptableIE:adidas_power_soccer,
+        adaptableIE:daley_thompsons_olympic_challenge ;
+    adaptableIE:isHeadquarteredIn adaptableIE:bavaria,
+        adaptableIE:germany,
+        adaptableIE:herzogenaurach ;
+    adaptableIE:isKnownFor adaptableIE:criticism_adidass_business_practisesethics_and_commitment_to_worker_welfare_have_been_scrutinised_and_often_criticised,
+        adaptableIE:public_relations_disaster,
+        adaptableIE:the_three_stripes_company ;
+    adaptableIE:launched adaptableIE:adidas_is_all_in ;
+    adaptableIE:launched3stripeLogo adaptableIE:1972,
+        adaptableIE:1972_summer_olympics,
+        adaptableIE:munich ;
+    adaptableIE:launchedCampaign adaptableIE:facebook,
+        adaptableIE:feelloveusehate,
+        adaptableIE:marketing_in_russia,
+        adaptableIE:sl_72_sneaker_advertising_campaign,
+        adaptableIE:soviet_themed_items ;
+    adaptableIE:launchedJointVentureWith adaptableIE:stella_mccartney ;
+    adaptableIE:launchedProduct adaptableIE:adidas_confirmed_app,
+        adaptableIE:fit_smart_wristband,
+        adaptableIE:franz_beckenbauer_tracksuit,
+        adaptableIE:shackle_sneakers ;
+    adaptableIE:launchedTrefoilLogo adaptableIE:1971,
+        adaptableIE:1972,
+        adaptableIE:1972_summer_olympics ;
+    adaptableIE:manufactures adaptableIE:adidas_barricade_tour_model,
+        adaptableIE:adidas_beau_jeu,
+        adaptableIE:adidas_brazuca,
+        adaptableIE:adidas_eqt_support_9317,
+        adaptableIE:adidas_eqt_support_adv,
+        adaptableIE:adidas_eqt_support_ultra,
+        adaptableIE:adidas_feather,
+        adaptableIE:adidas_finale,
+        adaptableIE:adidas_golf_accessories,
+        adaptableIE:adidas_golf_clothing,
+        adaptableIE:adidas_golf_footwear,
+        adaptableIE:adidas_gymnastics_pants,
+        adaptableIE:adidas_gymnastics_shorts,
+        adaptableIE:adidas_kabaddi_equipment,
+        adaptableIE:adidas_lacrosse_boots,
+        adaptableIE:adidas_lacrosse_equipment,
+        adaptableIE:adidas_lacrosse_gloves,
+        adaptableIE:adidas_lacrosse_protective_gear,
+        adaptableIE:adidas_lacrosse_sticks,
+        adaptableIE:adidas_lifestyle_shoes,
+        adaptableIE:adidas_masterblaster_elite,
+        adaptableIE:adidas_mens_competition_shirts,
+        adaptableIE:adidas_mens_gymnastics_wear,
+        adaptableIE:adidas_nmd_r1,
+        adaptableIE:adidas_nmd_xr1,
+        adaptableIE:adidas_predator,
+        adaptableIE:adidas_response,
+        adaptableIE:adidas_running_shoes,
+        adaptableIE:adidas_skateboarding_shoes,
+        adaptableIE:adidas_telstar,
+        adaptableIE:adidas_tennis_racquets,
+        adaptableIE:adidas_womens_gymnastics_wear,
+        adaptableIE:adilette,
+        adaptableIE:adipu,
+        adaptableIE:adipure,
+        adaptableIE:adissage,
+        adaptableIE:al_rihla,
+        adaptableIE:clothing,
+        adaptableIE:copa_mundial_moulded_boot,
+        adaptableIE:cricket_footwear,
+        adaptableIE:football_kits,
+        adaptableIE:hoodies,
+        adaptableIE:incurza,
+        adaptableIE:jabulani,
+        adaptableIE:jackets,
+        adaptableIE:leggings,
+        adaptableIE:libro,
+        adaptableIE:m_blaster,
+        adaptableIE:mens_t_shirts,
+        adaptableIE:pants,
+        adaptableIE:pellara,
+        adaptableIE:refereekits,
+        adaptableIE:santiossage,
+        adaptableIE:teamgeist,
+        adaptableIE:womens_t_shirts,
+        adaptableIE:world_cup ;
+    adaptableIE:operates adaptableIE:sweatshops ;
+    adaptableIE:ownsStakeIn adaptableIE:bayern_munich,
+        adaptableIE:runtastic ;
+    adaptableIE:participatedIn adaptableIE:1980_summer_olympics ;
+    adaptableIE:providedOutfitsFor adaptableIE:soviet_unions_team ;
+    adaptableIE:provides adaptableIE:major_league_soccer ;
+    adaptableIE:releasedNewVersionOf adaptableIE:adidas_1 ;
+    adaptableIE:removed adaptableIE:virat_kohli ;
+    adaptableIE:rivalOf adaptableIE:puma_se ;
+    adaptableIE:sells adaptableIE:all_blacks_replica_rugby_jersey ;
+    adaptableIE:sellsOnlineThrough adaptableIE:amazon,
+        adaptableIE:jabong,
+        adaptableIE:myntra,
+        adaptableIE:snapdeal ;
+    adaptableIE:signed adaptableIE:ranveer_singh ;
+    adaptableIE:sold adaptableIE:salomon_group ;
+    adaptableIE:sponsors adaptableIE:alessandro_del_piero,
+        adaptableIE:all_blacks,
+        adaptableIE:argentina,
+        adaptableIE:argentina_mens_national_field_hockey_team,
+        adaptableIE:argentina_womens_national_field_hockey_team,
+        adaptableIE:arjen_robben,
+        adaptableIE:australia_field_hockey_team,
+        adaptableIE:bayern_munich,
+        adaptableIE:beeston,
+        adaptableIE:belgium,
+        adaptableIE:belgium_field_hockey_team,
+        adaptableIE:brandon_knight,
+        adaptableIE:british_and_irish_lions,
+        adaptableIE:candace_parker,
+        adaptableIE:chauncey_billups,
+        adaptableIE:chile,
+        adaptableIE:collin_morikawa,
+        adaptableIE:colombia,
+        adaptableIE:damian_lillard,
+        adaptableIE:daniel_berger,
+        adaptableIE:david_beckham,
+        adaptableIE:derrick_rose,
+        adaptableIE:donovan_mitchell,
+        adaptableIE:dwayne_bravo,
+        adaptableIE:earvin_ngapeth,
+        adaptableIE:east_grinstead,
+        adaptableIE:england_field_hockey_team,
+        adaptableIE:france_national_team,
+        adaptableIE:gareth_bale,
+        adaptableIE:george_weah,
+        adaptableIE:germany,
+        adaptableIE:germany_field_hockey_team,
+        adaptableIE:gold_coast_titans,
+        adaptableIE:heineken_cup,
+        adaptableIE:hungary,
+        adaptableIE:iker_casillas,
+        adaptableIE:iman_shumpert,
+        adaptableIE:italian_national_rugby_team,
+        adaptableIE:italy,
+        adaptableIE:ivan_zaytsev,
+        adaptableIE:james_harden,
+        adaptableIE:james_rodr%C3%ADguez,
+        adaptableIE:japan,
+        adaptableIE:jeremy_lin,
+        adaptableIE:john_wall,
+        adaptableIE:jude_bellingham,
+        adaptableIE:k_l_rahul,
+        adaptableIE:kak%C3%A1,
+        adaptableIE:kareem_abdul_jabbar,
+        adaptableIE:kieron_pollard,
+        adaptableIE:lasith_malinga,
+        adaptableIE:lionel_messi,
+        adaptableIE:ludvig_%C3%A5berg,
+        adaptableIE:luis_su%C3%A1rez,
+        adaptableIE:mexico,
+        adaptableIE:mohamed_salah,
+        adaptableIE:netherlands_field_hockey_team,
+        adaptableIE:new_zealand_rugby_union,
+        adaptableIE:nick_dunlap,
+        adaptableIE:nick_taylor,
+        adaptableIE:paul_pogba,
+        adaptableIE:reading,
+        adaptableIE:son_heung_min,
+        adaptableIE:sonny_bill_williams,
+        adaptableIE:south_african_stormers,
+        adaptableIE:spain,
+        adaptableIE:spain_field_hockey_team,
+        adaptableIE:steven_gerrard,
+        adaptableIE:super_rugby,
+        adaptableIE:sweden,
+        adaptableIE:thomas_m%C3%BCller,
+        adaptableIE:tim_duncan,
+        adaptableIE:tracy_mcgrady,
+        adaptableIE:trae_young,
+        adaptableIE:tyrrell_hatton,
+        adaptableIE:uefa_champions_league,
+        adaptableIE:wales,
+        adaptableIE:western_province_rugby_union_team,
+        adaptableIE:xavi,
+        adaptableIE:zinedine_zidane ;
+    adaptableIE:sued adaptableIE:ncaa ;
+    adaptableIE:tookOffMarket adaptableIE:soviet_themed_items ;
+    adaptableIE:trademarkAcquisitionCost adaptableIE:1600,
+        adaptableIE:two_bottles_of_whiskey ;
+    adaptableIE:wasFormedFrom adaptableIE:gebr%C3%BCder_dassler_schuhfabrik ;
+    adaptableIE:wasFoundedBy adaptableIE:adolf_dassler,
+        adaptableIE:rudolf_dassler ;
+    adaptableIE:wasOneOfTheFirstToEnter adaptableIE:soviet_union ;
+    adaptableIE:withdrew adaptableIE:sl_72_sneaker_advertising_campaign ;
+    owl:sameAs wiki:Q3895 .
+
+adaptableIE:FinancialMetric a owl:Class ;
+    rdfs:label "financial_metric"^^xsd:string ;
+    owl:sameAs wiki:Q106905561 .
+
+adaptableIE:Year a owl:Class ;
+    rdfs:label "year"^^xsd:string ;
+    owl:sameAs wiki:Q577 .
+
+adaptableIE:Country a owl:Class ;
+    rdfs:label "country"^^xsd:string ;
+    owl:sameAs wiki:Q6256 .
+
+adaptableIE:Company a owl:Class ;
+    rdfs:label "company"^^xsd:string ;
+    owl:sameAs wiki:Q783794 .
+
+adaptableIE:Event a owl:Class ;
+    rdfs:label "event"^^xsd:string ;
+    owl:sameAs wiki:Q1656682 .
+
+adaptableIE:Location a owl:Class ;
+    rdfs:label "location"^^xsd:string ;
+    owl:sameAs wiki:Q2221906 .
+
+adaptableIE:Product a owl:Class ;
+    rdfs:label "product"^^xsd:string ;
+    owl:sameAs wiki:Q2424752 .
+
+adaptableIE:Organization a owl:Class ;
+    rdfs:label "organization"^^xsd:string ;
+    owl:sameAs wiki:Q43229 .
+
+adaptableIE:Person a owl:Class ;
+    rdfs:label "person"^^xsd:string ;
+    owl:sameAs wiki:Q5 .
+
