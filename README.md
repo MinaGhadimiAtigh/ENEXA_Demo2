@@ -111,4 +111,5 @@ python make_ttl_file.py
 - `--extraction_file` (output from Step 3)
 - `--disambiguation_file` (output from Step 4)
 - `--experiment` (experiment name for file naming)
+- `--types_file` (types file is wikidata id added version of target entity types, it is for quick mapping, can be found in input_files)
 - `--output_folder`

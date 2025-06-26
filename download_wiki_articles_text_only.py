@@ -49,7 +49,7 @@ def download_wiki_articles(urls, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(description='Download Wikipedia Articles')
-    parser.add_argument('-f', '--url_file', type=str, default= 'ENEXA_Demo2/input_files/urls.json', help='Json file with a list of Wikipedia URLs')
+    parser.add_argument('-f', '--url_file', type=str, default= 'ENEXA_Demo2/input_files/adidas_url.json', help='Json file with a list of Wikipedia URLs')
     parser.add_argument('-o', '--output_dir', type=str, default='ENEXA_Demo2/wiki_downloads_no_tables', help='Output directory to set for the downloaded articles')
     print('This updated script downloads text and tables from Wikipedia articles. Given a list of URLs, downloaded text and tables are ssved in JSON format: List of dictionaries with page url, headings and paragraphs, and tables.')
     args = parser.parse_args()

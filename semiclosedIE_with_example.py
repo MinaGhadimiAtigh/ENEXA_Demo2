@@ -73,10 +73,10 @@ def format_dataset_chatml(row, tokenizer):
 
 def main():
     parser = argparse.ArgumentParser(description='Test the model with the shadowlinks dataset')
-    parser.add_argument('--input_folder', type=str, default="ENEXA_Demo2/wiki_downloads", help='The input folder where the dowloaded Wikipedia files are stored')
+    parser.add_argument('--input_folder', type=str, default="ENEXA_Demo2/wiki_downloads/wiki_downloads_no_tables", help='The input folder where the dowloaded Wikipedia files are stored')
     parser.add_argument('--prompt_template', type=str, default="ENEXA_Demo2/input_files/prompt_template_with example.json", help='The prompt template to fill in the inputs.')
-    parser.add_argument('--target_entity_types', type=str, default="ENEXA_Demo2/input_files/target_entity_types.json", help='The target entity types to extract from the Wikipedia files.')
-    parser.add_argument('--target_relations', type=str, default="ENEXA_Demo2/input_files/target_relations_shorter.json", help='The target relations to extract from the Wikipedia files.')
+    parser.add_argument('--target_entity_types', type=str, default="ENEXA_Demo2/input_files/target_entity_types_4_adidas.json", help='The target entity types to extract from the Wikipedia files.')
+    parser.add_argument('--target_relations', type=str, default="ENEXA_Demo2/input_files/target_relations_4_adidas.json", help='The target relations to extract from the Wikipedia files.')
     parser.add_argument('--NER_example', type=str, default="ENEXA_Demo2/input_files/NER_example.json", help='NER example to use in the prompt template.')
     parser.add_argument('--RE_example', type=str, default="ENEXA_Demo2/input_files/RE_example.json", help='RE example to use in the prompt template.')
     parser.add_argument('--LLM', type=str, default="FinaPolat/phi4_adaptable_IE", help='The model to use for the test')

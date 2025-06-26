@@ -129,8 +129,8 @@ def get_types_dict(types_file):
 
 def create_ttl_file():
     parser = argparse.ArgumentParser(description='Create a TTL file from extraction and disambiguation data')
-    parser.add_argument('--extraction_file', type=str, default="ENEXA_Demo2/candidates_adidas_one_schema/extraction_and_candidates.jsonl", help='The input file where the extraction results are stored')
-    parser.add_argument('--disambiguation_file', type=str, default="ENEXA_Demo2/disambiguation_output/raged_output_one_schema/disambiguation_output.jsonl", help='The input file where the disambuguation results are stored')
+    parser.add_argument('--extraction_file', type=str, default="ENEXA_Demo2/IE_extraction_output/LLM_answers.jsonl", help='The input file where the extraction results are stored')
+    parser.add_argument('--disambiguation_file', type=str, default="ENEXA_Demo2/disambiguation_output/disambiguation_output.jsonl", help='The input file where the disambuguation results are stored')
     parser.add_argument('--experiment', type=str, default="adidas_text_only", help='The name of the experiment')
     parser.add_argument('--types_file', type=str, default="ENEXA_Demo2/input_files/target_entity_types_4_adidas_wikiIDs.json", help='The input file where the types are stored')
     parser.add_argument('--output_folder', type=str, default="ENEXA_Demo2/graph_output", help='The output folder where the ttl file is stored')

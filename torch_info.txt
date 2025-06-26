@@ -1,0 +1,6 @@
+=== PyTorch Info ===
+PyTorch Version: 2.6.0+cu124
+CUDA Available: True
+CUDA Version (from torch): 12.4
+cuDNN Version: 90100
+GPU Name: NVIDIA A100-SXM4-40GB

@@ -1,6 +1,6 @@
 import requests
 import requests_cache
-requests_cache.install_cache('wikidata_cache', expire_after=360000)  
+requests_cache.install_cache('wikidata_cache', expire_after=None)  # Cache does not expire
 import json
 import os
 from retry import retry
@@ -185,8 +185,8 @@ def trim_property_name(property_name):
 
 def main():
     parser = argparse.ArgumentParser(description='Query Wikidata for entity/property candidates.')
-    parser.add_argument('--input_file', type=str, default= "ENEXA_Demo2/IE_extraction_output/extraction_one_schema_per_task/LLM_answers.jsonl", help='Input file with mentions.')
-    parser.add_argument('--output_folder', type=str, default= "ENEXA_Demo2/candidates_adidas_v2", help='Output folder for results.')
+    parser.add_argument('--input_file', type=str, default= "ENEXA_Demo2/IE_extraction_output/LLM_answers.jsonl", help='Input file with mentions.')
+    parser.add_argument('--output_folder', type=str, default= "ENEXA_Demo2/cand_gen_output", help='Output folder for results.')
     parser.add_argument('--num_candidates', type=int, default=5, help='Number of candidates to return.')
 
     args = parser.parse_args()
