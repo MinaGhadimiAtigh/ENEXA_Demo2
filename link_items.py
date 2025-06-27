@@ -12,9 +12,9 @@ print(torch.cuda.is_available())  # Should return True if GPUs are available
 print(torch.cuda.device_count())  # Number of GPUs available
 
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "your-hf-token-here"
 # Login directly with your token
-login(token="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")
+login(token="your-hf-token-here")
 
 
 def read_jsonL(file):
