@@ -3,7 +3,6 @@ import json
 import os
 from collections import defaultdict
 import argparse
-from huggingface_hub import login
 from datasets import Dataset
 from transformers import AutoTokenizer #, TextStreamer
 from unsloth import FastLanguageModel
@@ -11,10 +10,6 @@ import torch
 print(torch.cuda.is_available())  # Should return True if GPUs are available
 print(torch.cuda.device_count())  # Number of GPUs available
 
-
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "your-hf-token-here"
-# Login directly with your token
-login(token="your-hf-token-here")
 
 
 def read_jsonL(file):
