@@ -19,7 +19,8 @@ def download_wiki_articles(urls, output_dir):
     for url in urls:
         print(f'Downloading {url}')
         page_name = url.split('/')[-1] # we get the page name from the url
-        page = requests.get(url)
+        headers = {"User-Agent": "Mozilla/5.0"}  # helps avoid blocks
+        page = requests.get(url, headers=headers)
         page_content = BeautifulSoup(page.text,'html.parser').select('body')[0]
         page_text = [{"url": url}]
         
