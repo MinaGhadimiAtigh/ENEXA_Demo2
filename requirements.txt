@@ -11,8 +11,6 @@ peft==0.15.2
 regex==2024.11.6
 requests==2.32.3
 tokenizers==0.21.1
-torch==2.6.0
-torchvision==0.21.0
 tqdm==4.67.1
 transformers==4.51.3
 trl==0.15.2
