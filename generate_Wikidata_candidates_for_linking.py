@@ -92,7 +92,8 @@ def is_WD_disambiguation_page(qid):
     url = f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json"
     
     try:
-        response = requests.get(url)
+        headers = {"User-Agent": "Mozilla/5.0"}
+        response = requests.get(url, headers=headers)
         response.raise_for_status()
         data = response.json()
 
@@ -135,7 +136,8 @@ def get_wikidata_candidates(mention, language='en', limit=10, search_type='item'
     }
 
     try:
-        response = requests.get(endpoint, params=params)
+        headers = {"User-Agent": "Mozilla/5.0"}
+        response = requests.get(endpoint, params=params, headers=headers)
         response.raise_for_status()
         data = response.json()
         results = data.get("search", [])
