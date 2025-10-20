@@ -179,8 +179,8 @@ def main():
 
 
     LLM_answers = []
-    for i in range(len(data)):
-    #for i in range(10):
+    # for i in range(len(data)):
+    for i in range(10):
         print(f"Generating answer for row {i}...", flush=True)
         row = data[i]   
         inputs = tokenizer(row["text"], return_tensors="pt").to("cuda")
