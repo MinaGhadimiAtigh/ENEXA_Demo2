@@ -76,7 +76,7 @@ def main():
     parser.add_argument('--RE_example', type=str, default="input_files/RE_example.json", help='RE example to use in the prompt template.')
     parser.add_argument('--LLM', type=str, default="FinaPolat/phi4_adaptable_IE", help='The model to use for the test')
     #parser.add_argument('--batch_size', type=int, default=1, help='The batch size to use for the test')
-    parser.add_argument('--temperature', type=int, default=0.001, help='The temperature to use for the test')
+    parser.add_argument('--temperature', type=float, default=0.001, help='The temperature to use for the test')
     parser.add_argument('--max_tokens', type=int, default=8192, help='The maximum number of tokens to use for the test')
     parser.add_argument('--output_folder', type=str, default="IE_extraction_output", help='The output folder where the resulting triples will be stored')
     args = parser.parse_args()
