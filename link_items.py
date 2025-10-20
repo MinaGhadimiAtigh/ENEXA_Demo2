@@ -76,8 +76,8 @@ def format_dataset_chatml(row, tokenizer):
 
 def main():
     parser = argparse.ArgumentParser(description='Test the model with the shadowlinks dataset')
-    parser.add_argument('--input_file', type=str, default="ENEXA_Demo2/IE_extraction_output/ft_phi4_semiclosed_with_example_test/LLM_answers.jsonl", help='The input file where the context is stored')
-    parser.add_argument('--prompt_template', type=str, default="ENEXA_Demo2/input_files/entity_disambiguation_temaplate_can_reject.json", help='The prompt template to use for the test')
+    parser.add_argument('--input_file', type=str, default="IE_extraction_output/ft_phi4_semiclosed_with_example_test/LLM_answers.jsonl", help='The input file where the context is stored')
+    parser.add_argument('--prompt_template', type=str, default="input_files/entity_disambiguation_temaplate_can_reject.json", help='The prompt template to use for the test')
     parser.add_argument('--LLM', type=str, default="FinaPolat/unsloth_llama3_8B_for_ED", help='The model to use for the test')
     parser.add_argument('--temperature', type=int, default=0.001, help='The temperature to use for the test')
     parser.add_argument('--max_tokens', type=int, default=5, help='The maximum number of tokens to use for the test')
